@@ -1,0 +1,273 @@
+"""
+StandUp Portugal - Automated Event Aggregator
+Collects stand-up comedy events in Portugal from public sources and an optional
+Google Sheet CSV (for manual Facebook/bar events and promoted highlights),
+deduplicates, removes past events, sorts ascending by date, and writes docs/events.json.
+"""
+
+from __future__ import annotations
+
+import csv
+import hashlib
+import io
+import json
+import os
+import re
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from typing import Any
+from urllib.parse import urljoin
+
+import requests
+from bs4 import BeautifulSoup
+from dateutil import parser as date_parser
+
+LISBON_TZ = timezone(timedelta(hours=0))
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+    ),
+    "Accept-Language": "pt-PT,pt;q=0.9,en;q=0.8",
+}
+
+DISTRICT_KEYWORDS: dict[str, list[str]] = {
+    "Lisboa": ["lisboa", "cascais", "oeiras", "sintra", "amadora", "loures", "odivelas", "mafra", "torres vedras"],
+    "Porto": ["porto", "matosinhos", "gaia", "vila nova de gaia", "maia", "gondomar", "valongo", "póvoa de varzim"],
+    "Braga": ["braga", "guimarães", "famalicão", "barcelos", "esposende"],
+    "Coimbra": ["coimbra", "figueira da foz", "cantanhede"],
+    "Faro": ["faro", "algarve", "portimão", "albufeira", "lagos", "loulé", "tavira", "olhão"],
+    "Aveiro": ["aveiro", "ílhavo", "santa maria da feira", "ovar", "águeda", "espinho"],
+    "Setúbal": ["setúbal", "almada", "seixal", "barreiro", "montijo", "palmela", "sesimbra", "sines"],
+    "Leiria": ["leiria", "caldas da rainha", "marinha grande", "alcobaça", "pombal"],
+    "Santarém": ["santarém", "tomar", "torres novas", "abrantes", "entroncamento"],
+    "Viseu": ["viseu", "lamego", "tondela"],
+    "Viana do Castelo": ["viana do castelo", "ponte de lima", "valença"],
+    "Vila Real": ["vila real", "chaves", "peso da régua"],
+    "Bragança": ["bragança", "mirandela"],
+    "Castelo Branco": ["castelo branco", "covilhã", "fundão"],
+    "Guarda": ["guarda", "seia"],
+    "Évora": ["évora", "estremoz", "montemor-o-novo"],
+    "Beja": ["beja", "moura", "odemira"],
+    "Portalegre": ["portalegre", "elvas", "ponte de sor"],
+    "Madeira": ["funchal", "madeira", "câmara de lobos"],
+    "Açores": ["ponta delgada", "açores", "angra do heroísmo", "horta"],
+}
+
+
+def infer_district(text: str) -> str:
+    lowered = text.lower()
+    for district, keywords in DISTRICT_KEYWORDS.items():
+        if any(kw in lowered for kw in keywords):
+            return district
+    return "Lisboa" if "tivoli" in lowered or "coliseu dos recreios" in lowered else "Portugal"
+
+
+def make_id(source: str, ticket_url: str, date_str: str) -> str:
+    digest = hashlib.sha1(f"{source}|{ticket_url}|{date_str}".encode("utf-8")).hexdigest()[:12]
+    return f"{source.lower()}-{digest}"
+
+
+def parse_iso_datetime(raw: str) -> datetime | None:
+    if not raw:
+        return None
+    try:
+        dt = date_parser.parse(raw, dayfirst=True)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=LISBON_TZ)
+        return dt
+    except (ValueError, TypeError):
+        return None
+
+
+def fetch_google_sheet_csv(csv_url: str) -> list[dict[str, Any]]:
+    if not csv_url:
+        return []
+    events: list[dict[str, Any]] = []
+    resp = requests.get(csv_url, headers=HEADERS, timeout=20)
+    resp.raise_for_status()
+    reader = csv.DictReader(io.StringIO(resp.text))
+    for row in reader:
+        title = (row.get("title") or "").strip()
+        raw_dt = (row.get("dateTime") or "").strip()
+        ticket_url = (row.get("ticketUrl") or "").strip()
+        if not title or not raw_dt or not ticket_url:
+            continue
+        dt = parse_iso_datetime(raw_dt)
+        if not dt:
+            continue
+        venue = (row.get("venue") or "").strip() or "Local a anunciar"
+        district = (row.get("district") or "").strip() or infer_district(f"{venue} {title}")
+        source = (row.get("source") or "").strip() or "Curadoria"
+        featured_raw = (row.get("featured") or "").strip().lower()
+        events.append({
+            "id": make_id(source, ticket_url, dt.isoformat()),
+            "title": title,
+            "dateTime": dt.isoformat(),
+            "venue": venue,
+            "district": district,
+            "imageUrl": (row.get("imageUrl") or "").strip(),
+            "ticketUrl": ticket_url,
+            "source": source,
+            "featured": featured_raw in {"true", "1", "sim", "yes"},
+        })
+    return events
+
+
+def fetch_ticketline_standup() -> list[dict[str, Any]]:
+    """
+    Attempts to fetch public stand-up comedy listings from Ticketline Portugal.
+    Gracefully returns [] if blocked or layout changes.
+    """
+    url = "https://ticketline.sapo.pt/pesquisa?q=stand+up"
+    resp = requests.get(url, headers=HEADERS, timeout=20)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+    events: list[dict[str, Any]] = []
+
+    for card in soup.select("a[href*='/evento/']"):
+        href = card.get("href", "")
+        if not href:
+            continue
+        ticket_url = urljoin("https://ticketline.sapo.pt", href)
+        title_el = card.select_one("h2, h3, .title, .event-title")
+        title = title_el.get_text(" ", strip=True) if title_el else card.get_text(" ", strip=True)
+        if not title or len(title) < 3:
+            continue
+        img_el = card.select_one("img")
+        image_url = ""
+        if img_el:
+            src = img_el.get("data-src") or img_el.get("src") or ""
+            image_url = urljoin("https://ticketline.sapo.pt", src) if src else ""
+
+        text_blob = card.get_text(" ", strip=True)
+        date_match = re.search(r"(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}(?:\s+\d{1,2}:\d{2})?)", text_blob)
+        dt = parse_iso_datetime(date_match.group(1)) if date_match else None
+        if not dt:
+            continue
+
+        venue = "Portugal"
+        district = infer_district(f"{title} {text_blob}")
+        events.append({
+            "id": make_id("ticketline", ticket_url, dt.isoformat()),
+            "title": title,
+            "dateTime": dt.isoformat(),
+            "venue": venue,
+            "district": district,
+            "imageUrl": image_url,
+            "ticketUrl": ticket_url,
+            "source": "Ticketline",
+            "featured": False,
+        })
+    return events
+
+
+def fetch_bol_standup() -> list[dict[str, Any]]:
+    """
+    Attempts to fetch public stand-up comedy listings from BOL (Bilheteira Online).
+    Gracefully returns [] if blocked or layout changes.
+    """
+    url = "https://www.bol.pt/Comprar/Pesquisa?q=stand+up"
+    resp = requests.get(url, headers=HEADERS, timeout=20)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+    events: list[dict[str, Any]] = []
+
+    for card in soup.select("a[href*='/Comprar/Bilhetes/']"):
+        href = card.get("href", "")
+        if not href:
+            continue
+        ticket_url = urljoin("https://www.bol.pt", href)
+        title = card.get_text(" ", strip=True)
+        if not title or len(title) < 3:
+            continue
+        img_el = card.select_one("img")
+        image_url = ""
+        if img_el:
+            src = img_el.get("data-src") or img_el.get("src") or ""
+            image_url = urljoin("https://www.bol.pt", src) if src else ""
+
+        parent_text = card.parent.get_text(" ", strip=True) if card.parent else title
+        date_match = re.search(r"(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}(?:\s+\d{1,2}:\d{2})?)", parent_text)
+        dt = parse_iso_datetime(date_match.group(1)) if date_match else None
+        if not dt:
+            continue
+
+        events.append({
+            "id": make_id("bol", ticket_url, dt.isoformat()),
+            "title": title,
+            "dateTime": dt.isoformat(),
+            "venue": "Portugal",
+            "district": infer_district(f"{title} {parent_text}"),
+            "imageUrl": image_url,
+            "ticketUrl": ticket_url,
+            "source": "BOL",
+            "featured": False,
+        })
+    return events
+
+
+def load_existing_events(output_path: Path) -> list[dict[str, Any]]:
+    if not output_path.exists():
+        return []
+    try:
+        data = json.loads(output_path.read_text(encoding="utf-8"))
+        return data.get("events", [])
+    except Exception:
+        return []
+
+
+def main() -> None:
+    repo_root = Path(__file__).resolve().parent.parent
+    output_path = repo_root / "docs" / "events.json"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    collected: list[dict[str, Any]] = []
+
+    for name, fetcher in [
+        ("Ticketline", fetch_ticketline_standup),
+        ("BOL", fetch_bol_standup),
+    ]:
+        try:
+            items = fetcher()
+            print(f"[{name}] fetched {len(items)} events")
+            collected.extend(items)
+        except Exception as exc:
+            print(f"[{name}] skipped due to error: {exc}")
+
+    sheet_url = os.getenv("GOOGLE_SHEET_CSV_URL", "").strip()
+    if sheet_url:
+        try:
+            sheet_items = fetch_google_sheet_csv(sheet_url)
+            print(f"[GoogleSheet] fetched {len(sheet_items)} events")
+            collected.extend(sheet_items)
+        except Exception as exc:
+            print(f"[GoogleSheet] error: {exc}")
+
+    # Keep existing future events if automatic scrapers returned nothing
+    existing = load_existing_events(output_path)
+    merged_by_url: dict[str, dict[str, Any]] = {}
+    for ev in existing + collected:
+        url_key = (ev.get("ticketUrl") or "").strip()
+        if url_key:
+            merged_by_url[url_key] = ev
+
+    cutoff = datetime.now(LISBON_TZ) - timedelta(hours=2)
+    upcoming: list[tuple[datetime, dict[str, Any]]] = []
+    for ev in merged_by_url.values():
+        dt = parse_iso_datetime(ev.get("dateTime", ""))
+        if dt and dt >= cutoff:
+            upcoming.append((dt, ev))
+
+    upcoming.sort(key=lambda item: (item[0], not bool(item[1].get("featured", False))))
+
+    payload = {
+        "updatedAt": datetime.now(timezone.utc).isoformat(),
+        "events": [ev for _, ev in upcoming],
+    }
+    output_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Wrote {len(upcoming)} upcoming events to {output_path}")
+
+
+if __name__ == "__main__":
+    main()
