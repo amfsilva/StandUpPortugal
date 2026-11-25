@@ -7,14 +7,14 @@ plugins {
 
 android {
     namespace = "pt.standupportugal.app"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "pt.standupportugal.comedy"
         minSdk = 24
-        targetSdk = 35
-        versionCode = 1
-        versionName = "1.0.0"
+        targetSdk = 36
+        versionCode = 2
+        versionName = "1.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
