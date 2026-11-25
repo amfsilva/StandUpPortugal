@@ -266,6 +266,8 @@ def fetch_ticketline_standup() -> list[dict[str, Any]]:
         "https://www.ticketline.pt/pesquisa?q=comedy",
         "https://www.ticketline.pt/pesquisa?q=porto+comedy+room",
         "https://www.ticketline.pt/pesquisa?q=pinguim",
+        "https://www.ticketline.pt/pesquisa?q=chiado+comedy+club",
+        "https://www.ticketline.pt/pesquisa?q=maxime+comedy+club",
     ]
     events: list[dict[str, Any]] = []
     seen_urls: set[str] = set()
