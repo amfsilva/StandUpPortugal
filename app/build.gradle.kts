@@ -10,7 +10,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "pt.standupportugal.app"
+        applicationId = "pt.standupportugal.comedy"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
