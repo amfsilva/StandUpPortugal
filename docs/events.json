@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T10:30:00Z",
+  "updatedAt": "2026-11-25T11:31:56.946651+00:00",
   "events": [
     {
       "id": "sample-1",
@@ -11,28 +11,6 @@
       "ticketUrl": "https://www.bol.pt/",
       "source": "BOL",
       "featured": true
-    },
-    {
-      "id": "sample-2",
-      "title": "Comédia à Sexta no Porto",
-      "dateTime": "2026-12-04T22:00:00+00:00",
-      "venue": "Teatro Sá da Bandeira",
-      "district": "Porto",
-      "imageUrl": "",
-      "ticketUrl": "https://ticketline.sapo.pt/",
-      "source": "Ticketline",
-      "featured": false
-    },
-    {
-      "id": "sample-3",
-      "title": "Stand-Up em Coimbra — Sessão Especial",
-      "dateTime": "2026-12-10T21:00:00+00:00",
-      "venue": "TAGV - Teatro Académico de Gil Vicente",
-      "district": "Coimbra",
-      "imageUrl": "",
-      "ticketUrl": "https://www.meetup.com/",
-      "source": "Meetup",
-      "featured": false
     }
   ]
 }
