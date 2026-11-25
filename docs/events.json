@@ -1,36 +1,14 @@
 {
-  "updatedAt": "2026-11-25T12:20:22.939301+00:00",
+  "updatedAt": "2026-11-25T13:01:48.984200+00:00",
   "events": [
-    {
-      "id": "meetup-ff6756b760ea",
-      "title": "Quiz & Beer Night / Noite de Quiz e Cerveja",
-      "dateTime": "2026-11-25T20:00:00+00:00",
-      "venue": "Letraria Porto Downtown",
-      "district": "Porto",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-3-square.webp",
-      "ticketUrl": "https://www.meetup.com/porto-torto/events/316465289/",
-      "source": "Meetup",
-      "featured": false
-    },
     {
       "id": "meetup-17d57d1584ae",
       "title": "Midweek Madness Open Mic",
       "dateTime": "2026-11-25T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-4-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/republic-comedy/events/317526025/",
-      "source": "Meetup",
-      "featured": false
-    },
-    {
-      "id": "meetup-6e6d26678212",
-      "title": "Meet New People in Porto — Dinner With Strangers 🍷",
-      "dateTime": "2026-11-25T20:30:00+00:00",
-      "venue": "Porto",
-      "district": "Porto",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-5-square.webp",
-      "ticketUrl": "https://www.meetup.com/dinnersmate/events/317505341/",
       "source": "Meetup",
       "featured": false
     },
@@ -40,7 +18,7 @@
       "dateTime": "2026-11-25T21:00:00+00:00",
       "venue": "A Fábrica da Picaria",
       "district": "Porto",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-2-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-2-square.webp",
       "ticketUrl": "https://www.meetup.com/a-lemonade-stand-up-comedy/events/317461559/",
       "source": "Meetup",
       "featured": false
@@ -79,23 +57,12 @@
       "featured": false
     },
     {
-      "id": "meetup-6fdc9f6d8b52",
-      "title": "🍹🌍 After-Work Drinks | Make Friends & Language Exchange! 🗣️✨",
-      "dateTime": "2026-11-26T19:00:33+00:00",
-      "venue": "Eleven Sports Bar Downtown",
-      "district": "Porto",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
-      "ticketUrl": "https://www.meetup.com/unstrangers/events/317362677/",
-      "source": "Meetup",
-      "featured": false
-    },
-    {
       "id": "meetup-2a0f7d59b2fd",
       "title": "Bad Advice - interactive standup comedy in English!",
       "dateTime": "2026-11-26T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-4-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/republic-comedy/events/317526033/",
       "source": "Meetup",
       "featured": false
@@ -106,7 +73,7 @@
       "dateTime": "2026-11-26T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317526034/",
       "source": "Meetup",
       "featured": false
@@ -172,7 +139,7 @@
       "dateTime": "2026-11-27T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317500393/",
       "source": "Meetup",
       "featured": false
@@ -183,19 +150,8 @@
       "dateTime": "2026-11-27T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-4-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/republic-comedy/events/317500392/",
-      "source": "Meetup",
-      "featured": false
-    },
-    {
-      "id": "meetup-b3a886bd84ec",
-      "title": "No Plans. No Problem. Dinner With Strangers✨",
-      "dateTime": "2026-11-27T20:30:00+00:00",
-      "venue": "Porto",
-      "district": "Porto",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-5-square.webp",
-      "ticketUrl": "https://www.meetup.com/dinnersmate/events/317313482/",
       "source": "Meetup",
       "featured": false
     },
@@ -282,7 +238,7 @@
       "dateTime": "2026-11-28T12:20:00+00:00",
       "venue": "Metro Casa da Musica",
       "district": "Porto",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-4-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/guibook-porto-community/events/317025767/",
       "source": "Meetup",
       "featured": false
@@ -304,7 +260,7 @@
       "dateTime": "2026-11-28T20:00:00+00:00",
       "venue": "Aconchego House",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/queer-lisbon/events/317359097/",
       "source": "Meetup",
       "featured": false
@@ -315,7 +271,7 @@
       "dateTime": "2026-11-28T20:30:00+00:00",
       "venue": "Selva Comedy Cafe",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317311939/",
       "source": "Meetup",
       "featured": false
@@ -326,7 +282,7 @@
       "dateTime": "2026-11-28T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317500398/",
       "source": "Meetup",
       "featured": false
@@ -354,7 +310,7 @@
       "featured": false
     },
     {
-      "id": "sample-1",
+      "id": "bol-fb8fdeaa357d",
       "title": "Noite de Stand-Up Comedy — Open Mic & Convidados",
       "dateTime": "2026-11-28T21:30:00+00:00",
       "venue": "Lisboa Comedy Club",
@@ -414,7 +370,7 @@
       "dateTime": "2026-11-29T09:00:00+00:00",
       "venue": "Campanha Train Station",
       "district": "Porto",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-4-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/porto-10000-steps-walk/events/317352978/",
       "source": "Meetup",
       "featured": false
@@ -425,7 +381,7 @@
       "dateTime": "2026-11-29T18:00:00+00:00",
       "venue": "Selva Comedy Cafe",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317358617/",
       "source": "Meetup",
       "featured": false
@@ -458,7 +414,7 @@
       "dateTime": "2026-12-01T19:00:00+00:00",
       "venue": "Nope Bar",
       "district": "Porto",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-3-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-3-square.webp",
       "ticketUrl": "https://www.meetup.com/nope-pelmeni-bar-friends/events/317385476/",
       "source": "Meetup",
       "featured": false
@@ -469,7 +425,7 @@
       "dateTime": "2026-12-01T20:30:00+00:00",
       "venue": "Selva Comedy Cafe",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317386443/",
       "source": "Meetup",
       "featured": false
@@ -491,7 +447,7 @@
       "dateTime": "2026-12-02T19:00:00+00:00",
       "venue": "Local a anunciar",
       "district": "Portugal",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-4-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/looksharp/events/317396707/",
       "source": "Meetup",
       "featured": false
@@ -502,7 +458,7 @@
       "dateTime": "2026-12-02T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317427056/",
       "source": "Meetup",
       "featured": false
@@ -524,7 +480,7 @@
       "dateTime": "2026-12-03T20:30:00+00:00",
       "venue": "Má Lingua",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317511743/",
       "source": "Meetup",
       "featured": false
@@ -546,7 +502,7 @@
       "dateTime": "2026-12-04T19:00:00+00:00",
       "venue": "Local a anunciar",
       "district": "Porto",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-4-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/porto-arts-curious-meetup-group/events/317369920/",
       "source": "Meetup",
       "featured": false
@@ -557,7 +513,7 @@
       "dateTime": "2026-12-04T20:30:00+00:00",
       "venue": "Selva Comedy Cafe",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317368720/",
       "source": "Meetup",
       "featured": false
@@ -571,6 +527,17 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz155787.jpg?v=2",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/181327-faro_hugo_sousa_aqui_entre_nos-cons_regional_do_algarve/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "ticketline-092903b3e581",
+      "title": "Comédia à Sexta no Porto",
+      "dateTime": "2026-12-04T22:00:00+00:00",
+      "venue": "Teatro Sá da Bandeira",
+      "district": "Porto",
+      "imageUrl": "",
+      "ticketUrl": "https://ticketline.sapo.pt/",
+      "source": "Ticketline",
       "featured": false
     },
     {
@@ -623,7 +590,7 @@
       "dateTime": "2026-12-07T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317515030/",
       "source": "Meetup",
       "featured": false
@@ -667,7 +634,7 @@
       "dateTime": "2026-12-09T21:00:00+00:00",
       "venue": "Look.Sharp Cafe and Event Space",
       "district": "Porto",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-4-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/looksharp/events/317513908/",
       "source": "Meetup",
       "featured": false
@@ -711,8 +678,19 @@
       "dateTime": "2026-12-10T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317427090/",
+      "source": "Meetup",
+      "featured": false
+    },
+    {
+      "id": "meetup-4b0b6722451c",
+      "title": "Stand-Up em Coimbra — Sessão Especial",
+      "dateTime": "2026-12-10T21:00:00+00:00",
+      "venue": "TAGV - Teatro Académico de Gil Vicente",
+      "district": "Coimbra",
+      "imageUrl": "",
+      "ticketUrl": "https://www.meetup.com/",
       "source": "Meetup",
       "featured": false
     },
@@ -722,7 +700,7 @@
       "dateTime": "2026-12-11T20:30:00+00:00",
       "venue": "Selva Comedy Cafe",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317386898/",
       "source": "Meetup",
       "featured": false
@@ -766,7 +744,7 @@
       "dateTime": "2026-12-12T17:00:00+00:00",
       "venue": "Healing House",
       "district": "Porto",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/women-circle-porto/events/317503414/",
       "source": "Meetup",
       "featured": false
@@ -777,7 +755,7 @@
       "dateTime": "2026-12-12T20:30:00+00:00",
       "venue": "Selva Comedy Cafe",
       "district": "Lisboa",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-1-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317415532/",
       "source": "Meetup",
       "featured": false
@@ -832,7 +810,7 @@
       "dateTime": "2026-12-17T21:00:00+00:00",
       "venue": "Maria Pistolas",
       "district": "Porto",
-      "imageUrl": "/images/fallbacks/redesign/group-cover-2-square.webp",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-2-square.webp",
       "ticketUrl": "https://www.meetup.com/porto-expat-meetup/events/317097937/",
       "source": "Meetup",
       "featured": false
@@ -1333,17 +1311,6 @@
       "featured": false
     },
     {
-      "id": "bol-73bc26458002",
-      "title": "MADRID | Quim Roscas & Zeca Estacionâncio",
-      "dateTime": "2027-04-10T21:30:00+00:00",
-      "venue": "Teatro Bellas Artes",
-      "district": "Portugal",
-      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz155732.jpg?v=6",
-      "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/184721-madrid_quim_roscas_zeca_estacionancio-teatro_bellas_artes/",
-      "source": "BOL",
-      "featured": false
-    },
-    {
       "id": "bol-832f9cc075a3",
       "title": "Diogo Batáguas | Optimista Céptico",
       "dateTime": "2027-04-13T21:30:00+00:00",
@@ -1403,7 +1370,7 @@
       "title": "Amanhã Não Está Certo",
       "dateTime": "2027-06-04T21:30:00+00:00",
       "venue": "Teatro Micaelense",
-      "district": "Portugal",
+      "district": "Açores",
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz159178.jpg?v=1",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/185133-amanha_nao_esta_certo-teatro_micaelense/",
       "source": "BOL",
