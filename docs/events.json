@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T13:01:48.984200+00:00",
+  "updatedAt": "2026-11-25T18:46:54.292451+00:00",
   "events": [
     {
       "id": "meetup-17d57d1584ae",
@@ -32,6 +32,83 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz161050.jpg?v=3",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/187276-nao_era_bem_isto_mas_agora_ja_esta-theatro_gil_vicente/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "ticketline-3d58b9cb9890",
+      "title": "Espaços Outros | Linha De Falha",
+      "dateTime": "2026-11-25T21:30:00+00:00",
+      "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108459/cartaz.jpg?rev=20261125171419",
+      "ticketUrl": "https://www.ticketline.pt/evento/v2-espacos-outros-linha-de-falha-fotografia-na-c",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-0e507f143657",
+      "title": "Macam",
+      "dateTime": "2026-11-25T21:30:00+00:00",
+      "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4,...",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/93233/cartaz.jpg?rev=20261125171419",
+      "ticketUrl": "https://www.ticketline.pt/evento/macam-93233",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-b9d126b84384",
+      "title": "Um Sonho De Natal: Vr",
+      "dateTime": "2026-11-25T21:30:00+00:00",
+      "venue": "Alfândega Do Porto",
+      "district": "Porto",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/109806/cartaz.jpg?rev=20261125171419",
+      "ticketUrl": "https://www.ticketline.pt/evento/um-sonho-de-natal-vr-109806",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-012afa9dc795",
+      "title": "Ressoar",
+      "dateTime": "2026-11-25T21:30:00+00:00",
+      "venue": "A Moagem - Sala De Exposições",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108236/cartaz.jpg?rev=20261125171419",
+      "ticketUrl": "https://www.ticketline.pt/evento/ressoar-108236",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-64a1657dfba5",
+      "title": "La Grazia",
+      "dateTime": "2026-11-25T21:30:00+00:00",
+      "venue": "Cine Teatro Eduardo Brazão | Vila Nova De Gaia",
+      "district": "Porto",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108743/cartaz.jpg?rev=20261125171419",
+      "ticketUrl": "https://www.ticketline.pt/evento/la-gazia-108743",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-b625289411b9",
+      "title": "Sob Pressão",
+      "dateTime": "2026-11-25T21:30:00+00:00",
+      "venue": "Teatro Da Trindade Inatel - Estúdio",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/104971/cartaz.jpg?rev=20261125171419",
+      "ticketUrl": "https://www.ticketline.pt/evento/sob-pressao-104971",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-b8371a33df95",
+      "title": "Victor Patrascan |The Biggest Problem In The World",
+      "dateTime": "2026-11-25T21:30:00+00:00",
+      "venue": "",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108670/cartaz.jpg?rev=20261125171419",
+      "ticketUrl": "https://www.ticketline.pt/evento/victor-patrascan-108670",
+      "source": "Ticketline",
       "featured": false
     },
     {
@@ -464,6 +541,17 @@
       "featured": false
     },
     {
+      "id": "meetup-174c7effef1c",
+      "title": "The Fabulous - standup comedy w/ women and queer comedians!",
+      "dateTime": "2026-12-02T20:30:00+00:00",
+      "venue": "Xafarix Bar",
+      "district": "Lisboa",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
+      "ticketUrl": "https://www.meetup.com/republic-comedy/events/317427057/",
+      "source": "Meetup",
+      "featured": false
+    },
+    {
       "id": "eventbrite-8b0757fd6864",
       "title": "Cheek Comedy: Candleit Comedy, Drinks, & New Friends in Graça (in English)",
       "dateTime": "2026-12-03T00:00:00+00:00",
@@ -559,6 +647,17 @@
       "district": "Lisboa",
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz162262.png?v=3",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/188620-banana_papaia_joana_gama_e_rita_camarneiro-lisboa_comedy_club/",
+      "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "bol-a5e46b0a191f",
+      "title": "DOMINO&#34;S COMEDY CLUB",
+      "dateTime": "2026-12-05T21:00:00+00:00",
+      "venue": "Domino´s Acqua Roma",
+      "district": "Lisboa",
+      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz163436.png?v=1",
+      "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/189928-domino_s_comedy_club-domino_s_acqua_roma/",
       "source": "BOL",
       "featured": false
     },
@@ -1349,7 +1448,7 @@
       "dateTime": "2027-05-28T21:30:00+00:00",
       "venue": "Coliseu de Lisboa",
       "district": "Lisboa",
-      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz162953.jpg?v=1",
+      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz162953.jpg?v=2",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/189393-bate_pe_after_dinner_ao_vivo-coliseu_de_lisboa/",
       "source": "BOL",
       "featured": false
