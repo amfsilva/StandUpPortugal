@@ -74,4 +74,15 @@ class EventRepositoryTest {
         assertEquals(1, porto.size)
         assertEquals("Porto", porto[0].district)
     }
+
+    @Test
+    fun applyFilters_matchesSearchQueryCaseInsensitive() {
+        val events = listOf(
+            StandUpEvent("1", "Diogo Batáguas", "2026-12-01T21:00:00Z", "TAGV", "Coimbra", "", "https://a.pt"),
+            StandUpEvent("2", "Luana do Bem", "2026-12-02T21:00:00Z", "Coliseu", "Lisboa", "", "https://b.pt")
+        )
+        val result = StandUpViewModel.applyFilters(events, "Todos", "batáguas")
+        assertEquals(1, result.size)
+        assertEquals("1", result[0].id)
+    }
 }

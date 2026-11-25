@@ -16,6 +16,7 @@ import pt.standupportugal.app.data.StandUpEvent
 data class StandUpUiState(
     val isLoading: Boolean = true,
     val selectedDistrict: String = "Todos",
+    val searchQuery: String = "",
     val allEvents: List<StandUpEvent> = emptyList(),
     val filteredEvents: List<StandUpEvent> = emptyList(),
     val availableDistricts: List<String> = PortugalDistricts.ALL,
@@ -40,7 +41,7 @@ class StandUpViewModel(application: Application) : AndroidViewModel(application)
                 repository.loadUpcomingEvents()
             }.onSuccess { result ->
                 _uiState.update { current ->
-                    val filtered = filterByDistrict(result.events, current.selectedDistrict)
+                    val filtered = applyFilters(result.events, current.selectedDistrict, current.searchQuery)
                     current.copy(
                         isLoading = false,
                         allEvents = result.events,
@@ -63,7 +64,16 @@ class StandUpViewModel(application: Application) : AndroidViewModel(application)
         _uiState.update { current ->
             current.copy(
                 selectedDistrict = district,
-                filteredEvents = filterByDistrict(current.allEvents, district)
+                filteredEvents = applyFilters(current.allEvents, district, current.searchQuery)
+            )
+        }
+    }
+
+    fun updateSearchQuery(query: String) {
+        _uiState.update { current ->
+            current.copy(
+                searchQuery = query,
+                filteredEvents = applyFilters(current.allEvents, current.selectedDistrict, query)
             )
         }
     }
@@ -72,6 +82,21 @@ class StandUpViewModel(application: Application) : AndroidViewModel(application)
         fun filterByDistrict(events: List<StandUpEvent>, district: String): List<StandUpEvent> {
             if (district == "Todos") return events
             return events.filter { it.district.equals(district, ignoreCase = true) }
+        }
+
+        fun applyFilters(
+            events: List<StandUpEvent>,
+            district: String,
+            query: String
+        ): List<StandUpEvent> {
+            val byDistrict = filterByDistrict(events, district)
+            val trimmed = query.trim()
+            if (trimmed.isEmpty()) return byDistrict
+            return byDistrict.filter { event ->
+                event.title.contains(trimmed, ignoreCase = true) ||
+                    event.venue.contains(trimmed, ignoreCase = true) ||
+                    event.district.contains(trimmed, ignoreCase = true)
+            }
         }
     }
 }

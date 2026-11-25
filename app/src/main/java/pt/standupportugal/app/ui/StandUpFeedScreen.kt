@@ -1,6 +1,7 @@
 package pt.standupportugal.app.ui
 
 import android.content.Context
+import android.content.Intent
 import android.net.Uri
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.compose.foundation.BorderStroke
@@ -26,9 +27,12 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.OpenInNew
 import androidx.compose.material.icons.filled.CalendarMonth
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material.icons.filled.Mic
 import androidx.compose.material.icons.filled.Refresh
+import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.filled.Share
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -41,6 +45,9 @@ import androidx.compose.material3.FilterChipDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedIconButton
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -115,6 +122,39 @@ fun StandUpFeedScreen(viewModel: StandUpViewModel) {
                 .fillMaxSize()
                 .padding(innerPadding)
         ) {
+            OutlinedTextField(
+                value = state.searchQuery,
+                onValueChange = viewModel::updateSearchQuery,
+                placeholder = { Text("Pesquisar comediante, espetáculo ou sala...") },
+                leadingIcon = {
+                    Icon(
+                        imageVector = Icons.Default.Search,
+                        contentDescription = null
+                    )
+                },
+                trailingIcon = {
+                    if (state.searchQuery.isNotEmpty()) {
+                        IconButton(onClick = { viewModel.updateSearchQuery("") }) {
+                            Icon(
+                                imageVector = Icons.Default.Close,
+                                contentDescription = "Limpar pesquisa"
+                            )
+                        }
+                    }
+                },
+                singleLine = true,
+                shape = RoundedCornerShape(12.dp),
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = MaterialTheme.colorScheme.primary,
+                    unfocusedBorderColor = MaterialTheme.colorScheme.outline.copy(alpha = 0.5f),
+                    focusedContainerColor = MaterialTheme.colorScheme.surface,
+                    unfocusedContainerColor = MaterialTheme.colorScheme.surface
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 6.dp)
+            )
+
             DistrictFilterBar(
                 districts = state.availableDistricts,
                 selectedDistrict = state.selectedDistrict,
@@ -200,7 +240,8 @@ fun StandUpFeedScreen(viewModel: StandUpViewModel) {
                         items(state.filteredEvents, key = { it.id }) { event ->
                             EventCard(
                                 event = event,
-                                onOpenTicketUrl = { openExternalUrl(context, event.ticketUrl) }
+                                onOpenTicketUrl = { openExternalUrl(context, event.ticketUrl) },
+                                onShareEvent = { shareEvent(context, event) }
                             )
                         }
                     }
@@ -245,7 +286,8 @@ private fun DistrictFilterBar(
 @Composable
 private fun EventCard(
     event: StandUpEvent,
-    onOpenTicketUrl: () -> Unit
+    onOpenTicketUrl: () -> Unit,
+    onShareEvent: () -> Unit
 ) {
     val border = if (event.featured) {
         BorderStroke(1.5.dp, MaterialTheme.colorScheme.primary)
@@ -404,29 +446,57 @@ private fun EventCard(
 
                 Spacer(modifier = Modifier.height(14.dp))
 
-                Button(
-                    onClick = onOpenTicketUrl,
-                    shape = RoundedCornerShape(10.dp),
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = MaterialTheme.colorScheme.primary,
-                        contentColor = MaterialTheme.colorScheme.onPrimary
-                    ),
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    verticalAlignment = Alignment.CenterVertically,
                     modifier = Modifier.fillMaxWidth()
                 ) {
-                    Text(
-                        text = "Ver / Comprar no site oficial",
-                        fontWeight = FontWeight.Bold
-                    )
-                    Spacer(modifier = Modifier.width(6.dp))
-                    Icon(
-                        imageVector = Icons.AutoMirrored.Filled.OpenInNew,
-                        contentDescription = null,
-                        modifier = Modifier.size(16.dp)
-                    )
+                    Button(
+                        onClick = onOpenTicketUrl,
+                        shape = RoundedCornerShape(10.dp),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = MaterialTheme.colorScheme.primary,
+                            contentColor = MaterialTheme.colorScheme.onPrimary
+                        ),
+                        modifier = Modifier.weight(1f)
+                    ) {
+                        Text(
+                            text = "Ver / Comprar no site oficial",
+                            fontWeight = FontWeight.Bold
+                        )
+                        Spacer(modifier = Modifier.width(6.dp))
+                        Icon(
+                            imageVector = Icons.AutoMirrored.Filled.OpenInNew,
+                            contentDescription = null,
+                            modifier = Modifier.size(16.dp)
+                        )
+                    }
+
+                    OutlinedIconButton(
+                        onClick = onShareEvent,
+                        shape = RoundedCornerShape(10.dp),
+                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline)
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Share,
+                            contentDescription = "Partilhar espetáculo",
+                            tint = MaterialTheme.colorScheme.onSurface
+                        )
+                    }
                 }
             }
         }
     }
+}
+
+private fun shareEvent(context: Context, event: StandUpEvent) {
+    val text = "${event.title}\n${event.formattedDateTimePt()} · ${event.venue} (${event.district})\n${event.ticketUrl}"
+    val intent = Intent(Intent.ACTION_SEND).apply {
+        type = "text/plain"
+        putExtra(Intent.EXTRA_SUBJECT, event.title)
+        putExtra(Intent.EXTRA_TEXT, text)
+    }
+    context.startActivity(Intent.createChooser(intent, "Partilhar espetáculo"))
 }
 
 private fun openExternalUrl(context: Context, url: String) {

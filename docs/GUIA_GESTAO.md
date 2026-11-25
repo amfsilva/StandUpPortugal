@@ -55,3 +55,4 @@
 | 2026-11-25 | `v1.0.1` (`07b0af1`) | Atualizado `applicationId` para `pt.standupportugal.comedy`, `compileSdk`/`targetSdk` para **API 36** (exigência Google Play) e `versionCode = 2`. |
 | 2026-11-25 | Google Sheet & Doc | Criada a Google Sheet `StandUp Portugal - Eventos` e este documento de gestão no Google Drive. |
 | 2026-11-25 | `privacy.html` | Publicada a Política de Privacidade no GitHub Pages (`docs/privacy.html`) para a Google Play Console. |
+| 2026-11-25 | `v1.1.0` | Adicionada pesquisa por comediante/sala, botão de partilha de espetáculos, textos da loja (`docs/GOOGLE_PLAY_FICHA.md`) e imagens `512x512` + `1024x500` em `store-assets/`. |
