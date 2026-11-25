@@ -335,6 +335,20 @@ def fetch_ticketline_standup() -> list[dict[str, Any]]:
     return events
 
 
+def fetch_agenda_cultural_porto() -> list[dict[str, Any]]:
+    url = "https://agendaculturalporto.org/stand-up-comedy-no-porto-espectaculos/"
+    resp = requests.get(url, headers=HEADERS, timeout=20)
+    print(f"[AgendaCulturalPorto] {url} -> HTTP {resp.status_code}")
+    if resp.status_code != 200:
+        return []
+    soup = BeautifulSoup(resp.text, "html.parser")
+    events = extract_json_ld_events(soup, "Agenda Cultural Porto", "https://agendaculturalporto.org")
+    for ev in events:
+        if ev.get("district") == "Portugal":
+            ev["district"] = "Porto"
+    return events
+
+
 def fetch_teatro_sa_da_bandeira() -> list[dict[str, Any]]:
     url = "https://teatrosadabandeira.pt/eventos/categoria/entretenimento/"
     resp = requests.get(url, headers=HEADERS, timeout=20)
@@ -422,6 +436,7 @@ def main() -> None:
         ("Ticketline", fetch_ticketline_standup),
         ("BOL", fetch_bol_standup),
         ("TeatroSaDaBandeira", fetch_teatro_sa_da_bandeira),
+        ("AgendaCulturalPorto", fetch_agenda_cultural_porto),
     ]:
         try:
             items = fetcher()
