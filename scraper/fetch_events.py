@@ -264,6 +264,8 @@ def fetch_ticketline_standup() -> list[dict[str, Any]]:
         "https://www.ticketline.pt/pesquisa?q=stand+up",
         "https://www.ticketline.pt/pesquisa?q=stand-up",
         "https://www.ticketline.pt/pesquisa?q=comedy",
+        "https://www.ticketline.pt/pesquisa?q=porto+comedy+room",
+        "https://www.ticketline.pt/pesquisa?q=pinguim",
     ]
     events: list[dict[str, Any]] = []
     seen_urls: set[str] = set()
@@ -333,45 +335,67 @@ def fetch_ticketline_standup() -> list[dict[str, Any]]:
     return events
 
 
-def fetch_bol_standup() -> list[dict[str, Any]]:
-    url = "https://www.bol.pt/Comprar/Pesquisa?q=stand+up"
+def fetch_teatro_sa_da_bandeira() -> list[dict[str, Any]]:
+    url = "https://teatrosadabandeira.pt/eventos/categoria/entretenimento/"
     resp = requests.get(url, headers=HEADERS, timeout=20)
-    print(f"[BOL] {url} -> HTTP {resp.status_code}")
-    resp.raise_for_status()
+    print(f"[TeatroSaDaBandeira] {url} -> HTTP {resp.status_code}")
+    if resp.status_code != 200:
+        return []
     soup = BeautifulSoup(resp.text, "html.parser")
-    events = extract_json_ld_events(soup, "BOL", "https://www.bol.pt")
+    events = extract_json_ld_events(soup, "Teatro Sá da Bandeira", "https://teatrosadabandeira.pt")
+    for ev in events:
+        if ev.get("district") == "Portugal":
+            ev["district"] = "Porto"
+        if ev.get("venue") == "Local a anunciar":
+            ev["venue"] = "Teatro Sá da Bandeira"
+    return events
 
-    for card in soup.select("a[href*='/Comprar/Bilhetes/']"):
-        href = card.get("href", "")
-        if not href:
-            continue
-        ticket_url = urljoin("https://www.bol.pt", href)
-        title = card.get_text(" ", strip=True)
-        if not title or len(title) < 3:
-            continue
-        img_el = card.select_one("img")
-        image_url = ""
-        if img_el:
-            src = img_el.get("data-src") or img_el.get("src") or ""
-            image_url = urljoin("https://www.bol.pt", src) if src else ""
 
-        parent_text = card.parent.get_text(" ", strip=True) if card.parent else title
-        date_match = re.search(r"(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}(?:\s+\d{1,2}:\d{2})?)", parent_text)
-        dt = parse_iso_datetime(date_match.group(1)) if date_match else None
-        if not dt:
+def fetch_bol_standup() -> list[dict[str, Any]]:
+    urls = [
+        "https://www.bol.pt/Comprar/Pesquisa?q=stand+up",
+        "https://www.bol.pt/Comprar/Pesquisa?q=lisboa+comedy+club",
+    ]
+    events: list[dict[str, Any]] = []
+    for url in urls:
+        resp = requests.get(url, headers=HEADERS, timeout=20)
+        print(f"[BOL] {url} -> HTTP {resp.status_code}")
+        if resp.status_code != 200:
             continue
+        soup = BeautifulSoup(resp.text, "html.parser")
+        events.extend(extract_json_ld_events(soup, "BOL", "https://www.bol.pt"))
 
-        events.append({
-            "id": make_id("bol", ticket_url, dt.isoformat()),
-            "title": title,
-            "dateTime": dt.isoformat(),
-            "venue": "Portugal",
-            "district": infer_district(f"{title} {parent_text}"),
-            "imageUrl": image_url,
-            "ticketUrl": ticket_url,
-            "source": "BOL",
-            "featured": False,
-        })
+        for card in soup.select("a[href*='/Comprar/Bilhetes/']"):
+            href = card.get("href", "")
+            if not href:
+                continue
+            ticket_url = urljoin("https://www.bol.pt", href)
+            title = card.get_text(" ", strip=True)
+            if not title or len(title) < 3:
+                continue
+            img_el = card.select_one("img")
+            image_url = ""
+            if img_el:
+                src = img_el.get("data-src") or img_el.get("src") or ""
+                image_url = urljoin("https://www.bol.pt", src) if src else ""
+
+            parent_text = card.parent.get_text(" ", strip=True) if card.parent else title
+            date_match = re.search(r"(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}(?:\s+\d{1,2}:\d{2})?)", parent_text)
+            dt = parse_iso_datetime(date_match.group(1)) if date_match else None
+            if not dt:
+                continue
+
+            events.append({
+                "id": make_id("bol", ticket_url, dt.isoformat()),
+                "title": title,
+                "dateTime": dt.isoformat(),
+                "venue": "Portugal",
+                "district": infer_district(f"{title} {parent_text}"),
+                "imageUrl": image_url,
+                "ticketUrl": ticket_url,
+                "source": "BOL",
+                "featured": False,
+            })
     return events
 
 
@@ -397,6 +421,7 @@ def main() -> None:
         ("Meetup", fetch_meetup_standup),
         ("Ticketline", fetch_ticketline_standup),
         ("BOL", fetch_bol_standup),
+        ("TeatroSaDaBandeira", fetch_teatro_sa_da_bandeira),
     ]:
         try:
             items = fetcher()
