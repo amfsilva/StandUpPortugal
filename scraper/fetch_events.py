@@ -52,8 +52,30 @@ DISTRICT_KEYWORDS: dict[str, list[str]] = {
     "Beja": ["beja", "moura", "odemira"],
     "Portalegre": ["portalegre", "elvas", "ponte de sor"],
     "Madeira": ["funchal", "madeira", "câmara de lobos"],
-    "Açores": ["ponta delgada", "açores", "angra do heroísmo", "horta"],
+    "Açores": ["ponta delgada", "açores", "angra do heroísmo", "horta", "teatro micaelense"],
 }
+
+NON_COMEDY_KEYWORDS = (
+    "dinner with strangers",
+    "quiz & beer",
+    "quiz night",
+    "language exchange",
+    "after-work drinks",
+)
+
+OUTSIDE_PORTUGAL_KEYWORDS = (
+    "madrid",
+    "teatro bellas artes",
+)
+
+
+def is_relevant_portugal_comedy(title: str, venue: str, source: str) -> bool:
+    combined = f"{title} {venue}".lower()
+    if any(bad in combined for bad in OUTSIDE_PORTUGAL_KEYWORDS):
+        return False
+    if source == "Meetup" and any(bad in combined for bad in NON_COMEDY_KEYWORDS):
+        return False
+    return True
 
 
 def infer_district(text: str) -> str:
@@ -141,6 +163,8 @@ def extract_json_ld_events(soup: BeautifulSoup, source: str, default_base_url: s
                 image_url = str(image_val.get("url", ""))
             else:
                 image_url = str(image_val or "")
+            if image_url.startswith("/"):
+                image_url = urljoin(default_base_url, image_url)
 
             loc = item.get("location") or {}
             venue = "Local a anunciar"
@@ -369,6 +393,13 @@ def main() -> None:
     cutoff = datetime.now(LISBON_TZ) - timedelta(hours=2)
     upcoming: list[tuple[datetime, dict[str, Any]]] = []
     for ev in merged_by_url.values():
+        if not is_relevant_portugal_comedy(
+            ev.get("title", ""), ev.get("venue", ""), ev.get("source", "")
+        ):
+            continue
+        img = (ev.get("imageUrl") or "").strip()
+        if img.startswith("/images/fallbacks/"):
+            ev["imageUrl"] = f"https://www.meetup.com{img}"
         dt = parse_iso_datetime(ev.get("dateTime", ""))
         if dt and dt >= cutoff:
             upcoming.append((dt, ev))
