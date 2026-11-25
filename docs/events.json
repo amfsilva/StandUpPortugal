@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T18:46:54.292451+00:00",
+  "updatedAt": "2026-11-25T18:49:56.021566+00:00",
   "events": [
     {
       "id": "meetup-17d57d1584ae",
@@ -464,6 +464,17 @@
       "featured": false
     },
     {
+      "id": "teatro sá da bandeira-245ae13ddd68",
+      "title": "ArtGym Company apresenta KAIROS",
+      "dateTime": "2026-11-30T00:00:00+00:00",
+      "venue": "Sala Principal",
+      "district": "Porto",
+      "imageUrl": "https://teatrosadabandeira.pt/wp-content/uploads/2026/09/Cartaz-ArtGym-Company-apresenta-KAIROS.jpg",
+      "ticketUrl": "https://teatrosadabandeira.pt/evento/artgym-company-apresenta-kairos/",
+      "source": "Teatro Sá da Bandeira",
+      "featured": false
+    },
+    {
       "id": "bol-6abfda177fa2",
       "title": "Caldo Verde - Roberto Correia",
       "dateTime": "2026-11-30T21:00:00+00:00",
@@ -868,6 +879,17 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz162612.jpg?v=3",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/189029-gaia_hugo_sousa_aqui_entre_nos-auditorio_de_olival/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "teatro sá da bandeira-7916353a7ab1",
+      "title": "DESPOLARIZA AO VIVO",
+      "dateTime": "2026-12-15T00:00:00+00:00",
+      "venue": "Sala Principal",
+      "district": "Porto",
+      "imageUrl": "https://teatrosadabandeira.pt/wp-content/uploads/2026/11/cartaz-1.jpg",
+      "ticketUrl": "https://teatrosadabandeira.pt/evento/despolariza-ao-vivo/",
+      "source": "Teatro Sá da Bandeira",
       "featured": false
     },
     {
