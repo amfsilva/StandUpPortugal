@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T18:49:56.021566+00:00",
+  "updatedAt": "2026-11-25T18:50:56.994497+00:00",
   "events": [
     {
       "id": "meetup-17d57d1584ae",
@@ -21,6 +21,17 @@
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-2-square.webp",
       "ticketUrl": "https://www.meetup.com/a-lemonade-stand-up-comedy/events/317461559/",
       "source": "Meetup",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-09949902042d",
+      "title": "A Lemonade Stand-up Comedy leva comédia em inglês à Fábrica da Picaria",
+      "dateTime": "2026-11-25T21:00:00+00:00",
+      "venue": "A Fábrica da Picaria - Craft Beer Brewpub",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/A-Lemonade-Stand-up-Comedy-leva-comedia-em-ingles-a-Fabrica-da-Picaria.avif",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/a-lemonade-stand-up-comedy-leva-comedia-em-ingles-a-fabrica-da-picaria-2/",
+      "source": "Agenda Cultural Porto",
       "featured": false
     },
     {
@@ -112,6 +123,17 @@
       "featured": false
     },
     {
+      "id": "agenda cultural porto-4f8d9360af71",
+      "title": "Casa da Madeira Noites de Comédia 25/NOVEMBRO",
+      "dateTime": "2026-11-25T21:30:00+00:00",
+      "venue": "Casa da Madeira do Norte",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/WhatsApp-Image-2026-10-29-at-17.51.47.jpeg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/casa-da-madeira-noites-de-comedia-25-novembro/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
       "id": "eventbrite-d85a9315b88e",
       "title": "Bad Advice - interactive standup comedy in English!",
       "dateTime": "2026-11-26T00:00:00+00:00",
@@ -131,6 +153,17 @@
       "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1197123992%2F100461319853%2F1%2Foriginal.20261102-220633?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=777b1802baf7694dfc89c1976b9dfc28",
       "ticketUrl": "https://www.eventbrite.pt/e/cicis-storytelling-night-tickets-2004259871228",
       "source": "Eventbrite",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-892eb6830d8e",
+      "title": "Stand Up Comedy in Broken English: Victor Pãtrãşcan no Porto às 19h00",
+      "dateTime": "2026-11-26T19:00:00+00:00",
+      "venue": "CCOP -Círculo Católico dos Operários do Porto",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/06/transferir.webp",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/stand-up-comedy-in-broken-english-victor-patrascan-no-porto-as-19h00/",
+      "source": "Agenda Cultural Porto",
       "featured": false
     },
     {
@@ -164,6 +197,28 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz163036.png?v=2",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/189476-show_do_gongo-lisboa_comedy_club/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-88f5a26ea36a",
+      "title": "Stand Up Comedy in Broken English: Victor Pãtrãşcan no Porto às 21h00",
+      "dateTime": "2026-11-26T21:00:00+00:00",
+      "venue": "CCOP -Círculo Católico dos Operários do Porto",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/06/transferir.webp",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/stand-up-comedy-in-broken-english-victor-patrascan-no-porto-as-21h00/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-111651e3faef",
+      "title": "Porto Comedy Room leva novos humoristas ao Pinguim Café",
+      "dateTime": "2026-11-26T21:30:00+00:00",
+      "venue": "Pinguim Café",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/a0cf091324301d74242a99d0f7020f43-large.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/porto-comedy-room-leva-novos-humoristas-ao-pinguim-cafe/",
+      "source": "Agenda Cultural Porto",
       "featured": false
     },
     {
@@ -266,6 +321,28 @@
       "featured": false
     },
     {
+      "id": "agenda cultural porto-ea23faf9e9ce",
+      "title": "Alameda Comedy Club: seis noites de stand-up com entrada gratuita",
+      "dateTime": "2026-11-27T21:00:00+00:00",
+      "venue": "Alameda Shop&amp;Spot",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/09/338619c18ab38b319f5bbd6dc2598a85-large.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/stand-up-gratis-no-alameda-shopspot/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-7d13d265c32d",
+      "title": "Manel Rosa sobe ao palco do Alameda Comedy Club",
+      "dateTime": "2026-11-27T21:00:00+00:00",
+      "venue": "Alameda Shop&amp;Spot",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-11-at-17.31.33.jpeg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/manel-rosa-sobe-ao-palco-do-alameda-comedy-club/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
       "id": "bol-a955cde2d649",
       "title": "Pedro Teixeira da Mota | Amanhã não Está Certo",
       "dateTime": "2026-11-27T21:30:00+00:00",
@@ -274,6 +351,39 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz158888.jpg?v=5",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/184834-pedro_teixeira_da_mota_amanha_nao_esta_certo-cae_vale_de_cambra/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-598fab3411fb",
+      "title": "Balbúrdia transforma o Auditório Francisco de Assis numa noite de caos e stand-up",
+      "dateTime": "2026-11-27T21:30:00+00:00",
+      "venue": "Auditório Francisco de Assis",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/08/Balburdia-transforma-o-Auditorio-Francisco-de-Assis-numa-noite-de-caos-e-stand-up.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/balburdia-transforma-o-auditorio-francisco-de-assis-numa-noite-de-caos-e-stand-up/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-cf87aec03d16",
+      "title": "Monstros do Ano: Fernando Alvim leva a Gaia os momentos mais insólitos e bizarros de 2026",
+      "dateTime": "2026-11-27T21:30:00+00:00",
+      "venue": "Auditório Municipal de Gaia",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/09/ticketline_post_1080x1350-1.png",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/monstros-do-ano-fernando-alvim-leva-a-gaia-os-momentos-mais-insolitos-e-bizarros-de-2026/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-905c32a29a03",
+      "title": "Porto Comedy Room ocupa o Hard Rock Cafe Porto na sexta-feira",
+      "dateTime": "2026-11-27T21:30:00+00:00",
+      "venue": "Hard Rock Café Porto",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/f889be63d0c2bcbe39c7cd5109e09504-large.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/porto-comedy-room-ocupa-o-hard-rock-cafe-porto-na-sexta-feira/",
+      "source": "Agenda Cultural Porto",
       "featured": false
     },
     {
@@ -420,6 +530,17 @@
       "featured": false
     },
     {
+      "id": "agenda cultural porto-29009efd5f35",
+      "title": "Noites de Comédia &#8212; Porto Comedy Room no Hard Rock Cafe",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Hard Rock Café Porto",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/18e2146239590c673f93367668d88ed6-large.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/noites-de-comedia-porto-comedy-room-no-hard-rock-cafe/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
       "id": "eventbrite-d966d0ecbf7a",
       "title": "English Comedy Night",
       "dateTime": "2026-11-29T00:00:00+00:00",
@@ -461,6 +582,17 @@
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317358617/",
       "source": "Meetup",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-0387aded456e",
+      "title": "A Lemonade Stand-up Comedy fecha novembro no Pinguim Café",
+      "dateTime": "2026-11-29T21:00:00+00:00",
+      "venue": "Pinguim Café",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/nTcaG0ysb7.avif",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/a-lemonade-stand-up-comedy-fecha-novembro-no-pinguim-cafe/",
+      "source": "Agenda Cultural Porto",
       "featured": false
     },
     {
@@ -560,6 +692,17 @@
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/republic-comedy/events/317427057/",
       "source": "Meetup",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-a31851439883",
+      "title": "João Paulo Rodrigues no Porto: música, humor e histórias no Teatro Sá da Bandeira",
+      "dateTime": "2026-12-02T21:00:00+00:00",
+      "venue": "Teatro Sá da Bandeira",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/06/JOAO-PAULO-RODRIGUES-PORTO.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/joao-paulo-rodrigues-no-porto-musica-humor-e-historias-no-teatro-sa-da-bandeira/",
+      "source": "Agenda Cultural Porto",
       "featured": false
     },
     {
@@ -670,6 +813,17 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz163436.png?v=1",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/189928-domino_s_comedy_club-domino_s_acqua_roma/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-91d24e07e59a",
+      "title": "Duarte Pita Negrão apresenta Personagem Secundária no Auditório CCOP",
+      "dateTime": "2026-12-05T21:00:00+00:00",
+      "venue": "Auditório CCOP",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/07/DUARTE-PITA-NEGRAO.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/duarte-pita-negrao-apresenta-personagem-secundaria-no-auditorio-ccop/",
+      "source": "Agenda Cultural Porto",
       "featured": false
     },
     {
@@ -871,6 +1025,28 @@
       "featured": false
     },
     {
+      "id": "agenda cultural porto-73161adf53d9",
+      "title": "1 Irishman in Porto: Reece Kidd apresenta stand-up comedy em inglês no Auditório do CCOP",
+      "dateTime": "2026-12-12T21:00:00+00:00",
+      "venue": "CCOP -Círculo Católico dos Operários do Porto",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/06/y08ru9khqhg2cqlhzw57.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/1-irishman-in-porto-reece-kidd-apresenta-stand-up-comedy-em-ingles-no-auditorio-do-ccop/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-99a97e2bd546",
+      "title": "Gilmário Vemba regressa ao Porto com o stand-up &#8220;3.º Round&#8221;",
+      "dateTime": "2026-12-12T21:30:00+00:00",
+      "venue": "Teatro Sá da Bandeira",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/10/cartaz-3-round.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/gilmario-vemba-regressa-ao-porto-com-o-stand-up-3-o-round/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
       "id": "bol-86a1e744dd26",
       "title": "GAIA | HUGO SOUSA: AQUI ENTRE NÓS",
       "dateTime": "2026-12-13T21:00:00+00:00",
@@ -901,6 +1077,17 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz160806.jpg?v=3",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/186992-com_calma_comedy_sessions_avenidas_novas-com_calma_avenidas_novas/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-3ac76c8b65a4",
+      "title": "Terapia: Marcelo Serrado transforma ansiedade, crises e a tentativa de ser normal em comédia no Porto",
+      "dateTime": "2026-12-16T21:00:00+00:00",
+      "venue": "Teatro Sá da Bandeira",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/09/cartaz-TERAPIA-com-MARCELO-SERRADO.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/terapia-marcelo-serrado-transforma-ansiedade-crises-e-a-tentativa-de-ser-normal-em-comedia-no-porto/",
+      "source": "Agenda Cultural Porto",
       "featured": false
     },
     {
@@ -937,6 +1124,17 @@
       "featured": false
     },
     {
+      "id": "agenda cultural porto-19910981b2ac",
+      "title": "English Stand-Up Comedy Open Mic no Porto: noite de humor em inglês no Maria Pistolas",
+      "dateTime": "2026-12-17T21:00:00+00:00",
+      "venue": "Maria Pistolas",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/05/f3473365d4f33e2af4cf2a89dc950415-large.png",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/english-stand-up-comedy-open-mic-no-porto-noite-de-humor-em-ingles-no-maria-pistolas-7/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
       "id": "bol-7f49fb4d586d",
       "title": "GUIMARÃES | HUGO SOUSA: AQUI ENTRE NÓS",
       "dateTime": "2026-12-17T21:30:00+00:00",
@@ -948,6 +1146,17 @@
       "featured": false
     },
     {
+      "id": "agenda cultural porto-dd9431fc0dde",
+      "title": "Ana Garcia Martins leva &#8220;Insuficiente&#8221; ao Porto em duas novas sessões",
+      "dateTime": "2026-12-18T21:00:00+00:00",
+      "venue": "Teatro Sá da Bandeira",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/10/Cartaz-Ana-Garcia-Martins-nova-data.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/ana-garcia-martins-leva-insuficiente-ao-porto-em-duas-novas-sessoes/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
       "id": "bol-9dcad9e1781c",
       "title": "PEDRO TEIXEIRA DA MOTA",
       "dateTime": "2026-12-18T21:30:00+00:00",
@@ -956,6 +1165,17 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz158609.jpg?v=2",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/184518-pedro_teixeira_da_mota-centro_de_artes_de_agueda/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-5dfb275c3b1e",
+      "title": "Bumba na Fofinha estreia-se em «Portátil» e sobe ao palco da Super Bock Arena no Porto",
+      "dateTime": "2026-12-18T21:30:00+00:00",
+      "venue": "Super Bock Arena - Pav. Rosa Mota",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/09/cartaz-4-1.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/bumba-na-fofinha-estreia-se-em-portatil-e-sobe-ao-palco-da-super-bock-arena-no-porto/",
+      "source": "Agenda Cultural Porto",
       "featured": false
     },
     {
@@ -992,6 +1212,28 @@
       "featured": false
     },
     {
+      "id": "agenda cultural porto-ec44c296ea55",
+      "title": "CHIADO COMEDY CLUB | Humor Negro",
+      "dateTime": "2026-12-19T21:30:00+00:00",
+      "venue": "Teatro Sá da Bandeira - Estúdio Latino",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2025/02/HUMOR-NEGRO-e1753263427391.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/chiado-comedy-club-humor-negro/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-cb2672bd503b",
+      "title": "Chiado Comedy Club encerra o ano com Humor Negro em dezembro",
+      "dateTime": "2026-12-19T21:30:00+00:00",
+      "venue": "Teatro Sá da Bandeira",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/06/Chiado-Comedy-Club.webp",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/chiado-comedy-club-encerra-o-ano-com-humor-negro-em-dezembro/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
       "id": "bol-d9bc83bcb900",
       "title": "&#34;TERAPIA&#34; com MARCELO SERRADO",
       "dateTime": "2026-12-21T21:00:00+00:00",
@@ -1000,6 +1242,17 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz158410.jpg?v=3",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/184304-terapia_com_marcelo_serrado-cinema_sao_jorge/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-0c19bbc64090",
+      "title": "Especial Natal 2026 | Etc e Tal",
+      "dateTime": "2026-12-26T21:00:00+00:00",
+      "venue": "Teatro Sá da Bandeira",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/10/Especial-Natal-2026-Etc-e-Tal.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/especial-natal-2026-etc-e-tal/",
+      "source": "Agenda Cultural Porto",
       "featured": false
     },
     {
@@ -1135,6 +1388,28 @@
       "featured": false
     },
     {
+      "id": "agenda cultural porto-c324c57d9818",
+      "title": "Anita no Tinder",
+      "dateTime": "2027-01-27T21:30:00+00:00",
+      "venue": "Coliseu do Porto Ageas",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/10/Anita-no-Tinder.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/anita-no-tinder/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-bf580cf03e99",
+      "title": "Diogo Batáguas apresenta “Optimista Céptico” na Super Bock Arena",
+      "dateTime": "2027-01-30T21:30:00+00:00",
+      "venue": "Super Bock Arena - Pav. Rosa Mota",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/06/cartaz-1.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/diogo-bataguas-apresenta-optimista-ceptico-na-super-bock-arena/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
       "id": "bol-12ca32d403f1",
       "title": "Diogo Batáguas - Optimista Céptico",
       "dateTime": "2027-02-05T21:30:00+00:00",
@@ -1179,6 +1454,17 @@
       "featured": false
     },
     {
+      "id": "agenda cultural porto-c7d236c1f26d",
+      "title": "Quim Roscas &#038; Zeca Estacionâncio regressam ao Coliseu do Porto",
+      "dateTime": "2027-02-06T21:30:00+00:00",
+      "venue": "Coliseu do Porto Ageas",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/quim-roscas-e-zeca-estacionancio-topo5412bbfb_destaque_2col.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/quim-roscas-zeca-estacionancio-regressam-ao-coliseu-do-porto/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
       "id": "bol-321f11fa97f1",
       "title": "Raphael Ghanem | O Rugido do Leão | Stand Up Comedy",
       "dateTime": "2027-02-11T18:30:00+00:00",
@@ -1209,6 +1495,17 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz162553.jpg?v=4",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/188960-lisboa_quim_roscas_zeca_estacionancio-coliseu_de_lisboa/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-318bebf62bd7",
+      "title": "Raphael Ghanem apresenta O Rugido do Leão no Coliseu Porto Ageas",
+      "dateTime": "2027-02-13T21:30:00+00:00",
+      "venue": "Coliseu do Porto Ageas",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/07/RAPHAEL-GHANEM.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/raphael-ghanem-apresenta-o-rugido-do-leao-no-coliseu-porto-ageas/",
+      "source": "Agenda Cultural Porto",
       "featured": false
     },
     {
@@ -1267,6 +1564,17 @@
       "featured": false
     },
     {
+      "id": "agenda cultural porto-83c15151e18d",
+      "title": "Pedro Teixeira da Mota apresenta Amanhã Não Está Certo na Super Bock Arena",
+      "dateTime": "2027-02-18T22:00:00+00:00",
+      "venue": "Super Bock Arena - Pav. Rosa Mota",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/09/ptm-amanhanaoestacerto-prtsbarena-1080x1920-1.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/pedro-teixeira-da-mota-apresenta-amanha-nao-esta-certo-na-super-bock-arena/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
       "id": "bol-a35d66eafd3d",
       "title": "GUIMARÃES | EMERSON CEARÁ: O RETORNO DA LENDA",
       "dateTime": "2027-02-19T21:30:00+00:00",
@@ -1289,6 +1597,17 @@
       "featured": false
     },
     {
+      "id": "agenda cultural porto-7f86604048d5",
+      "title": "Pedro Teixeira da Mota apresenta Amanhã Não Está Certo na Super Bock Arena",
+      "dateTime": "2027-02-19T22:00:00+00:00",
+      "venue": "Super Bock Arena - Pav. Rosa Mota",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/09/ptm-amanhanaoestacerto-prtsbarena-1080x1920-1.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/pedro-teixeira-da-mota-apresenta-amanha-nao-esta-certo-na-super-bock-arena-2/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
       "id": "bol-b5aec159ba76",
       "title": "LUXEMBURGO | Roscas & Estacionâncio",
       "dateTime": "2027-02-20T20:00:00+00:00",
@@ -1297,6 +1616,17 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz161008.jpg?v=2",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/187220-luxemburgo_roscas_estacionancio-luxemburgo/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-48d71f7e8e6c",
+      "title": "Pedro Teixeira da Mota apresenta Amanhã Não Está Certo na Super Bock Arena",
+      "dateTime": "2027-02-20T22:00:00+00:00",
+      "venue": "Super Bock Arena - Pav. Rosa Mota",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/09/ptm-amanhanaoestacerto-prtsbarena-1080x1920-1.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/pedro-teixeira-da-mota-apresenta-amanha-nao-esta-certo-na-super-bock-arena-3/",
+      "source": "Agenda Cultural Porto",
       "featured": false
     },
     {
@@ -1410,6 +1740,28 @@
       "featured": false
     },
     {
+      "id": "agenda cultural porto-226264bae5d1",
+      "title": "Jimmy Carr atua no Coliseu Porto AGEAS em março de 2027 com a digressão “Laughs Funny”",
+      "dateTime": "2027-03-25T21:00:00+00:00",
+      "venue": "Coliseu do Porto Ageas",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/07/1782895151.jpeg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/jimmy-carr-atua-no-coliseu-porto-ageas-em-marco-de-2027-com-a-digressao-laughs-funny/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-36d65d150911",
+      "title": "Carlos Contente apresenta En Passant no Porto: o primeiro solo transforma o público em adversário",
+      "dateTime": "2027-03-25T21:00:00+00:00",
+      "venue": "Teatro Sá da Bandeira",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/09/cartaz-EN-PASSANT-CARLOS-CONTENTE.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/carlos-contente-apresenta-en-passant-no-porto-o-primeiro-solo-transforma-o-publico-em-adversario/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
       "id": "bol-55a650f7e9a6",
       "title": "O CÉU PODE ESPERAR | Luana do Bem",
       "dateTime": "2027-04-09T21:30:00+00:00",
@@ -1465,6 +1817,28 @@
       "featured": false
     },
     {
+      "id": "agenda cultural porto-77066566e8db",
+      "title": "Tempo de Espera &#8211; Carlos Vidal",
+      "dateTime": "2027-04-24T22:00:00+01:00",
+      "venue": "Teatro Sá da Bandeira",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/10/Tempo-de-Espera-Carlos-Vidal.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/tempo-de-espera-carlos-vidal/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-51b6b1050cfa",
+      "title": "Morgan Jay traz “La Dolce Vita Tour” ao Coliseu do Porto",
+      "dateTime": "2027-05-15T21:00:00+01:00",
+      "venue": "Coliseu do Porto Ageas",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/06/Morgan-Jay-traz-La-Dolce-Vita-Tour-ao-Coliseu-do-Porto.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/morgan-jay-traz-la-dolce-vita-tour-ao-coliseu-do-porto/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
       "id": "bol-d3937ca0d24e",
       "title": "BATE PÉ AFTER DINNER (AO VIVO)",
       "dateTime": "2027-05-28T21:30:00+00:00",
@@ -1506,6 +1880,28 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz162090.jpg?v=2",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/188430-exame_nacional_manuel_cardoso-coliseu_porto_ageas/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-314c1e971ebb",
+      "title": "Manuel Cardoso estreia Exame Nacional no Coliseu Porto Ageas",
+      "dateTime": "2027-06-05T22:30:00+01:00",
+      "venue": "Coliseu do Porto Ageas",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/Manuel-Cardoso-estreia-Exame-Nacional-no-Coliseu-Porto-Ageas.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/manuel-cardoso-estreia-exame-nacional-no-coliseu-porto-ageas/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-368437920785",
+      "title": "Bate Pé regressa ao Coliseu do Porto com uma noite de humor, conversas inesperadas e um After Dinner ao vivo",
+      "dateTime": "2027-06-09T22:00:00+01:00",
+      "venue": "Coliseu do Porto Ageas",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/cartaz-10.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/bate-pe-regressa-ao-coliseu-do-porto-com-uma-noite-de-humor-conversas-inesperadas-e-um-after-dinner-ao-vivo/",
+      "source": "Agenda Cultural Porto",
       "featured": false
     },
     {
