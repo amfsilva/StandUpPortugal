@@ -3,6 +3,7 @@
 **Última atualização:** 2026-11-25  
 **Repositório GitHub:** https://github.com/amfsilva/StandUpPortugal  
 **Feed JSON público (GitHub Pages):** https://amfsilva.github.io/StandUpPortugal/events.json  
+**Política de Privacidade (Google Play):** https://amfsilva.github.io/StandUpPortugal/privacy.html  
 **Google Sheet de Eventos e Destaques:** https://docs.google.com/spreadsheets/d/1Of0g9oUzgiO8OLR0zTWlKeioWC2-HKwEoz7vcpFrNdk/edit  
 
 ---
@@ -53,3 +54,4 @@
 | 2026-11-25 | `329cec9` / `4d33150` | Adicionados Eventbrite e Meetup (JSON-LD), filtros de relevância/distritos, keystore na cloud (`generate-keystore.yml`) e `.trim()` nos secrets de assinatura. |
 | 2026-11-25 | `v1.0.1` (`07b0af1`) | Atualizado `applicationId` para `pt.standupportugal.comedy`, `compileSdk`/`targetSdk` para **API 36** (exigência Google Play) e `versionCode = 2`. |
 | 2026-11-25 | Google Sheet & Doc | Criada a Google Sheet `StandUp Portugal - Eventos` e este documento de gestão no Google Drive. |
+| 2026-11-25 | `privacy.html` | Publicada a Política de Privacidade no GitHub Pages (`docs/privacy.html`) para a Google Play Console. |
