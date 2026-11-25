@@ -260,45 +260,76 @@ def fetch_meetup_standup() -> list[dict[str, Any]]:
 
 
 def fetch_ticketline_standup() -> list[dict[str, Any]]:
-    url = "https://ticketline.sapo.pt/pesquisa?q=stand+up"
-    resp = requests.get(url, headers=HEADERS, timeout=20)
-    print(f"[Ticketline] {url} -> HTTP {resp.status_code}")
-    resp.raise_for_status()
-    soup = BeautifulSoup(resp.text, "html.parser")
-    events = extract_json_ld_events(soup, "Ticketline", "https://ticketline.sapo.pt")
+    urls = [
+        "https://www.ticketline.pt/pesquisa?q=stand+up",
+        "https://www.ticketline.pt/pesquisa?q=stand-up",
+        "https://www.ticketline.pt/pesquisa?q=comedy",
+    ]
+    events: list[dict[str, Any]] = []
+    seen_urls: set[str] = set()
+    non_comedy_slugs = (
+        "museu-", "ecoteca-", "igreja-", "dino-parque", "palacio-",
+        "exposicao-", "fado-", "world-press-cartoon", "spiritus",
+    )
 
-    for card in soup.select("a[href*='/evento/']"):
-        href = card.get("href", "")
-        if not href:
+    for url in urls:
+        resp = requests.get(url, headers=HEADERS, timeout=20)
+        print(f"[Ticketline] {url} -> HTTP {resp.status_code}")
+        if resp.status_code != 200:
             continue
-        ticket_url = urljoin("https://ticketline.sapo.pt", href)
-        title_el = card.select_one("h2, h3, .title, .event-title")
-        title = title_el.get_text(" ", strip=True) if title_el else card.get_text(" ", strip=True)
-        if not title or len(title) < 3:
-            continue
-        img_el = card.select_one("img")
-        image_url = ""
-        if img_el:
-            src = img_el.get("data-src") or img_el.get("src") or ""
-            image_url = urljoin("https://ticketline.sapo.pt", src) if src else ""
+        soup = BeautifulSoup(resp.text, "html.parser")
+        events.extend(extract_json_ld_events(soup, "Ticketline", "https://www.ticketline.pt"))
 
-        text_blob = card.get_text(" ", strip=True)
-        date_match = re.search(r"(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}(?:\s+\d{1,2}:\d{2})?)", text_blob)
-        dt = parse_iso_datetime(date_match.group(1)) if date_match else None
-        if not dt:
-            continue
+        for li in soup.select('li[itemtype*="schema.org/Event"]'):
+            link = li.select_one('a[href*="/evento/"]')
+            if not link:
+                continue
+            href = link.get("href", "").strip()
+            if not href or any(slug in href.lower() for slug in non_comedy_slugs):
+                continue
+            ticket_url = urljoin("https://www.ticketline.pt", href)
+            if ticket_url in seen_urls:
+                continue
 
-        events.append({
-            "id": make_id("ticketline", ticket_url, dt.isoformat()),
-            "title": title,
-            "dateTime": dt.isoformat(),
-            "venue": "Portugal",
-            "district": infer_district(f"{title} {text_blob}"),
-            "imageUrl": image_url,
-            "ticketUrl": ticket_url,
-            "source": "Ticketline",
-            "featured": False,
-        })
+            start_el = li.select_one('[itemprop="startDate"]')
+            start_raw = (start_el.get("content") or start_el.get("data-date") or "").strip() if start_el else ""
+            if start_raw and re.fullmatch(r"\d{4}-\d{2}-\d{2}", start_raw):
+                start_raw = f"{start_raw}T21:30:00+00:00"
+            dt = parse_iso_datetime(start_raw)
+            if not dt:
+                continue
+
+            img_el = li.select_one("img")
+            image_url = ""
+            title = ""
+            if img_el:
+                src = img_el.get("data-src-original") or img_el.get("data-src") or img_el.get("src") or ""
+                if src and "blank.png" not in src:
+                    image_url = urljoin("https://www.ticketline.pt", src)
+                title = (img_el.get("alt") or "").strip()
+
+            if not title:
+                title_el = li.select_one(".details h2, .details h3, .details .title, [itemprop='name']")
+                title = title_el.get_text(" ", strip=True) if title_el else ""
+            if not title:
+                continue
+
+            venue_el = li.select_one('[itemprop="location"], .venues')
+            venue = venue_el.get_text(" ", strip=True) if venue_el else "Portugal"
+            district = infer_district(f"{venue} {title}")
+
+            seen_urls.add(ticket_url)
+            events.append({
+                "id": make_id("ticketline", ticket_url, dt.isoformat()),
+                "title": title,
+                "dateTime": dt.isoformat(),
+                "venue": venue,
+                "district": district,
+                "imageUrl": image_url,
+                "ticketUrl": ticket_url,
+                "source": "Ticketline",
+                "featured": False,
+            })
     return events
 
 
