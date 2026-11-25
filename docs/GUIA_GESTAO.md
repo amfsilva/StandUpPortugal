@@ -62,4 +62,4 @@
 
 ## 5. Próximos Desenvolvimentos (Backlog)
 
-- **Sugerir novo espaço/espetáculo por e-mail:** Adicionar um botão/opção na app (no diálogo `ⓘ` ou no topo/fundo) para o utilizador enviar um e-mail pré-preenchido para `amfsilva@gmail.com` a sugerir um bar, comedy club ou espetáculo para ser incluído na Google Sheet / scraper.
+- **Sugerir novo espaço de comédia por e-mail:** Adicionar um botão/opção na app (no diálogo `ⓘ` ou no topo/fundo) para o utilizador enviar um e-mail pré-preenchido para `amfsilva@gmail.com` a sugerir um novo espaço de comédia (bar, comedy club ou sala com noites de stand-up) para ser incluído na Google Sheet / scraper.
