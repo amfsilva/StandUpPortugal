@@ -71,8 +71,17 @@ def make_id(source: str, ticket_url: str, date_str: str) -> str:
 def parse_iso_datetime(raw: str) -> datetime | None:
     if not raw:
         return None
+    cleaned = raw.strip()
     try:
-        dt = date_parser.parse(raw, dayfirst=True)
+        # Try strict ISO-8601 first so YYYY-MM-DD is never swapped by dayfirst=True
+        dt = datetime.fromisoformat(cleaned.replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=LISBON_TZ)
+        return dt
+    except ValueError:
+        pass
+    try:
+        dt = date_parser.parse(cleaned, dayfirst=True)
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=LISBON_TZ)
         return dt
