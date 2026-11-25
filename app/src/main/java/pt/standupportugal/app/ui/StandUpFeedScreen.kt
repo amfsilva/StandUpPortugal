@@ -28,12 +28,14 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.OpenInNew
 import androidx.compose.material.icons.filled.CalendarMonth
 import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material.icons.filled.Mic
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material.icons.filled.Star
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
@@ -51,11 +53,15 @@ import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -75,6 +81,34 @@ import pt.standupportugal.app.data.StandUpEvent
 fun StandUpFeedScreen(viewModel: StandUpViewModel) {
     val state by viewModel.uiState.collectAsState()
     val context = LocalContext.current
+    var showAboutDialog by remember { mutableStateOf(false) }
+
+    if (showAboutDialog) {
+        AlertDialog(
+            onDismissRequest = { showAboutDialog = false },
+            title = { Text("Sobre a StandUp Portugal") },
+            text = {
+                Text(
+                    "A StandUp Portugal é uma app meramente informativa que agrega eventos públicos de comédia em Portugal.\n\n" +
+                        "Não nos responsabilizamos por eventuais erros, cancelamentos ou informações desatualizadas. " +
+                        "Confirme sempre datas, horários, locais e disponibilidade diretamente no site oficial antes de comprar bilhetes."
+                )
+            },
+            confirmButton = {
+                TextButton(onClick = { showAboutDialog = false }) {
+                    Text("Fechar")
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = {
+                    showAboutDialog = false
+                    openExternalUrl(context, "https://amfsilva.github.io/StandUpPortugal/privacy.html")
+                }) {
+                    Text("Privacidade")
+                }
+            }
+        )
+    }
 
     Scaffold(
         topBar = {
@@ -103,6 +137,12 @@ fun StandUpFeedScreen(viewModel: StandUpViewModel) {
                     }
                 },
                 actions = {
+                    IconButton(onClick = { showAboutDialog = true }) {
+                        Icon(
+                            imageVector = Icons.Default.Info,
+                            contentDescription = "Aviso e informações"
+                        )
+                    }
                     IconButton(onClick = { viewModel.refresh() }) {
                         Icon(
                             imageVector = Icons.Default.Refresh,
@@ -242,6 +282,14 @@ fun StandUpFeedScreen(viewModel: StandUpViewModel) {
                                 event = event,
                                 onOpenTicketUrl = { openExternalUrl(context, event.ticketUrl) },
                                 onShareEvent = { shareEvent(context, event) }
+                            )
+                        }
+                        item {
+                            Text(
+                                text = "Aviso: Informação meramente informativa. Datas, horários, salas e bilhetes podem sofrer alterações — confirme sempre no site oficial antes da compra.",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                modifier = Modifier.padding(top = 8.dp, bottom = 16.dp)
                             )
                         }
                     }

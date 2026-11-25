@@ -56,3 +56,4 @@
 | 2026-11-25 | Google Sheet & Doc | Criada a Google Sheet `StandUp Portugal - Eventos` e este documento de gestão no Google Drive. |
 | 2026-11-25 | `privacy.html` | Publicada a Política de Privacidade no GitHub Pages (`docs/privacy.html`) para a Google Play Console. |
 | 2026-11-25 | `v1.1.0` | Adicionada pesquisa por comediante/sala, botão de partilha de espetáculos, textos da loja (`docs/GOOGLE_PLAY_FICHA.md`) e imagens `512x512` + `1024x500` em `store-assets/`. |
+| 2026-11-25 | `v1.1.1` | Adicionado aviso de isenção de responsabilidade na app (botão `ⓘ` + rodapé), em `docs/privacy.html` e na descrição da Google Play. |

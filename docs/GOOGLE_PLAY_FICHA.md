@@ -18,6 +18,8 @@ Funcionalidades principais:
 • Ligação direta ao site oficial ou bilheteira para comprar bilhetes com segurança
 • Partilha rápida de espetáculos com amigos
 • Atualização automática frequente, sem precisar de criar conta
+
+Nota: App meramente informativa. Não nos responsabilizamos por eventuais erros ou alterações — confirme sempre horários, locais e bilhetes no link oficial de cada espetáculo.
 ```
 
 ---
