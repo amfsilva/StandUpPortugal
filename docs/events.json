@@ -1,28 +1,6 @@
 {
-  "updatedAt": "2026-11-26T18:09:08.194013+00:00",
+  "updatedAt": "2026-11-26T21:06:06.930397+00:00",
   "events": [
-    {
-      "id": "meetup-611c8d5dff20",
-      "title": "Public Speaking Practice: Games, Drills and Getting Past the Nerves",
-      "dateTime": "2026-11-26T17:30:00+00:00",
-      "venue": "Local a anunciar",
-      "district": "Portugal",
-      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
-      "ticketUrl": "https://www.meetup.com/speak-up-public-speaking-practice/events/317485551/",
-      "source": "Meetup",
-      "featured": false
-    },
-    {
-      "id": "agenda cultural porto-892eb6830d8e",
-      "title": "Stand Up Comedy in Broken English: Victor Pãtrãşcan no Porto às 19h00",
-      "dateTime": "2026-11-26T19:00:00+00:00",
-      "venue": "CCOP -Círculo Católico dos Operários do Porto",
-      "district": "Porto",
-      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/06/transferir.webp",
-      "ticketUrl": "https://agendaculturalporto.org/eventos/stand-up-comedy-in-broken-english-victor-patrascan-no-porto-as-19h00/",
-      "source": "Agenda Cultural Porto",
-      "featured": false
-    },
     {
       "id": "meetup-2a0f7d59b2fd",
       "title": "Bad Advice - interactive standup comedy in English!",
@@ -73,7 +51,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108459/cartaz.jpg?rev=20261126175704",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108459/cartaz.jpg?rev=20261126181924",
       "ticketUrl": "https://www.ticketline.pt/evento/v2-espacos-outros-linha-de-falha-fotografia-na-c",
       "source": "Ticketline",
       "featured": false
@@ -84,7 +62,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4,...",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/93233/cartaz.jpg?rev=20261126175704",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/93233/cartaz.jpg?rev=20261126181924",
       "ticketUrl": "https://www.ticketline.pt/evento/macam-93233",
       "source": "Ticketline",
       "featured": false
@@ -95,7 +73,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Alfândega Do Porto",
       "district": "Porto",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/109806/cartaz.jpg?rev=20261126175704",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/109806/cartaz.jpg?rev=20261126181924",
       "ticketUrl": "https://www.ticketline.pt/evento/um-sonho-de-natal-vr-109806",
       "source": "Ticketline",
       "featured": false
@@ -106,7 +84,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "A Moagem - Sala De Exposições",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108236/cartaz.jpg?rev=20261126175704",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108236/cartaz.jpg?rev=20261126181924",
       "ticketUrl": "https://www.ticketline.pt/evento/ressoar-108236",
       "source": "Ticketline",
       "featured": false
@@ -117,7 +95,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Teatro Da Trindade Inatel - Estúdio",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/104971/cartaz.jpg?rev=20261126175704",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/104971/cartaz.jpg?rev=20261126181924",
       "ticketUrl": "https://www.ticketline.pt/evento/sob-pressao-104971",
       "source": "Ticketline",
       "featured": false
@@ -139,7 +117,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Casino Lisboa - Auditório Dos Oceanos",
       "district": "Lisboa",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106734/cartaz.jpg?rev=20261126175704",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106734/cartaz.jpg?rev=20261126181924",
       "ticketUrl": "https://www.ticketline.pt/evento/rosaline-a-ex-do-romeu-106734",
       "source": "Ticketline",
       "featured": false
@@ -150,7 +128,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Culturgest - Auditório Emílio Rui Vilar",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106089/cartaz.jpg?rev=20261126175704",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106089/cartaz.jpg?rev=20261126181924",
       "ticketUrl": "https://www.ticketline.pt/evento/carolina-bianchi-the-brotherhood-106089",
       "source": "Ticketline",
       "featured": false
@@ -194,7 +172,7 @@
       "dateTime": "2026-11-27T00:00:00+00:00",
       "venue": "Maldita Brewpub",
       "district": "Aveiro",
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1197563537%2F242570557569%2F1%2Foriginal.20261109-025352?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.617&fp-y=0.521&s=9a2d45ed95c5c02123e96a24bf25f770",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1197563537%2F242570557569%2F1%2Foriginal.20261109-025352?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.617&fp-y=0.521&s=87f41dc23b27d32d536eb6b4d84a2e48",
       "ticketUrl": "https://www.eventbrite.pt/e/bilhetes-maldita-comedia-aveiro-2004557217599",
       "source": "Eventbrite",
       "featured": false
@@ -348,7 +326,7 @@
       "dateTime": "2026-11-28T00:00:00+00:00",
       "venue": "Selva Comedy Cafe",
       "district": "Lisboa",
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1185358651%2F187809150375%2F1%2Foriginal.20260525-121145?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=00e0183536870c3fa941c54fe7188a62",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1185358651%2F187809150375%2F1%2Foriginal.20260525-121145?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=434278b08f0eba1742ffc312f4dddaf3",
       "ticketUrl": "https://www.eventbrite.com/e/dating-is-a-joke-a-comedy-singles-event-in-english-tickets-2003563003879",
       "source": "Eventbrite",
       "featured": false
@@ -480,7 +458,7 @@
       "dateTime": "2026-11-29T00:00:00+00:00",
       "venue": "Pinguim Café - Bar/Pub",
       "district": "Porto",
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1198114620%2F541466589697%2F1%2Foriginal.20261116-221543?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=43c9c05f870a3f8f84d277110241cbd4",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1198114620%2F541466589697%2F1%2Foriginal.20261116-221543?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=b926691135a4b3f7ca93d762196dc149",
       "ticketUrl": "https://www.eventbrite.co.uk/e/english-comedy-night-tickets-2004921683727",
       "source": "Eventbrite",
       "featured": false
@@ -612,7 +590,7 @@
       "dateTime": "2026-12-02T00:00:00+00:00",
       "venue": "Insónia",
       "district": "Aveiro",
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1196865509%2F816374214233%2F1%2Foriginal.20261029-161723?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=67b31a39bc592610a0cde0da2e54fa6f",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1196865509%2F816374214233%2F1%2Foriginal.20261029-161723?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=a394e280de609e4f4863eaec8d47e698",
       "ticketUrl": "https://www.eventbrite.pt/e/english-stand-up-comedy-open-mic-aveiro-tickets-2004079100538",
       "source": "Eventbrite",
       "featured": false
@@ -692,6 +670,17 @@
       "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1198603470%2F2700744850371%2F1%2Foriginal.20261124-122409?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.502&fp-y=0.141&s=e9efe57fd75fb5a55bf3841f0ef67e83",
       "ticketUrl": "https://www.eventbrite.com/e/finalmente-standup-lisboa-tickets-2005087957055",
       "source": "Eventbrite",
+      "featured": false
+    },
+    {
+      "id": "meetup-93de27cb0bff",
+      "title": "Open Mic Night at Fable",
+      "dateTime": "2026-12-03T19:00:00+00:00",
+      "venue": "Fable - Cafe, Coffee, English Books",
+      "district": "Lisboa",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
+      "ticketUrl": "https://www.meetup.com/fable-lisbon-bookshop-cafe-events-workshops/events/317033044/",
+      "source": "Meetup",
       "featured": false
     },
     {
@@ -835,6 +824,17 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz163488.jpg?v=1",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/190050-alverca_hugo_sousa_aqui_entre_nos-sf_recreio_alverquese/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "meetup-37508a8e2024",
+      "title": "I don’t hate Mondays",
+      "dateTime": "2026-12-07T17:00:00+00:00",
+      "venue": "CASA CAMÉLIA",
+      "district": "Porto",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-3-square.webp",
+      "ticketUrl": "https://www.meetup.com/i-don-t-hate-mondays/events/316925499/",
+      "source": "Meetup",
       "featured": false
     },
     {
@@ -1019,7 +1019,7 @@
       "dateTime": "2026-12-12T00:00:00+00:00",
       "venue": "Maxime Restaurante-Bar",
       "district": "Lisboa",
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1198168947%2F2815057093711%2F1%2Foriginal.20261117-160413?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=34f22d27bb97823615d6def139eadfe2",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1198168947%2F2815057093711%2F1%2Foriginal.20261117-160413?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=be47c2ec6b5de2e99391bfa6b5074cc1",
       "ticketUrl": "https://www.eventbrite.pt/e/maxime-cabaret-show-vanity-redfire-and-others-tickets-2003768729209",
       "source": "Eventbrite",
       "featured": false
@@ -1129,7 +1129,7 @@
       "dateTime": "2026-12-17T00:00:00+00:00",
       "venue": "Maria Pistolas",
       "district": "Porto",
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1196866481%2F816374214233%2F1%2Foriginal.20261029-162702?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=c82ebb0b72dc18c49b0659be5ad8b7ad",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1196866481%2F816374214233%2F1%2Foriginal.20261029-162702?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=39f074f98d2f54e18be9283db6580823",
       "ticketUrl": "https://www.eventbrite.pt/e/english-stand-up-comedy-open-mic-porto-tickets-2004079998223",
       "source": "Eventbrite",
       "featured": false
@@ -1558,7 +1558,7 @@
       "dateTime": "2027-02-14T00:00:00+00:00",
       "venue": "VidaMar Resort Hotel Madeira",
       "district": "Madeira",
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1196372526%2F124277772125%2F1%2Foriginal.20261022-154150?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=4ca5d4bd5e1617c2b6ad3622dae2056c",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1196372526%2F124277772125%2F1%2Foriginal.20261022-154150?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=bd0f3d190394ad3b1a6a17c6520b9912",
       "ticketUrl": "https://www.eventbrite.co.uk/e/the-biggest-problem-in-the-world-victor-patrascan-in-funchal-tickets-1997035264234",
       "source": "Eventbrite",
       "featured": false
@@ -1580,7 +1580,7 @@
       "dateTime": "2027-02-15T00:00:00+00:00",
       "venue": "Auditório CCOP",
       "district": "Porto",
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1196358301%2F124277772125%2F1%2Foriginal.20261022-124750?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=c5fc3a110efbf38324887241eb13f657",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1196358301%2F124277772125%2F1%2Foriginal.20261022-124750?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=f33c0239a0521c08ce26cc06bdb91a9d",
       "ticketUrl": "https://www.eventbrite.co.uk/e/the-biggest-problem-in-the-world-victor-patrascan-in-porto-tickets-2004484778933",
       "source": "Eventbrite",
       "featured": false
@@ -1591,7 +1591,7 @@
       "dateTime": "2027-02-16T00:00:00+00:00",
       "venue": "Grande Auditório - ISCTE-IUL",
       "district": "Lisboa",
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1196358263%2F124277772125%2F1%2Foriginal.20261022-124700?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=2800cc95f9a6edb8992143e4325549fd",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1196358263%2F124277772125%2F1%2Foriginal.20261022-124700?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=6429ef5513baf6271c46fb95b0236a86",
       "ticketUrl": "https://www.eventbrite.co.uk/e/the-biggest-problem-in-the-world-victor-patrascan-in-lisbon-tickets-2005149492108",
       "source": "Eventbrite",
       "featured": false
@@ -1734,7 +1734,7 @@
       "dateTime": "2027-03-05T00:00:00+00:00",
       "venue": "Selva Comedy Cafe",
       "district": "Lisboa",
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1198526169%2F348352544189%2F1%2Foriginal.20261123-120122?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=25ef7aa67a47f8ede8022452faa7253e",
+      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1198526169%2F348352544189%2F1%2Foriginal.20261123-120122?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=4a54e7ca8d304d7b4570258557d0e4c5",
       "ticketUrl": "https://www.eventbrite.com/e/that-girl-tickets-2005270689613",
       "source": "Eventbrite",
       "featured": false
