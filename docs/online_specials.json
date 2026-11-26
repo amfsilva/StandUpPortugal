@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T17:46:00Z",
+  "updatedAt": "2026-11-26T18:13:00Z",
   "specials": [
     {
       "id": "youtube-NbBwN6000uA",
@@ -23,7 +23,7 @@
       "imageUrl": "https://i.ytimg.com/vi/q_7q92HEk_g/hqdefault.jpg",
       "watchUrl": "https://www.youtube.com/watch?v=q_7q92HEk_g",
       "featured": false,
-      "priority": 90
+      "priority": 95
     },
     {
       "id": "youtube-kKUCaJP90so",
@@ -35,7 +35,7 @@
       "imageUrl": "https://i.ytimg.com/vi/kKUCaJP90so/hqdefault.jpg",
       "watchUrl": "https://www.youtube.com/watch?v=kKUCaJP90so",
       "featured": false,
-      "priority": 80
+      "priority": 90
     },
     {
       "id": "youtube-bS_gc7gLAto",
@@ -47,7 +47,7 @@
       "imageUrl": "https://i.ytimg.com/vi/bS_gc7gLAto/hqdefault.jpg",
       "watchUrl": "https://www.youtube.com/watch?v=bS_gc7gLAto",
       "featured": false,
-      "priority": 70
+      "priority": 85
     },
     {
       "id": "youtube-Bx-Kika1o8g",
@@ -59,7 +59,103 @@
       "imageUrl": "https://i.ytimg.com/vi/Bx-Kika1o8g/hqdefault.jpg",
       "watchUrl": "https://www.youtube.com/watch?v=Bx-Kika1o8g",
       "featured": false,
+      "priority": 80
+    },
+    {
+      "id": "netflix-81194685",
+      "title": "Alma de Pobre",
+      "comedian": "Afonso Padilha",
+      "platform": "Netflix",
+      "language": "PT-BR",
+      "year": "",
+      "imageUrl": "",
+      "watchUrl": "https://www.netflix.com/title/81194685",
+      "featured": false,
+      "priority": 75
+    },
+    {
+      "id": "netflix-81194682",
+      "title": "POKAS",
+      "comedian": "Thiago Ventura",
+      "platform": "Netflix",
+      "language": "PT-BR",
+      "year": "",
+      "imageUrl": "",
+      "watchUrl": "https://www.netflix.com/title/81194682",
+      "featured": false,
+      "priority": 70
+    },
+    {
+      "id": "prime-0PHO8D7679GIP9LZPPU7FPRBVW",
+      "title": "Gerações",
+      "comedian": "Afonso Padilha",
+      "platform": "Prime Video",
+      "language": "PT-BR",
+      "year": "",
+      "imageUrl": "",
+      "watchUrl": "https://www.primevideo.com/detail/0PHO8D7679GIP9LZPPU7FPRBVW",
+      "featured": false,
+      "priority": 65
+    },
+    {
+      "id": "youtube-wUvVw-Qhgrc",
+      "title": "Desessencial (Show Completo)",
+      "comedian": "Afonso Padilha",
+      "platform": "YouTube",
+      "language": "PT-BR",
+      "year": "",
+      "imageUrl": "https://i.ytimg.com/vi/wUvVw-Qhgrc/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=wUvVw-Qhgrc",
+      "featured": false,
       "priority": 60
+    },
+    {
+      "id": "youtube-OvNHCn2Hk9Y",
+      "title": "Sujeito Homem (Especial Completo)",
+      "comedian": "Thiago Ventura",
+      "platform": "YouTube",
+      "language": "PT-BR",
+      "year": "",
+      "imageUrl": "https://i.ytimg.com/vi/OvNHCn2Hk9Y/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=OvNHCn2Hk9Y",
+      "featured": false,
+      "priority": 55
+    },
+    {
+      "id": "youtube-mwTJxRLHWA0",
+      "title": "O Pequeno Bigbig (Especial Completo)",
+      "comedian": "Thiago Ventura",
+      "platform": "YouTube",
+      "language": "PT-BR",
+      "year": "",
+      "imageUrl": "https://i.ytimg.com/vi/mwTJxRLHWA0/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=mwTJxRLHWA0",
+      "featured": false,
+      "priority": 50
+    },
+    {
+      "id": "youtube-34xcdhQ0QgU",
+      "title": "Efeito Borboleta (Show Completo)",
+      "comedian": "Whindersson Nunes",
+      "platform": "YouTube",
+      "language": "PT-BR",
+      "year": "",
+      "imageUrl": "https://i.ytimg.com/vi/34xcdhQ0QgU/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=34xcdhQ0QgU",
+      "featured": false,
+      "priority": 45
+    },
+    {
+      "id": "youtube-IRirqw082XI",
+      "title": "Proparoxítona (Show Completo)",
+      "comedian": "Whindersson Nunes",
+      "platform": "YouTube",
+      "language": "PT-BR",
+      "year": "",
+      "imageUrl": "https://i.ytimg.com/vi/IRirqw082XI/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=IRirqw082XI",
+      "featured": false,
+      "priority": 40
     }
   ]
 }
