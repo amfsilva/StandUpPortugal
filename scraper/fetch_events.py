@@ -571,7 +571,7 @@ def update_online_specials(online_output_path: Path) -> None:
         title = (row.get("title") or "").strip()
         platform = (row.get("platform") or "").strip() or "YouTube"
         lang = (row.get("language") or "PT").strip().upper()
-        if not title or not watch_url or "PT" not in lang:
+        if not title or not watch_url or not any(tag in lang for tag in ("PT", "BR")):
             continue
         featured_raw = (row.get("featured") or "").strip().lower()
         try:

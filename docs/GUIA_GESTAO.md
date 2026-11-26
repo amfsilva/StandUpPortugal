@@ -49,8 +49,8 @@ Contém os sites públicos com dados estruturados (`JSON-LD`) que o scraper cons
 ### 2.3 Aba `Feed Atual` — Espelho dos Eventos no Ar
 Lista os espetáculos atualmente ativos no `events.json`, para consultar rapidamente o que está visível na app e copiar o `ticketUrl` exato quando quiser destacar ou ocultar algum evento na `Folha1`.
 
-### 2.4 Aba `Online` — Especiais Completos de Humoristas em Português
-Permite gerir e priorizar o separador **Online (Especiais)** da app (apenas espetáculos de humoristas em português — entradas sem `PT` em `language` são ignoradas).
+### 2.4 Aba `Online` — Especiais Completos em Português (PT e PT-BR)
+Permite gerir e priorizar o separador **Online (Especiais)** da app (apenas espetáculos em português de Portugal ou do Brasil — entradas sem `PT` ou `BR` em `language` são ignoradas).
 
 **Regra de curadoria rigorosa (apenas fontes oficiais):**
 - **YouTube:** aceitar apenas espetáculos publicados no **canal oficial do próprio humorista ou produtora** (nunca re-uploads de terceiros).
