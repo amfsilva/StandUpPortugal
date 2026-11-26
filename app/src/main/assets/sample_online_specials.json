@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-26T15:55:00Z",
+  "updatedAt": "2026-11-26T16:00:00Z",
   "specials": [
     {
       "id": "online-sample-1",
-      "title": "Especiais de Stand-Up Comedy",
+      "title": "Stand-Up Comedy em Português — Especiais",
       "comedian": "Netflix Portugal",
       "platform": "Netflix",
-      "language": "PT / EN",
+      "language": "PT",
       "year": "",
       "imageUrl": "",
       "watchUrl": "https://www.netflix.com/browse/genre/11559",
@@ -15,19 +15,19 @@
     },
     {
       "id": "online-sample-2",
-      "title": "Stand-Up Comedy no YouTube",
-      "comedian": "Canais Oficiais",
+      "title": "Stand-Up em Português no YouTube (Oficiais)",
+      "comedian": "Humoristas Portugueses",
       "platform": "YouTube",
-      "language": "PT / EN",
+      "language": "PT",
       "year": "",
       "imageUrl": "",
-      "watchUrl": "https://www.youtube.com/results?search_query=stand+up+comedy+portugal+espetaculo+completo+oficial",
+      "watchUrl": "https://www.youtube.com/results?search_query=stand+up+comedy+portugues+espetaculo+completo+oficial",
       "featured": false,
       "priority": 50
     },
     {
       "id": "online-sample-3",
-      "title": "Humor & Comédia na RTP Play",
+      "title": "Humor & Comédia Portuguesa — RTP Play",
       "comedian": "RTP Play",
       "platform": "RTP Play",
       "language": "PT",

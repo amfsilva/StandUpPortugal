@@ -49,8 +49,8 @@ Contém os sites públicos com dados estruturados (`JSON-LD`) que o scraper cons
 ### 2.3 Aba `Feed Atual` — Espelho dos Eventos no Ar
 Lista os espetáculos atualmente ativos no `events.json`, para consultar rapidamente o que está visível na app e copiar o `ticketUrl` exato quando quiser destacar ou ocultar algum evento na `Folha1`.
 
-### 2.4 Aba `Online` — Especiais Completos (YouTube, Netflix, Max, Prime Video, RTP Play)
-Permite gerir e priorizar o separador **Online (Especiais)** da app:
+### 2.4 Aba `Online` — Especiais Completos de Humoristas em Português
+Permite gerir e priorizar o separador **Online (Especiais)** da app (apenas espetáculos de humoristas em português — entradas sem `PT` em `language` são ignoradas):
 - `title`, `comedian`, `platform` (`YouTube`, `Netflix`, `Max`, `Prime Video`, `RTP Play`), `language`, `year`, `imageUrl`, `watchUrl`
 - `featured`: `TRUE` para destacar no topo com selo **Em Destaque**
 - `priority`: número inteiro (ex.: `100`, `50`, `10`) para ordenar os seus especiais favoritos primeiro

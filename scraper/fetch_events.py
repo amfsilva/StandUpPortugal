@@ -570,7 +570,8 @@ def update_online_specials(online_output_path: Path) -> None:
             continue
         title = (row.get("title") or "").strip()
         platform = (row.get("platform") or "").strip() or "YouTube"
-        if not title or not watch_url:
+        lang = (row.get("language") or "PT").strip().upper()
+        if not title or not watch_url or "PT" not in lang:
             continue
         featured_raw = (row.get("featured") or "").strip().lower()
         try:
@@ -582,7 +583,7 @@ def update_online_specials(online_output_path: Path) -> None:
             "title": title,
             "comedian": (row.get("comedian") or "").strip(),
             "platform": platform,
-            "language": (row.get("language") or "PT").strip(),
+            "language": lang,
             "year": (row.get("year") or "").strip(),
             "imageUrl": (row.get("imageUrl") or "").strip(),
             "watchUrl": watch_url,

@@ -1,4 +1,4 @@
 title,comedian,platform,language,year,imageUrl,watchUrl,featured,priority,hide
-"Especiais de Stand-Up Comedy","Netflix Portugal","Netflix","PT / EN","","","https://www.netflix.com/browse/genre/11559",TRUE,100,FALSE
-"Stand-Up Comedy no YouTube","Canais Oficiais","YouTube","PT / EN","","","https://www.youtube.com/results?search_query=stand+up+comedy+portugal+espetaculo+completo+oficial",FALSE,50,FALSE
-"Humor & Comédia na RTP Play","RTP Play","RTP Play","PT","","","https://www.rtp.pt/play/programas/humor",FALSE,40,FALSE
+"Stand-Up Comedy em Português — Especiais","Netflix Portugal","Netflix","PT","","","https://www.netflix.com/browse/genre/11559",TRUE,100,FALSE
+"Stand-Up em Português no YouTube (Oficiais)","Humoristas Portugueses","YouTube","PT","","","https://www.youtube.com/results?search_query=stand+up+comedy+portugues+espetaculo+completo+oficial",FALSE,50,FALSE
+"Humor & Comédia Portuguesa — RTP Play","RTP Play","RTP Play","PT","","","https://www.rtp.pt/play/programas/humor",FALSE,40,FALSE
