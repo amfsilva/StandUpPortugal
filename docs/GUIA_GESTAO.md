@@ -50,7 +50,13 @@ Contém os sites públicos com dados estruturados (`JSON-LD`) que o scraper cons
 Lista os espetáculos atualmente ativos no `events.json`, para consultar rapidamente o que está visível na app e copiar o `ticketUrl` exato quando quiser destacar ou ocultar algum evento na `Folha1`.
 
 ### 2.4 Aba `Online` — Especiais Completos de Humoristas em Português
-Permite gerir e priorizar o separador **Online (Especiais)** da app (apenas espetáculos de humoristas em português — entradas sem `PT` em `language` são ignoradas):
+Permite gerir e priorizar o separador **Online (Especiais)** da app (apenas espetáculos de humoristas em português — entradas sem `PT` em `language` são ignoradas).
+
+**Regra de curadoria rigorosa (apenas fontes oficiais):**
+- **YouTube:** aceitar apenas espetáculos publicados no **canal oficial do próprio humorista ou produtora** (nunca re-uploads de terceiros).
+- **Streaming:** apenas links diretos oficiais de **Netflix**, **Max (HBO)**, **Prime Video** ou **RTP Play**.
+
+Colunas:
 - `title`, `comedian`, `platform` (`YouTube`, `Netflix`, `Max`, `Prime Video`, `RTP Play`), `language`, `year`, `imageUrl`, `watchUrl`
 - `featured`: `TRUE` para destacar no topo com selo **Em Destaque**
 - `priority`: número inteiro (ex.: `100`, `50`, `10`) para ordenar os seus especiais favoritos primeiro
