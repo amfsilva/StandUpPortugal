@@ -535,6 +535,80 @@ def main() -> None:
     output_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Wrote {len(upcoming)} upcoming events to {output_path}")
 
+    update_online_specials(repo_root / "docs" / "online_specials.json")
+
+
+def update_online_specials(online_output_path: Path) -> None:
+    online_csv_url = os.getenv("GOOGLE_SHEET_ONLINE_CSV_URL", "").strip()
+    if not online_csv_url:
+        return
+    try:
+        resp = requests.get(online_csv_url, headers=HEADERS, timeout=20)
+        resp.raise_for_status()
+    except Exception as exc:
+        print(f"[OnlineSheet] error: {exc}")
+        return
+
+    existing_by_url: dict[str, dict[str, Any]] = {}
+    if online_output_path.exists():
+        try:
+            existing_data = json.loads(online_output_path.read_text(encoding="utf-8"))
+            for sp in existing_data.get("specials", []):
+                u = (sp.get("watchUrl") or "").strip()
+                if u:
+                    existing_by_url[u] = sp
+        except Exception:
+            pass
+
+    hidden_urls: set[str] = set()
+    reader = csv.DictReader(io.StringIO(resp.text))
+    for row in reader:
+        watch_url = (row.get("watchUrl") or "").strip()
+        hide_raw = (row.get("hide") or row.get("ocultar") or "").strip().lower()
+        if watch_url and hide_raw in {"true", "1", "sim", "yes"}:
+            hidden_urls.add(watch_url)
+            continue
+        title = (row.get("title") or "").strip()
+        platform = (row.get("platform") or "").strip() or "YouTube"
+        if not title or not watch_url:
+            continue
+        featured_raw = (row.get("featured") or "").strip().lower()
+        try:
+            priority = int((row.get("priority") or "0").strip() or "0")
+        except ValueError:
+            priority = 0
+        existing_by_url[watch_url] = {
+            "id": make_id(platform, watch_url, title),
+            "title": title,
+            "comedian": (row.get("comedian") or "").strip(),
+            "platform": platform,
+            "language": (row.get("language") or "PT").strip(),
+            "year": (row.get("year") or "").strip(),
+            "imageUrl": (row.get("imageUrl") or "").strip(),
+            "watchUrl": watch_url,
+            "featured": featured_raw in {"true", "1", "sim", "yes"},
+            "priority": priority,
+        }
+
+    final_specials = [
+        sp for url_key, sp in existing_by_url.items() if url_key not in hidden_urls
+    ]
+    final_specials.sort(
+        key=lambda sp: (
+            not bool(sp.get("featured", False)),
+            -int(sp.get("priority", 0)),
+            sp.get("title", ""),
+        )
+    )
+    online_payload = {
+        "updatedAt": datetime.now(timezone.utc).isoformat(),
+        "specials": final_specials,
+    }
+    online_output_path.write_text(
+        json.dumps(online_payload, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    print(f"Wrote {len(final_specials)} online specials to {online_output_path}")
+
 
 if __name__ == "__main__":
     main()

@@ -4,6 +4,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import pt.standupportugal.app.data.EventRepository
+import pt.standupportugal.app.data.OnlineSpecial
 import pt.standupportugal.app.data.StandUpEvent
 import pt.standupportugal.app.ui.StandUpViewModel
 import java.time.ZoneId
@@ -84,5 +85,16 @@ class EventRepositoryTest {
         val result = StandUpViewModel.applyFilters(events, "Todos", "batáguas")
         assertEquals(1, result.size)
         assertEquals("1", result[0].id)
+    }
+
+    @Test
+    fun applyOnlineFilters_filtersByPlatformAndQuery() {
+        val specials = listOf(
+            OnlineSpecial("1", "Especial Completo", "Comediante PT", "YouTube", "PT", "2026", "", "https://youtube.com/1"),
+            OnlineSpecial("2", "Netflix Special", "Comediante EN", "Netflix", "EN", "2026", "", "https://netflix.com/2")
+        )
+        val yt = StandUpViewModel.applyOnlineFilters(specials, "YouTube", "comediante")
+        assertEquals(1, yt.size)
+        assertEquals("1", yt[0].id)
     }
 }

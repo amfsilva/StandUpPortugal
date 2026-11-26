@@ -13,16 +13,21 @@ android {
         applicationId = "pt.standupportugal.comedy"
         minSdk = 24
         targetSdk = 36
-        versionCode = 4
-        versionName = "1.1.1"
+        versionCode = 5
+        versionName = "1.2.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        // Configure your GitHub Pages feed URL and optional Google Sheet CSV URL here:
+        // Configure your GitHub Pages feed URLs and optional Google Sheet CSV URL here:
         buildConfigField(
             "String",
             "EVENTS_FEED_URL",
             "\"https://amfsilva.github.io/StandUpPortugal/events.json\""
+        )
+        buildConfigField(
+            "String",
+            "ONLINE_FEED_URL",
+            "\"https://amfsilva.github.io/StandUpPortugal/online_specials.json\""
         )
         buildConfigField(
             "String",

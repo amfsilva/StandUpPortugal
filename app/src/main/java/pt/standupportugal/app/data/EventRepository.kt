@@ -25,6 +25,7 @@ data class EventLoadResult(
 class EventRepository(
     private val context: Context,
     private val feedUrl: String = BuildConfig.EVENTS_FEED_URL,
+    private val onlineFeedUrl: String = BuildConfig.ONLINE_FEED_URL,
     private val googleSheetCsvUrl: String = BuildConfig.GOOGLE_SHEET_CSV_URL
 ) {
     private val json = Json {
@@ -53,6 +54,36 @@ class EventRepository(
             )
             EventLoadResult(events = merged, origin = origin, updatedAt = updatedAt)
         }
+
+    suspend fun loadOnlineSpecials(): List<OnlineSpecial> = withContext(Dispatchers.IO) {
+        val remote = fetchRemoteOnlineFeed()
+        val list = if (remote != null && remote.specials.isNotEmpty()) {
+            remote.specials
+        } else {
+            loadBundledOnlineFeed().specials
+        }
+        list.sortedWith(
+            compareByDescending<OnlineSpecial> { it.featured }
+                .thenByDescending { it.priority }
+                .thenBy { it.title }
+        )
+    }
+
+    private fun fetchRemoteOnlineFeed(): OnlineSpecialsFeed? {
+        if (onlineFeedUrl.isBlank() || onlineFeedUrl.contains("SEU-UTILIZADOR")) return null
+        return runCatching {
+            val raw = httpGet(onlineFeedUrl)
+            json.decodeFromString<OnlineSpecialsFeed>(raw)
+        }.getOrNull()
+    }
+
+    private fun loadBundledOnlineFeed(): OnlineSpecialsFeed {
+        return runCatching {
+            context.assets.open("sample_online_specials.json").bufferedReader().use { reader ->
+                json.decodeFromString<OnlineSpecialsFeed>(reader.readText())
+            }
+        }.getOrDefault(OnlineSpecialsFeed())
+    }
 
     private fun fetchRemoteJsonFeed(): EventsFeed? {
         if (feedUrl.isBlank() || feedUrl.contains("SEU-UTILIZADOR")) return null

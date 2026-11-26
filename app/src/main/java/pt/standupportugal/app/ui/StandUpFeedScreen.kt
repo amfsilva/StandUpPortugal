@@ -31,6 +31,7 @@ import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material.icons.filled.Mic
+import androidx.compose.material.icons.filled.PlayCircle
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Share
@@ -51,6 +52,9 @@ import androidx.compose.material3.OutlinedIconButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.SegmentedButton
+import androidx.compose.material3.SegmentedButtonDefaults
+import androidx.compose.material3.SingleChoiceSegmentedButtonRow
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -74,6 +78,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import pt.standupportugal.app.data.FeedOrigin
+import pt.standupportugal.app.data.OnlineSpecial
 import pt.standupportugal.app.data.StandUpEvent
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -128,8 +133,13 @@ fun StandUpFeedScreen(viewModel: StandUpViewModel) {
                                 style = MaterialTheme.typography.titleLarge,
                                 fontWeight = FontWeight.Bold
                             )
+                            val subtitle = if (state.browseMode == BrowseMode.LIVE) {
+                                "${state.filteredEvents.size} próximos espetáculos"
+                            } else {
+                                "${state.filteredOnlineSpecials.size} especiais disponíveis"
+                            }
                             Text(
-                                text = "${state.filteredEvents.size} próximos espetáculos",
+                                text = subtitle,
                                 style = MaterialTheme.typography.labelSmall,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant
                             )
@@ -162,10 +172,51 @@ fun StandUpFeedScreen(viewModel: StandUpViewModel) {
                 .fillMaxSize()
                 .padding(innerPadding)
         ) {
+            SingleChoiceSegmentedButtonRow(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 4.dp)
+            ) {
+                SegmentedButton(
+                    selected = state.browseMode == BrowseMode.LIVE,
+                    onClick = { viewModel.setBrowseMode(BrowseMode.LIVE) },
+                    shape = SegmentedButtonDefaults.itemShape(index = 0, count = 2),
+                    colors = SegmentedButtonDefaults.colors(
+                        activeContainerColor = MaterialTheme.colorScheme.primary,
+                        activeContentColor = MaterialTheme.colorScheme.onPrimary,
+                        inactiveContainerColor = MaterialTheme.colorScheme.surface,
+                        inactiveContentColor = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                ) {
+                    Text("Ao Vivo", fontWeight = FontWeight.Bold)
+                }
+                SegmentedButton(
+                    selected = state.browseMode == BrowseMode.ONLINE,
+                    onClick = { viewModel.setBrowseMode(BrowseMode.ONLINE) },
+                    shape = SegmentedButtonDefaults.itemShape(index = 1, count = 2),
+                    colors = SegmentedButtonDefaults.colors(
+                        activeContainerColor = MaterialTheme.colorScheme.primary,
+                        activeContentColor = MaterialTheme.colorScheme.onPrimary,
+                        inactiveContainerColor = MaterialTheme.colorScheme.surface,
+                        inactiveContentColor = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                ) {
+                    Text("Online (Especiais)", fontWeight = FontWeight.Bold)
+                }
+            }
+
             OutlinedTextField(
                 value = state.searchQuery,
                 onValueChange = viewModel::updateSearchQuery,
-                placeholder = { Text("Pesquisar comediante, espetáculo ou sala...") },
+                placeholder = {
+                    Text(
+                        if (state.browseMode == BrowseMode.LIVE) {
+                            "Pesquisar comediante, espetáculo ou sala..."
+                        } else {
+                            "Pesquisar comediante, especial ou plataforma..."
+                        }
+                    )
+                },
                 leadingIcon = {
                     Icon(
                         imageVector = Icons.Default.Search,
@@ -195,11 +246,19 @@ fun StandUpFeedScreen(viewModel: StandUpViewModel) {
                     .padding(horizontal = 16.dp, vertical = 6.dp)
             )
 
-            DistrictFilterBar(
-                districts = state.availableDistricts,
-                selectedDistrict = state.selectedDistrict,
-                onSelectDistrict = viewModel::selectDistrict
-            )
+            if (state.browseMode == BrowseMode.LIVE) {
+                DistrictFilterBar(
+                    items = state.availableDistricts,
+                    selectedItem = state.selectedDistrict,
+                    onSelectItem = viewModel::selectDistrict
+                )
+            } else {
+                DistrictFilterBar(
+                    items = state.availablePlatforms,
+                    selectedItem = state.selectedPlatform,
+                    onSelectItem = viewModel::selectPlatform
+                )
+            }
 
             if (state.feedOrigin == FeedOrigin.LOCAL_FALLBACK && !state.isLoading) {
                 Surface(
@@ -248,7 +307,7 @@ fun StandUpFeedScreen(viewModel: StandUpViewModel) {
                     }
                 }
 
-                state.filteredEvents.isEmpty() -> {
+                state.browseMode == BrowseMode.LIVE && state.filteredEvents.isEmpty() -> {
                     Box(
                         modifier = Modifier
                             .fillMaxSize()
@@ -271,22 +330,55 @@ fun StandUpFeedScreen(viewModel: StandUpViewModel) {
                     }
                 }
 
+                state.browseMode == BrowseMode.ONLINE && state.filteredOnlineSpecials.isEmpty() -> {
+                    Box(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(24.dp),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                            Text(
+                                text = "Sem especiais encontrados em ${state.selectedPlatform}.",
+                                style = MaterialTheme.typography.bodyLarge,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                            Spacer(modifier = Modifier.height(8.dp))
+                            if (state.selectedPlatform != "Todos") {
+                                Button(onClick = { viewModel.selectPlatform("Todos") }) {
+                                    Text("Ver todas as plataformas")
+                                }
+                            }
+                        }
+                    }
+                }
+
                 else -> {
                     LazyColumn(
                         contentPadding = PaddingValues(horizontal = 16.dp, vertical = 12.dp),
                         verticalArrangement = Arrangement.spacedBy(16.dp),
                         modifier = Modifier.fillMaxSize()
                     ) {
-                        items(state.filteredEvents, key = { it.id }) { event ->
-                            EventCard(
-                                event = event,
-                                onOpenTicketUrl = { openExternalUrl(context, event.ticketUrl) },
-                                onShareEvent = { shareEvent(context, event) }
-                            )
+                        if (state.browseMode == BrowseMode.LIVE) {
+                            items(state.filteredEvents, key = { it.id }) { event ->
+                                EventCard(
+                                    event = event,
+                                    onOpenTicketUrl = { openExternalUrl(context, event.ticketUrl) },
+                                    onShareEvent = { shareEvent(context, event) }
+                                )
+                            }
+                        } else {
+                            items(state.filteredOnlineSpecials, key = { it.id }) { special ->
+                                OnlineSpecialCard(
+                                    special = special,
+                                    onOpenWatchUrl = { openExternalUrl(context, special.watchUrl) },
+                                    onShareSpecial = { shareSpecial(context, special) }
+                                )
+                            }
                         }
                         item {
                             Text(
-                                text = "Aviso: Informação meramente informativa. Datas, horários, salas e bilhetes podem sofrer alterações — confirme sempre no site oficial antes da compra.",
+                                text = "Aviso: Informação meramente informativa. Datas, horários, salas, links e catálogos podem sofrer alterações — confirme sempre no site oficial.",
                                 style = MaterialTheme.typography.bodySmall,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                                 modifier = Modifier.padding(top = 8.dp, bottom = 16.dp)
@@ -301,22 +393,22 @@ fun StandUpFeedScreen(viewModel: StandUpViewModel) {
 
 @Composable
 private fun DistrictFilterBar(
-    districts: List<String>,
-    selectedDistrict: String,
-    onSelectDistrict: (String) -> Unit
+    items: List<String>,
+    selectedItem: String,
+    onSelectItem: (String) -> Unit
 ) {
     LazyRow(
         contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp)
     ) {
-        items(districts) { district ->
-            val selected = district == selectedDistrict
+        items(items) { item ->
+            val selected = item == selectedItem
             FilterChip(
                 selected = selected,
-                onClick = { onSelectDistrict(district) },
+                onClick = { onSelectItem(item) },
                 label = {
                     Text(
-                        text = district,
+                        text = item,
                         fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal
                     )
                 },
@@ -545,6 +637,185 @@ private fun shareEvent(context: Context, event: StandUpEvent) {
         putExtra(Intent.EXTRA_TEXT, text)
     }
     context.startActivity(Intent.createChooser(intent, "Partilhar espetáculo"))
+}
+
+@Composable
+private fun OnlineSpecialCard(
+    special: OnlineSpecial,
+    onOpenWatchUrl: () -> Unit,
+    onShareSpecial: () -> Unit
+) {
+    val border = if (special.featured) {
+        BorderStroke(1.5.dp, MaterialTheme.colorScheme.primary)
+    } else {
+        BorderStroke(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = 0.4f))
+    }
+
+    Card(
+        shape = RoundedCornerShape(16.dp),
+        border = border,
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { onOpenWatchUrl() }
+    ) {
+        Column {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .aspectRatio(16f / 9f)
+                    .background(MaterialTheme.colorScheme.surfaceVariant)
+            ) {
+                if (special.imageUrl.isNotBlank()) {
+                    AsyncImage(
+                        model = special.imageUrl,
+                        contentDescription = special.title,
+                        contentScale = ContentScale.Crop,
+                        modifier = Modifier.fillMaxSize()
+                    )
+                } else {
+                    Box(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .background(
+                                Brush.linearGradient(
+                                    listOf(Color(0xFF2B194D), Color(0xFF1A1128))
+                                )
+                            ),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.PlayCircle,
+                            contentDescription = null,
+                            tint = MaterialTheme.colorScheme.primary.copy(alpha = 0.75f),
+                            modifier = Modifier.size(60.dp)
+                        )
+                    }
+                }
+
+                Surface(
+                    color = Color.Black.copy(alpha = 0.72f),
+                    shape = RoundedCornerShape(999.dp),
+                    modifier = Modifier
+                        .align(Alignment.TopEnd)
+                        .padding(10.dp)
+                ) {
+                    Text(
+                        text = special.platform,
+                        style = MaterialTheme.typography.labelSmall,
+                        color = Color.White,
+                        modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp)
+                    )
+                }
+
+                if (special.featured) {
+                    Surface(
+                        color = MaterialTheme.colorScheme.primary,
+                        shape = RoundedCornerShape(999.dp),
+                        modifier = Modifier
+                            .align(Alignment.TopStart)
+                            .padding(10.dp)
+                    ) {
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp)
+                        ) {
+                            Icon(
+                                imageVector = Icons.Default.Star,
+                                contentDescription = null,
+                                tint = MaterialTheme.colorScheme.onPrimary,
+                                modifier = Modifier.size(14.dp)
+                            )
+                            Spacer(modifier = Modifier.width(4.dp))
+                            Text(
+                                text = "Em Destaque",
+                                style = MaterialTheme.typography.labelSmall,
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colorScheme.onPrimary
+                            )
+                        }
+                    }
+                }
+            }
+
+            Column(modifier = Modifier.padding(16.dp)) {
+                val metaParts = buildList {
+                    if (special.comedian.isNotBlank()) add(special.comedian)
+                    if (special.language.isNotBlank()) add(special.language)
+                    if (special.year.isNotBlank()) add(special.year)
+                }
+                if (metaParts.isNotEmpty()) {
+                    Text(
+                        text = metaParts.joinToString(" · "),
+                        style = MaterialTheme.typography.labelLarge,
+                        color = MaterialTheme.colorScheme.primary,
+                        fontWeight = FontWeight.SemiBold
+                    )
+                    Spacer(modifier = Modifier.height(6.dp))
+                }
+
+                Text(
+                    text = special.title,
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.onSurface,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis
+                )
+
+                Spacer(modifier = Modifier.height(14.dp))
+
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Button(
+                        onClick = onOpenWatchUrl,
+                        shape = RoundedCornerShape(10.dp),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = MaterialTheme.colorScheme.primary,
+                            contentColor = MaterialTheme.colorScheme.onPrimary
+                        ),
+                        modifier = Modifier.weight(1f)
+                    ) {
+                        Text(
+                            text = "Ver na ${special.platform}",
+                            fontWeight = FontWeight.Bold
+                        )
+                        Spacer(modifier = Modifier.width(6.dp))
+                        Icon(
+                            imageVector = Icons.AutoMirrored.Filled.OpenInNew,
+                            contentDescription = null,
+                            modifier = Modifier.size(16.dp)
+                        )
+                    }
+
+                    OutlinedIconButton(
+                        onClick = onShareSpecial,
+                        shape = RoundedCornerShape(10.dp),
+                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline)
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Share,
+                            contentDescription = "Partilhar especial",
+                            tint = MaterialTheme.colorScheme.onSurface
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+private fun shareSpecial(context: Context, special: OnlineSpecial) {
+    val text = "${special.title} (${special.platform})\n${special.watchUrl}"
+    val intent = Intent(Intent.ACTION_SEND).apply {
+        type = "text/plain"
+        putExtra(Intent.EXTRA_SUBJECT, special.title)
+        putExtra(Intent.EXTRA_TEXT, text)
+    }
+    context.startActivity(Intent.createChooser(intent, "Partilhar especial"))
 }
 
 private fun openExternalUrl(context: Context, url: String) {

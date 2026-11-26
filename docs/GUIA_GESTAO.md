@@ -3,6 +3,7 @@
 **Última atualização:** 2026-11-25  
 **Repositório GitHub:** https://github.com/amfsilva/StandUpPortugal  
 **Feed JSON público (GitHub Pages):** https://amfsilva.github.io/StandUpPortugal/events.json  
+**Feed Online público (Especiais):** https://amfsilva.github.io/StandUpPortugal/online_specials.json  
 **Política de Privacidade (Google Play):** https://amfsilva.github.io/StandUpPortugal/privacy.html  
 **Google Sheet de Eventos e Destaques:** https://docs.google.com/spreadsheets/d/1Of0g9oUzgiO8OLR0zTWlKeioWC2-HKwEoz7vcpFrNdk/edit  
 
@@ -48,11 +49,19 @@ Contém os sites públicos com dados estruturados (`JSON-LD`) que o scraper cons
 ### 2.3 Aba `Feed Atual` — Espelho dos Eventos no Ar
 Lista os espetáculos atualmente ativos no `events.json`, para consultar rapidamente o que está visível na app e copiar o `ticketUrl` exato quando quiser destacar ou ocultar algum evento na `Folha1`.
 
-### 2.4 Configuração única (Publicar na Web) e Atualização Imediata
+### 2.4 Aba `Online` — Especiais Completos (YouTube, Netflix, Max, Prime Video, RTP Play)
+Permite gerir e priorizar o separador **Online (Especiais)** da app:
+- `title`, `comedian`, `platform` (`YouTube`, `Netflix`, `Max`, `Prime Video`, `RTP Play`), `language`, `year`, `imageUrl`, `watchUrl`
+- `featured`: `TRUE` para destacar no topo com selo **Em Destaque**
+- `priority`: número inteiro (ex.: `100`, `50`, `10`) para ordenar os seus especiais favoritos primeiro
+- `hide`: `TRUE` para ocultar algum item
+
+### 2.5 Configuração única (Publicar na Web) e Atualização Imediata
 1. Na Google Sheet: **Ficheiro → Partilhar → Publicar na Web**.
 2. Publique como **Valores separados por vírgulas (.csv)**:
    - A aba **`Folha1`** → guarde o URL no secret **`GOOGLE_SHEET_CSV_URL`** do GitHub (**Settings → Secrets and variables → Actions**).
    - A aba **`Fontes`** → guarde o URL no secret **`GOOGLE_SHEET_SOURCES_CSV_URL`** do GitHub.
+   - A aba **`Online`** → guarde o URL no secret **`GOOGLE_SHEET_ONLINE_CSV_URL`** do GitHub.
 3. **Quando entra em vigor?** Automaticamente de **6 em 6 horas** (ou em ~15 segundos se abrir **Actions → Update Stand-Up Events Feed → Run workflow** no GitHub). **Não é preciso lançar nova versão da app na Google Play.**
 
 ---
@@ -82,6 +91,7 @@ Lista os espetáculos atualmente ativos no `events.json`, para consultar rapidam
 | 2026-11-25 | `v1.1.0` | Adicionada pesquisa por comediante/sala, botão de partilha de espetáculos, textos da loja (`docs/GOOGLE_PLAY_FICHA.md`) e imagens `512x512` + `1024x500` em `store-assets/`. |
 | 2026-11-25 | `v1.1.1` | Adicionado aviso de isenção de responsabilidade na app (botão `ⓘ` + rodapé), em `docs/privacy.html` e na descrição da Google Play. |
 | 2026-11-26 | Sheet Moderação & Fontes | Adicionada coluna `hide` para ocultar eventos, aba `Fontes` (`GOOGLE_SHEET_SOURCES_CSV_URL`) para gerir sites/bares no Drive e aba `Feed Atual` com os 174 eventos ativos. |
+| 2026-11-26 | `v1.2.0` | Adicionado alternador **Ao Vivo / Online (Especiais)** na app, filtro por plataforma, `docs/online_specials.json` e aba `Online` na Google Sheet com `featured`, `priority` e `hide`. |
 
 ---
 
