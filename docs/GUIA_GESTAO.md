@@ -16,23 +16,44 @@
 
 ---
 
-## 2. Como gerir eventos e destaques no dia a dia
+## 2. Como gerir eventos, moderação e fontes na Google Sheet
 
-1. Abra a folha **StandUp Portugal - Eventos** no Google Sheets.
-2. Para **adicionar um espetáculo manual** (ex.: eventos do Facebook/Instagram ou bares locais), preencha uma nova linha com:
-   - `title`: Nome do espetáculo / comediante
-   - `dateTime`: Data e hora em formato ISO-8601 (ex.: `2026-12-12T21:30:00+00:00`)
-   - `venue`: Nome da sala/bar
-   - `district`: Distrito (ex.: `Lisboa`, `Porto`, `Coimbra`, `Braga`, `Faro`, `Açores`, etc.)
-   - `imageUrl`: Link direto da imagem/cartaz (opcional)
-   - `ticketUrl`: Link oficial de compra ou evento
-   - `source`: Nome da fonte (ex.: `Facebook`, `Meetup`, `BOL`)
-   - `featured`: `TRUE` para destacar com borda dourada e selo **Em Destaque**, ou `FALSE` para normal.
-   - `hide`: `TRUE` para **ocultar/remover** um espetáculo do feed (mesmo que venha do scraper automático, basta colar o `ticketUrl` e pôr `hide = TRUE`).
-3. Para **promover um espetáculo já existente** no feed automático, basta adicionar uma linha na folha com o **mesmo `ticketUrl`** e `featured = TRUE` — a entrada da Google Sheet sobrepõe-se à automática.
-4. **Aba `Fontes` (novos sites/bares automáticos):** Pode adicionar, ativar ou desativar (`active = TRUE/FALSE`) páginas públicas com dados estruturados (`JSON-LD`) sem mexer em código — basta publicar também a aba `Fontes` como `.csv` e guardar no secret `GOOGLE_SHEET_SOURCES_CSV_URL`.
-5. **Aba `Feed Atual`:** Espelho dos espetáculos atualmente no `events.json` para consulta rápida e cópia de `ticketUrl`.
-6. *(Configuração inicial única na Google Sheet)*: **Ficheiro → Partilhar → Publicar na Web → Valores separados por vírgulas (.csv)** e guardar o link no secret `GOOGLE_SHEET_CSV_URL` do GitHub.
+Abra a folha **StandUp Portugal - Eventos** no Google Drive (`myAntigravity > Projecto StandUp Portugal`). Ela tem **3 abas**:
+
+### 2.1 Aba `Folha1` — Adicionar, Destacar ou Ocultar Espetáculos
+Cada linha representa um espetáculo manual ou uma regra sobre um espetáculo existente:
+- `title`: Nome do espetáculo / comediante
+- `dateTime`: Data e hora em formato ISO-8601 (ex.: `2026-12-12T21:30:00+00:00`)
+- `venue`: Nome da sala/bar
+- `district`: Distrito (ex.: `Lisboa`, `Porto`, `Coimbra`, `Braga`, `Faro`, `Açores`, etc.)
+- `imageUrl`: Link direto da imagem/cartaz (opcional)
+- `ticketUrl`: Link oficial de compra ou evento *(chave única usada para identificar o evento)*
+- `source`: Nome da fonte (ex.: `Facebook`, `Meetup`, `BOL`)
+- `featured`: `TRUE` para destacar com borda dourada e selo **Em Destaque**, ou `FALSE` para normal.
+- `hide`: `TRUE` para **ocultar/remover** o espetáculo do feed; `FALSE` (ou vazio) para mostrar.
+
+**Exemplos práticos:**
+- **Adicionar evento do Facebook / bar local:** preencha uma nova linha com todos os campos e `hide = FALSE`.
+- **Promover um evento que já vem do scraper:** copie o `ticketUrl` da aba `Feed Atual`, cole numa nova linha da `Folha1`, preencha os campos e coloque `featured = TRUE`.
+- **Remover/esconder um evento errado do scraper:** copie o `ticketUrl` da aba `Feed Atual`, cole numa nova linha da `Folha1` e coloque `hide = TRUE` (os restantes campos podem ficar simples ou copiados).
+
+### 2.2 Aba `Fontes` — Adicionar ou Desativar Sites/Locais Automáticos
+Contém os sites públicos com dados estruturados (`JSON-LD`) que o scraper consulta:
+- `name`: Nome da fonte/local que aparece no cartão da app (ex.: `Teatro Sá da Bandeira`)
+- `url`: Endereço da página de agenda pública
+- `defaultDistrict`: Distrito por defeito caso a página não indique cidade (ex.: `Porto`, `Lisboa`)
+- `sourceType`: `JSON-LD`
+- `active`: `TRUE` para recolher automaticamente; `FALSE` para pausar/desativar essa fonte sem apagar a linha.
+
+### 2.3 Aba `Feed Atual` — Espelho dos Eventos no Ar
+Lista os espetáculos atualmente ativos no `events.json`, para consultar rapidamente o que está visível na app e copiar o `ticketUrl` exato quando quiser destacar ou ocultar algum evento na `Folha1`.
+
+### 2.4 Configuração única (Publicar na Web) e Atualização Imediata
+1. Na Google Sheet: **Ficheiro → Partilhar → Publicar na Web**.
+2. Publique como **Valores separados por vírgulas (.csv)**:
+   - A aba **`Folha1`** → guarde o URL no secret **`GOOGLE_SHEET_CSV_URL`** do GitHub (**Settings → Secrets and variables → Actions**).
+   - A aba **`Fontes`** → guarde o URL no secret **`GOOGLE_SHEET_SOURCES_CSV_URL`** do GitHub.
+3. **Quando entra em vigor?** Automaticamente de **6 em 6 horas** (ou em ~15 segundos se abrir **Actions → Update Stand-Up Events Feed → Run workflow** no GitHub). **Não é preciso lançar nova versão da app na Google Play.**
 
 ---
 
