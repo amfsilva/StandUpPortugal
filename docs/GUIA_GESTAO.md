@@ -76,6 +76,7 @@ Permite gerir e priorizar o separador **Online (Especiais)** da app (apenas espe
    - `RELEASE_KEYSTORE_BASE64`, `RELEASE_KEYSTORE_PASSWORD`, `RELEASE_KEY_ALIAS`, `RELEASE_KEY_PASSWORD`.
    - Guarde o ficheiro `standup-release.jks` em segurança na sua pasta `StandupPortugal` do Google Drive.
 4. **Atualizar na Play Console:** Antes de gerar um novo `.aab` para a Play Store, incremente o `versionCode` e `versionName` em `app/build.gradle.kts`.
+5. **Deploy automático para Testes Internos (opcional):** Se configurar o secret `GOOGLE_PLAY_SERVICE_ACCOUNT_JSON` no GitHub (com a chave JSON de uma *Service Account* da Google Cloud ligada à Play Console com permissão de *Gerir versões* / *Release to testing tracks*), cada alteração na pasta `app/` enviada para `main` envia automaticamente o `.aab` para a faixa **Testes internos**!
 
 ---
 
@@ -92,6 +93,7 @@ Permite gerir e priorizar o separador **Online (Especiais)** da app (apenas espe
 | 2026-11-25 | `v1.1.1` | Adicionado aviso de isenção de responsabilidade na app (botão `ⓘ` + rodapé), em `docs/privacy.html` e na descrição da Google Play. |
 | 2026-11-26 | Sheet Moderação & Fontes | Adicionada coluna `hide` para ocultar eventos, aba `Fontes` (`GOOGLE_SHEET_SOURCES_CSV_URL`) para gerir sites/bares no Drive e aba `Feed Atual` com os 174 eventos ativos. |
 | 2026-11-26 | `v1.2.0` | Adicionado alternador **Ao Vivo / Online (Especiais)** na app, filtro por plataforma, `docs/online_specials.json` e aba `Online` na Google Sheet com `featured`, `priority` e `hide`. |
+| 2026-11-26 | Auto-Deploy Play | Configurado envio automático opcional do `.aab` para **Testes internos** da Google Play via `GOOGLE_PLAY_SERVICE_ACCOUNT_JSON` (`r0adkll/upload-google-play`). |
 
 ---
 
