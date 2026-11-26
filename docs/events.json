@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T07:23:17.411665+00:00",
+  "updatedAt": "2026-11-26T14:52:24.635158+00:00",
   "events": [
     {
       "id": "meetup-611c8d5dff20",
@@ -73,7 +73,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108459/cartaz.jpg?rev=20261125200617",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108459/cartaz.jpg?rev=20261126144659",
       "ticketUrl": "https://www.ticketline.pt/evento/v2-espacos-outros-linha-de-falha-fotografia-na-c",
       "source": "Ticketline",
       "featured": false
@@ -84,7 +84,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4,...",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/93233/cartaz.jpg?rev=20261125200617",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/93233/cartaz.jpg?rev=20261126144659",
       "ticketUrl": "https://www.ticketline.pt/evento/macam-93233",
       "source": "Ticketline",
       "featured": false
@@ -95,7 +95,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Alfândega Do Porto",
       "district": "Porto",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/109806/cartaz.jpg?rev=20261125200617",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/109806/cartaz.jpg?rev=20261126144659",
       "ticketUrl": "https://www.ticketline.pt/evento/um-sonho-de-natal-vr-109806",
       "source": "Ticketline",
       "featured": false
@@ -106,7 +106,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "A Moagem - Sala De Exposições",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108236/cartaz.jpg?rev=20261125200617",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108236/cartaz.jpg?rev=20261126144659",
       "ticketUrl": "https://www.ticketline.pt/evento/ressoar-108236",
       "source": "Ticketline",
       "featured": false
@@ -117,7 +117,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Teatro Da Trindade Inatel - Estúdio",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/104971/cartaz.jpg?rev=20261125200617",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/104971/cartaz.jpg?rev=20261126144659",
       "ticketUrl": "https://www.ticketline.pt/evento/sob-pressao-104971",
       "source": "Ticketline",
       "featured": false
@@ -139,7 +139,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Casino Lisboa - Auditório Dos Oceanos",
       "district": "Lisboa",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106734/cartaz.jpg?rev=20261125200617",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106734/cartaz.jpg?rev=20261126144659",
       "ticketUrl": "https://www.ticketline.pt/evento/rosaline-a-ex-do-romeu-106734",
       "source": "Ticketline",
       "featured": false
@@ -150,7 +150,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Culturgest - Auditório Emílio Rui Vilar",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106089/cartaz.jpg?rev=20261125200617",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106089/cartaz.jpg?rev=20261126144659",
       "ticketUrl": "https://www.ticketline.pt/evento/carolina-bianchi-the-brotherhood-106089",
       "source": "Ticketline",
       "featured": false
@@ -860,6 +860,17 @@
       "featured": false
     },
     {
+      "id": "meetup-ee4df2ff4b30",
+      "title": "Storytelling Night—\"SECRETS AND LIES\"",
+      "dateTime": "2026-12-09T19:30:00+00:00",
+      "venue": "Fábrica Braço de Prata",
+      "district": "Lisboa",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-3-square.webp",
+      "ticketUrl": "https://www.meetup.com/storytelling-lisboa/events/317590654/",
+      "source": "Meetup",
+      "featured": false
+    },
+    {
       "id": "meetup-d235525f5756",
       "title": "COMEDY NIGHT in Porto: Presented in English",
       "dateTime": "2026-12-09T21:00:00+00:00",
@@ -1351,6 +1362,17 @@
       "district": "Santarém",
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz162297.png?v=1",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/188662-entroncamento_quim_roscas_zeca_estacionancio-cineteatro_sao_joao/",
+      "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "bol-648b71285eb4",
+      "title": "MOZELOS | Sor Miguel + Bicalho",
+      "dateTime": "2027-01-23T21:30:00+00:00",
+      "venue": "Tuna Musical Mozelense",
+      "district": "Aveiro",
+      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz163226.jpg?v=1",
+      "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/189678-mozelos_sor_miguel_bicalho-tuna_musical_mozelense/",
       "source": "BOL",
       "featured": false
     },
