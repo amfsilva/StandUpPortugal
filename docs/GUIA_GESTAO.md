@@ -28,8 +28,11 @@
    - `ticketUrl`: Link oficial de compra ou evento
    - `source`: Nome da fonte (ex.: `Facebook`, `Meetup`, `BOL`)
    - `featured`: `TRUE` para destacar com borda dourada e selo **Em Destaque**, ou `FALSE` para normal.
+   - `hide`: `TRUE` para **ocultar/remover** um espetáculo do feed (mesmo que venha do scraper automático, basta colar o `ticketUrl` e pôr `hide = TRUE`).
 3. Para **promover um espetáculo já existente** no feed automático, basta adicionar uma linha na folha com o **mesmo `ticketUrl`** e `featured = TRUE` — a entrada da Google Sheet sobrepõe-se à automática.
-4. *(Configuração inicial única na Google Sheet)*: **Ficheiro → Partilhar → Publicar na Web → Valores separados por vírgulas (.csv)** e guardar o link no secret `GOOGLE_SHEET_CSV_URL` do GitHub.
+4. **Aba `Fontes` (novos sites/bares automáticos):** Pode adicionar, ativar ou desativar (`active = TRUE/FALSE`) páginas públicas com dados estruturados (`JSON-LD`) sem mexer em código — basta publicar também a aba `Fontes` como `.csv` e guardar no secret `GOOGLE_SHEET_SOURCES_CSV_URL`.
+5. **Aba `Feed Atual`:** Espelho dos espetáculos atualmente no `events.json` para consulta rápida e cópia de `ticketUrl`.
+6. *(Configuração inicial única na Google Sheet)*: **Ficheiro → Partilhar → Publicar na Web → Valores separados por vírgulas (.csv)** e guardar o link no secret `GOOGLE_SHEET_CSV_URL` do GitHub.
 
 ---
 
@@ -57,6 +60,7 @@
 | 2026-11-25 | `privacy.html` | Publicada a Política de Privacidade no GitHub Pages (`docs/privacy.html`) para a Google Play Console. |
 | 2026-11-25 | `v1.1.0` | Adicionada pesquisa por comediante/sala, botão de partilha de espetáculos, textos da loja (`docs/GOOGLE_PLAY_FICHA.md`) e imagens `512x512` + `1024x500` em `store-assets/`. |
 | 2026-11-25 | `v1.1.1` | Adicionado aviso de isenção de responsabilidade na app (botão `ⓘ` + rodapé), em `docs/privacy.html` e na descrição da Google Play. |
+| 2026-11-26 | Sheet Moderação & Fontes | Adicionada coluna `hide` para ocultar eventos, aba `Fontes` (`GOOGLE_SHEET_SOURCES_CSV_URL`) para gerir sites/bares no Drive e aba `Feed Atual` com os 174 eventos ativos. |
 
 ---
 

@@ -1,0 +1,8 @@
+name,url,defaultDistrict,sourceType,active
+"Teatro Sá da Bandeira","https://teatrosadabandeira.pt/eventos/categoria/entretenimento/","Porto","JSON-LD",TRUE
+"Agenda Cultural Porto","https://agendaculturalporto.org/stand-up-comedy-no-porto-espectaculos/","Porto","JSON-LD",TRUE
+"Eventbrite Portugal","https://www.eventbrite.pt/d/portugal/stand-up-comedy/","Portugal","JSON-LD",TRUE
+"Eventbrite Lisboa","https://www.eventbrite.pt/d/portugal--lisbon/comedy/","Lisboa","JSON-LD",TRUE
+"Eventbrite Porto","https://www.eventbrite.pt/d/portugal--porto/comedy/","Porto","JSON-LD",TRUE
+"Meetup Lisboa","https://www.meetup.com/find/?keywords=stand%20up%20comedy&location=pt--Lisbon&source=EVENTS","Lisboa","JSON-LD",TRUE
+"Meetup Porto","https://www.meetup.com/find/?keywords=comedy&location=pt--Porto&source=EVENTS","Porto","JSON-LD",TRUE

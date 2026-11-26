@@ -192,17 +192,23 @@ def extract_json_ld_events(soup: BeautifulSoup, source: str, default_base_url: s
     return events
 
 
-def fetch_google_sheet_csv(csv_url: str) -> list[dict[str, Any]]:
+def fetch_google_sheet_csv(csv_url: str) -> tuple[list[dict[str, Any]], set[str]]:
     if not csv_url:
-        return []
+        return [], set()
     events: list[dict[str, Any]] = []
+    hidden_urls: set[str] = set()
     resp = requests.get(csv_url, headers=HEADERS, timeout=20)
     resp.raise_for_status()
     reader = csv.DictReader(io.StringIO(resp.text))
     for row in reader:
+        ticket_url = (row.get("ticketUrl") or "").strip()
+        hide_raw = (row.get("hide") or row.get("ocultar") or "").strip().lower()
+        if ticket_url and hide_raw in {"true", "1", "sim", "yes"}:
+            hidden_urls.add(ticket_url)
+            continue
+
         title = (row.get("title") or "").strip()
         raw_dt = (row.get("dateTime") or "").strip()
-        ticket_url = (row.get("ticketUrl") or "").strip()
         if not title or not raw_dt or not ticket_url:
             continue
         dt = parse_iso_datetime(raw_dt)
@@ -223,6 +229,39 @@ def fetch_google_sheet_csv(csv_url: str) -> list[dict[str, Any]]:
             "source": source,
             "featured": featured_raw in {"true", "1", "sim", "yes"},
         })
+    return events, hidden_urls
+
+
+def fetch_custom_json_ld_sources(sources_csv_url: str) -> list[dict[str, Any]]:
+    """Reads custom JSON-LD sources from the 'Fontes' Google Sheet CSV."""
+    if not sources_csv_url:
+        return []
+    events: list[dict[str, Any]] = []
+    resp = requests.get(sources_csv_url, headers=HEADERS, timeout=20)
+    resp.raise_for_status()
+    reader = csv.DictReader(io.StringIO(resp.text))
+    for row in reader:
+        active_raw = (row.get("active") or row.get("ativo") or "true").strip().lower()
+        if active_raw in {"false", "0", "nao", "não", "no"}:
+            continue
+        name = (row.get("name") or row.get("nome") or "Web").strip()
+        url = (row.get("url") or "").strip()
+        default_district = (row.get("defaultDistrict") or row.get("distrito_padrao") or "Portugal").strip()
+        if not url:
+            continue
+        try:
+            page = requests.get(url, headers=HEADERS, timeout=20)
+            print(f"[CustomSource:{name}] {url} -> HTTP {page.status_code}")
+            if page.status_code != 200:
+                continue
+            soup = BeautifulSoup(page.text, "html.parser")
+            extracted = extract_json_ld_events(soup, name, url)
+            for ev in extracted:
+                if ev.get("district") == "Portugal" and default_district:
+                    ev["district"] = default_district
+            events.extend(extracted)
+        except Exception as exc:
+            print(f"[CustomSource:{name}] skipped due to error: {exc}")
     return events
 
 
@@ -448,19 +487,29 @@ def main() -> None:
             print(f"[{name}] skipped due to error: {exc}")
 
     sheet_url = os.getenv("GOOGLE_SHEET_CSV_URL", "").strip()
+    hidden_urls: set[str] = set()
     if sheet_url:
         try:
-            sheet_items = fetch_google_sheet_csv(sheet_url)
-            print(f"[GoogleSheet] fetched {len(sheet_items)} events")
+            sheet_items, hidden_urls = fetch_google_sheet_csv(sheet_url)
+            print(f"[GoogleSheet] fetched {len(sheet_items)} events, {len(hidden_urls)} hidden")
             collected.extend(sheet_items)
         except Exception as exc:
             print(f"[GoogleSheet] error: {exc}")
+
+    sources_csv_url = os.getenv("GOOGLE_SHEET_SOURCES_CSV_URL", "").strip()
+    if sources_csv_url:
+        try:
+            custom_items = fetch_custom_json_ld_sources(sources_csv_url)
+            print(f"[CustomSources] fetched {len(custom_items)} events")
+            collected.extend(custom_items)
+        except Exception as exc:
+            print(f"[CustomSources] error: {exc}")
 
     existing = load_existing_events(output_path)
     merged_by_url: dict[str, dict[str, Any]] = {}
     for ev in existing + collected:
         url_key = (ev.get("ticketUrl") or "").strip()
-        if url_key:
+        if url_key and url_key not in hidden_urls:
             merged_by_url[url_key] = ev
 
     cutoff = datetime.now(LISBON_TZ) - timedelta(hours=2)

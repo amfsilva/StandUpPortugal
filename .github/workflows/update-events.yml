@@ -30,6 +30,7 @@ jobs:
       - name: Fetch and aggregate events
         env:
           GOOGLE_SHEET_CSV_URL: ${{ secrets.GOOGLE_SHEET_CSV_URL }}
+          GOOGLE_SHEET_SOURCES_CSV_URL: ${{ secrets.GOOGLE_SHEET_SOURCES_CSV_URL }}
         run: python scraper/fetch_events.py
 
       - name: Commit updated events.json
