@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T14:52:24.635158+00:00",
+  "updatedAt": "2026-11-26T16:00:22.532978+00:00",
   "events": [
     {
       "id": "meetup-611c8d5dff20",
@@ -73,7 +73,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108459/cartaz.jpg?rev=20261126144659",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108459/cartaz.jpg?rev=20261126151944",
       "ticketUrl": "https://www.ticketline.pt/evento/v2-espacos-outros-linha-de-falha-fotografia-na-c",
       "source": "Ticketline",
       "featured": false
@@ -84,7 +84,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4,...",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/93233/cartaz.jpg?rev=20261126144659",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/93233/cartaz.jpg?rev=20261126151944",
       "ticketUrl": "https://www.ticketline.pt/evento/macam-93233",
       "source": "Ticketline",
       "featured": false
@@ -95,7 +95,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Alfândega Do Porto",
       "district": "Porto",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/109806/cartaz.jpg?rev=20261126144659",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/109806/cartaz.jpg?rev=20261126151944",
       "ticketUrl": "https://www.ticketline.pt/evento/um-sonho-de-natal-vr-109806",
       "source": "Ticketline",
       "featured": false
@@ -106,7 +106,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "A Moagem - Sala De Exposições",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108236/cartaz.jpg?rev=20261126144659",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108236/cartaz.jpg?rev=20261126151944",
       "ticketUrl": "https://www.ticketline.pt/evento/ressoar-108236",
       "source": "Ticketline",
       "featured": false
@@ -117,7 +117,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Teatro Da Trindade Inatel - Estúdio",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/104971/cartaz.jpg?rev=20261126144659",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/104971/cartaz.jpg?rev=20261126151944",
       "ticketUrl": "https://www.ticketline.pt/evento/sob-pressao-104971",
       "source": "Ticketline",
       "featured": false
@@ -139,7 +139,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Casino Lisboa - Auditório Dos Oceanos",
       "district": "Lisboa",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106734/cartaz.jpg?rev=20261126144659",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106734/cartaz.jpg?rev=20261126151944",
       "ticketUrl": "https://www.ticketline.pt/evento/rosaline-a-ex-do-romeu-106734",
       "source": "Ticketline",
       "featured": false
@@ -150,7 +150,7 @@
       "dateTime": "2026-11-26T21:30:00+00:00",
       "venue": "Culturgest - Auditório Emílio Rui Vilar",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106089/cartaz.jpg?rev=20261126144659",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106089/cartaz.jpg?rev=20261126151944",
       "ticketUrl": "https://www.ticketline.pt/evento/carolina-bianchi-the-brotherhood-106089",
       "source": "Ticketline",
       "featured": false
@@ -1396,6 +1396,17 @@
       "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/10/Anita-no-Tinder.jpg",
       "ticketUrl": "https://agendaculturalporto.org/eventos/anita-no-tinder/",
       "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "bol-0f63707090a6",
+      "title": "Namastê",
+      "dateTime": "2027-01-30T21:00:00+00:00",
+      "venue": "Fórum Luísa Todi",
+      "district": "Setúbal",
+      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz163495.jpg?v=2",
+      "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/189992-namaste-forum_luisa_todi/",
+      "source": "BOL",
       "featured": false
     },
     {
