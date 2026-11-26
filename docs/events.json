@@ -1,158 +1,15 @@
 {
-  "updatedAt": "2026-11-25T21:17:30.638261+00:00",
+  "updatedAt": "2026-11-26T07:23:17.411665+00:00",
   "events": [
     {
-      "id": "meetup-17d57d1584ae",
-      "title": "Midweek Madness Open Mic",
-      "dateTime": "2026-11-25T20:30:00+00:00",
-      "venue": "Xafarix Bar",
-      "district": "Lisboa",
-      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
-      "ticketUrl": "https://www.meetup.com/republic-comedy/events/317526025/",
+      "id": "meetup-611c8d5dff20",
+      "title": "Public Speaking Practice: Games, Drills and Getting Past the Nerves",
+      "dateTime": "2026-11-26T17:30:00+00:00",
+      "venue": "Local a anunciar",
+      "district": "Portugal",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
+      "ticketUrl": "https://www.meetup.com/speak-up-public-speaking-practice/events/317485551/",
       "source": "Meetup",
-      "featured": false
-    },
-    {
-      "id": "meetup-bda61f3595f3",
-      "title": "English Open Mic",
-      "dateTime": "2026-11-25T21:00:00+00:00",
-      "venue": "A Fábrica da Picaria",
-      "district": "Porto",
-      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-2-square.webp",
-      "ticketUrl": "https://www.meetup.com/a-lemonade-stand-up-comedy/events/317461559/",
-      "source": "Meetup",
-      "featured": false
-    },
-    {
-      "id": "agenda cultural porto-09949902042d",
-      "title": "A Lemonade Stand-up Comedy leva comédia em inglês à Fábrica da Picaria",
-      "dateTime": "2026-11-25T21:00:00+00:00",
-      "venue": "A Fábrica da Picaria - Craft Beer Brewpub",
-      "district": "Porto",
-      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/A-Lemonade-Stand-up-Comedy-leva-comedia-em-ingles-a-Fabrica-da-Picaria.avif",
-      "ticketUrl": "https://agendaculturalporto.org/eventos/a-lemonade-stand-up-comedy-leva-comedia-em-ingles-a-fabrica-da-picaria-2/",
-      "source": "Agenda Cultural Porto",
-      "featured": false
-    },
-    {
-      "id": "bol-152b46e1e5b8",
-      "title": "NÃO ERA BEM ISTO, MAS AGORA JÁ ESTÁ",
-      "dateTime": "2026-11-25T21:30:00+00:00",
-      "venue": "Theatro Gil Vicente",
-      "district": "Braga",
-      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz161050.jpg?v=3",
-      "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/187276-nao_era_bem_isto_mas_agora_ja_esta-theatro_gil_vicente/",
-      "source": "BOL",
-      "featured": false
-    },
-    {
-      "id": "ticketline-3d58b9cb9890",
-      "title": "Espaços Outros | Linha De Falha",
-      "dateTime": "2026-11-25T21:30:00+00:00",
-      "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4",
-      "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108459/cartaz.jpg?rev=20261125200617",
-      "ticketUrl": "https://www.ticketline.pt/evento/v2-espacos-outros-linha-de-falha-fotografia-na-c",
-      "source": "Ticketline",
-      "featured": false
-    },
-    {
-      "id": "ticketline-0e507f143657",
-      "title": "Macam",
-      "dateTime": "2026-11-25T21:30:00+00:00",
-      "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4,...",
-      "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/93233/cartaz.jpg?rev=20261125200617",
-      "ticketUrl": "https://www.ticketline.pt/evento/macam-93233",
-      "source": "Ticketline",
-      "featured": false
-    },
-    {
-      "id": "ticketline-b9d126b84384",
-      "title": "Um Sonho De Natal: Vr",
-      "dateTime": "2026-11-25T21:30:00+00:00",
-      "venue": "Alfândega Do Porto",
-      "district": "Porto",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/109806/cartaz.jpg?rev=20261125200617",
-      "ticketUrl": "https://www.ticketline.pt/evento/um-sonho-de-natal-vr-109806",
-      "source": "Ticketline",
-      "featured": false
-    },
-    {
-      "id": "ticketline-012afa9dc795",
-      "title": "Ressoar",
-      "dateTime": "2026-11-25T21:30:00+00:00",
-      "venue": "A Moagem - Sala De Exposições",
-      "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108236/cartaz.jpg?rev=20261125200617",
-      "ticketUrl": "https://www.ticketline.pt/evento/ressoar-108236",
-      "source": "Ticketline",
-      "featured": false
-    },
-    {
-      "id": "ticketline-64a1657dfba5",
-      "title": "La Grazia",
-      "dateTime": "2026-11-25T21:30:00+00:00",
-      "venue": "Cine Teatro Eduardo Brazão | Vila Nova De Gaia",
-      "district": "Porto",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108743/cartaz.jpg?rev=20261125200617",
-      "ticketUrl": "https://www.ticketline.pt/evento/la-gazia-108743",
-      "source": "Ticketline",
-      "featured": false
-    },
-    {
-      "id": "ticketline-b625289411b9",
-      "title": "Sob Pressão",
-      "dateTime": "2026-11-25T21:30:00+00:00",
-      "venue": "Teatro Da Trindade Inatel - Estúdio",
-      "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/104971/cartaz.jpg?rev=20261125200617",
-      "ticketUrl": "https://www.ticketline.pt/evento/sob-pressao-104971",
-      "source": "Ticketline",
-      "featured": false
-    },
-    {
-      "id": "ticketline-b8371a33df95",
-      "title": "Victor Patrascan |The Biggest Problem In The World",
-      "dateTime": "2026-11-25T21:30:00+00:00",
-      "venue": "",
-      "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108670/cartaz.jpg?rev=20261125200617",
-      "ticketUrl": "https://www.ticketline.pt/evento/victor-patrascan-108670",
-      "source": "Ticketline",
-      "featured": false
-    },
-    {
-      "id": "agenda cultural porto-4f8d9360af71",
-      "title": "Casa da Madeira Noites de Comédia 25/NOVEMBRO",
-      "dateTime": "2026-11-25T21:30:00+00:00",
-      "venue": "Casa da Madeira do Norte",
-      "district": "Porto",
-      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/WhatsApp-Image-2026-10-29-at-17.51.47.jpeg",
-      "ticketUrl": "https://agendaculturalporto.org/eventos/casa-da-madeira-noites-de-comedia-25-novembro/",
-      "source": "Agenda Cultural Porto",
-      "featured": false
-    },
-    {
-      "id": "eventbrite-d85a9315b88e",
-      "title": "Bad Advice - interactive standup comedy in English!",
-      "dateTime": "2026-11-26T00:00:00+00:00",
-      "venue": "Xafarix",
-      "district": "Lisboa",
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1188437942%2F69073713913%2F1%2Foriginal.20260708-083259?w=400&auto=format%2Ccompress&q=75&sharp=10&s=f6e94f816e69d38eca89ce97f01b6fbf",
-      "ticketUrl": "https://www.eventbrite.com/e/bad-advice-interactive-standup-comedy-in-english-tickets-2005202823624",
-      "source": "Eventbrite",
-      "featured": false
-    },
-    {
-      "id": "eventbrite-54ae131bc1ba",
-      "title": "Cici's Storytelling Night",
-      "dateTime": "2026-11-26T00:00:00+00:00",
-      "venue": "Fable - Cafe, Coffee, English Books",
-      "district": "Lisboa",
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1197123992%2F100461319853%2F1%2Foriginal.20261102-220633?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=777b1802baf7694dfc89c1976b9dfc28",
-      "ticketUrl": "https://www.eventbrite.pt/e/cicis-storytelling-night-tickets-2004259871228",
-      "source": "Eventbrite",
       "featured": false
     },
     {
@@ -211,6 +68,61 @@
       "featured": false
     },
     {
+      "id": "ticketline-57bef0b56b85",
+      "title": "Espaços Outros | Linha De Falha",
+      "dateTime": "2026-11-26T21:30:00+00:00",
+      "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108459/cartaz.jpg?rev=20261125200617",
+      "ticketUrl": "https://www.ticketline.pt/evento/v2-espacos-outros-linha-de-falha-fotografia-na-c",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-202f0f17002f",
+      "title": "Macam",
+      "dateTime": "2026-11-26T21:30:00+00:00",
+      "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4,...",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/93233/cartaz.jpg?rev=20261125200617",
+      "ticketUrl": "https://www.ticketline.pt/evento/macam-93233",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-3cdb9fcdf8a8",
+      "title": "Um Sonho De Natal: Vr",
+      "dateTime": "2026-11-26T21:30:00+00:00",
+      "venue": "Alfândega Do Porto",
+      "district": "Porto",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/109806/cartaz.jpg?rev=20261125200617",
+      "ticketUrl": "https://www.ticketline.pt/evento/um-sonho-de-natal-vr-109806",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-d24e9d910f14",
+      "title": "Ressoar",
+      "dateTime": "2026-11-26T21:30:00+00:00",
+      "venue": "A Moagem - Sala De Exposições",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108236/cartaz.jpg?rev=20261125200617",
+      "ticketUrl": "https://www.ticketline.pt/evento/ressoar-108236",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-a00d227be378",
+      "title": "Sob Pressão",
+      "dateTime": "2026-11-26T21:30:00+00:00",
+      "venue": "Teatro Da Trindade Inatel - Estúdio",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/104971/cartaz.jpg?rev=20261125200617",
+      "ticketUrl": "https://www.ticketline.pt/evento/sob-pressao-104971",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
       "id": "agenda cultural porto-111651e3faef",
       "title": "Porto Comedy Room leva novos humoristas ao Pinguim Café",
       "dateTime": "2026-11-26T21:30:00+00:00",
@@ -219,6 +131,28 @@
       "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/a0cf091324301d74242a99d0f7020f43-large.jpg",
       "ticketUrl": "https://agendaculturalporto.org/eventos/porto-comedy-room-leva-novos-humoristas-ao-pinguim-cafe/",
       "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "ticketline-e2baceaddc65",
+      "title": "Rosaline, A Ex Do Romeu",
+      "dateTime": "2026-11-26T21:30:00+00:00",
+      "venue": "Casino Lisboa - Auditório Dos Oceanos",
+      "district": "Lisboa",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106734/cartaz.jpg?rev=20261125200617",
+      "ticketUrl": "https://www.ticketline.pt/evento/rosaline-a-ex-do-romeu-106734",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-22b477fa5d32",
+      "title": "Carolina Bianchi | The Brotherhood",
+      "dateTime": "2026-11-26T21:30:00+00:00",
+      "venue": "Culturgest - Auditório Emílio Rui Vilar",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106089/cartaz.jpg?rev=20261125200617",
+      "ticketUrl": "https://www.ticketline.pt/evento/carolina-bianchi-the-brotherhood-106089",
+      "source": "Ticketline",
       "featured": false
     },
     {
@@ -662,6 +596,17 @@
       "featured": false
     },
     {
+      "id": "meetup-08adc9cdb580",
+      "title": "English Comedy Showcase - The BEST comedians in Lisbon 🔥",
+      "dateTime": "2026-12-01T20:30:00+00:00",
+      "venue": "Selva Comedy Cafe",
+      "district": "Lisboa",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-3-square.webp",
+      "ticketUrl": "https://www.meetup.com/lisbon-digital-nomads/events/317018536/",
+      "source": "Meetup",
+      "featured": false
+    },
+    {
       "id": "eventbrite-986284df8660",
       "title": "ENGLISH STAND UP COMEDY OPEN MIC @Aveiro",
       "dateTime": "2026-12-02T00:00:00+00:00",
@@ -802,7 +747,7 @@
       "imageUrl": "",
       "ticketUrl": "https://ticketline.sapo.pt/",
       "source": "Ticketline",
-      "featured": false
+      "featured": true
     },
     {
       "id": "bol-f26537e46918",
