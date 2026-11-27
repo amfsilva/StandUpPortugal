@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T09:16:56.503198+00:00",
+  "updatedAt": "2026-11-27T09:30:38.841529+00:00",
   "events": [
     {
       "id": "meetup-fdcedaa29ed4",
@@ -319,17 +319,6 @@
       "ticketUrl": "https://www.bol.pt/",
       "source": "BOL",
       "featured": true
-    },
-    {
-      "id": "bol-5111bfa764b5",
-      "title": "Frescos",
-      "dateTime": "2026-11-28T21:30:00+00:00",
-      "venue": "Aud B V Carcavelos",
-      "district": "Lisboa",
-      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz160910.jpg?v=5",
-      "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/187108-frescos-aud_b_v_carcavelos/",
-      "source": "BOL",
-      "featured": false
     },
     {
       "id": "bol-e516ff423a4d",
@@ -1582,6 +1571,17 @@
       "district": "Portugal",
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz161008.jpg?v=2",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/187220-luxemburgo_roscas_estacionancio-luxemburgo/",
+      "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "bol-cc61e764a2f9",
+      "title": "Frescos",
+      "dateTime": "2027-02-20T21:30:00+00:00",
+      "venue": "Aud B V Carcavelos",
+      "district": "Lisboa",
+      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz160910.jpg?v=5",
+      "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/187108-frescos-aud_b_v_carcavelos/",
       "source": "BOL",
       "featured": false
     },
