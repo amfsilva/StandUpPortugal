@@ -1,26 +1,48 @@
 {
-  "updatedAt": "2026-11-27T11:03:11.030925+00:00",
+  "updatedAt": "2026-11-27T11:28:47.885398+00:00",
   "events": [
     {
-      "id": "meetup-fdcedaa29ed4",
+      "id": "meetup lisboa-f2a89726d297",
       "title": "The Villain Comedy",
       "dateTime": "2026-11-27T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317500393/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
-      "id": "meetup-7d3b24a78f3b",
+      "id": "meetup lisboa-d4174431217e",
       "title": "The Villain Comedy",
       "dateTime": "2026-11-27T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/republic-comedy/events/317500392/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
+      "featured": false
+    },
+    {
+      "id": "meetup porto-1db2c2129374",
+      "title": "No Plans. No Problem. Dinner With Strangers✨",
+      "dateTime": "2026-11-27T20:30:00+00:00",
+      "venue": "Porto",
+      "district": "Porto",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-5-square.webp",
+      "ticketUrl": "https://www.meetup.com/dinnersmate/events/317313482/",
+      "source": "Meetup Porto",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-bc477e4c9aad",
+      "title": "Mais de 30",
+      "dateTime": "2026-11-27T20:30:00+00:00",
+      "venue": "Suspenso",
+      "district": "Lisboa",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/726cd36fc83d11588afd4c1edaeca371-md.jpg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1871489/mais-de-30",
+      "source": "Viral Agenda Comédia",
       "featured": false
     },
     {
@@ -79,6 +101,17 @@
       "featured": false
     },
     {
+      "id": "viral agenda comédia-be505f19bf05",
+      "title": "Manel Rosa sobe ao palco do Alameda Comedy Club",
+      "dateTime": "2026-11-27T21:00:00+00:00",
+      "venue": "Alameda Shopping - Porto",
+      "district": "Porto",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/5ce909b69738d863e95515573013a1a8-md.jpg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1882245/manel-rosa-sobe-ao-palco-do-alameda-comedy-club",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
       "id": "ticketline-564abeb32470",
       "title": "Espaços Outros | Linha De Falha",
       "dateTime": "2026-11-27T21:30:00+00:00",
@@ -97,17 +130,6 @@
       "district": "Portugal",
       "imageUrl": "https://info.ticketline.pt/images/Espectaculos/93233/cartaz.jpg?rev=20261126181924",
       "ticketUrl": "https://www.ticketline.pt/evento/macam-93233",
-      "source": "Ticketline",
-      "featured": false
-    },
-    {
-      "id": "ticketline-353622c649de",
-      "title": "Um Sonho De Natal: Vr",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "Alfândega Do Porto",
-      "district": "Porto",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/109806/cartaz.jpg?rev=20261126181924",
-      "ticketUrl": "https://www.ticketline.pt/evento/um-sonho-de-natal-vr-109806",
       "source": "Ticketline",
       "featured": false
     },
@@ -200,6 +222,61 @@
       "featured": false
     },
     {
+      "id": "viral agenda comédia-79a60dc9c12c",
+      "title": "Festival: III Azores Comedy Fest",
+      "dateTime": "2026-11-27T21:30:00+00:00",
+      "venue": "Centro Cultural e de Congressos de Angra do Heroismo",
+      "district": "Portugal",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1801779-32e3e2f2d9daf7d3fd9cc8f25bb9b865.jpg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1801779/festival-iii-azores-comedy-fest",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-25e27a89f351",
+      "title": "Monstros do Ano",
+      "dateTime": "2026-11-27T21:30:00+00:00",
+      "venue": "Auditório Municipal de Gaia",
+      "district": "Porto",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1849983-67e952f4acdcaf48173b85f0080cf1e5.png",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1849983/monstros-do-ano",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-b3d73d317cff",
+      "title": "As Artimanhas de Scapino",
+      "dateTime": "2026-11-27T21:30:00+00:00",
+      "venue": "Casa das Artes de Vila Nova de Famalicão",
+      "district": "Braga",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1874314-f2ed6526137cc74b4130105128ac2822.jpeg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1874314/as-artimanhas-de-scapino",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-133ce8393180",
+      "title": "RIALMA - CLUBE DE COMÉDIA DE ALMADA",
+      "dateTime": "2026-11-27T21:30:00+00:00",
+      "venue": "Cine Incrível",
+      "district": "Setúbal",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1879626-9e9a54c88995e633ffa6de6c25e19e3e.jpeg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1879626/rialma-clube-de-comedia-de-almada",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-e6d915324425",
+      "title": "Stand Up Comedy | Hard Rock Café - Porto Comedy Room",
+      "dateTime": "2026-11-27T21:30:00+00:00",
+      "venue": "Hard Rock Cafe Porto",
+      "district": "Porto",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/f889be63d0c2bcbe39c7cd5109e09504-md.jpg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1883109/stand-up-comedy-hard-rock-cafe-porto-comedy-room",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
       "id": "eventbrite-6cda15686445",
       "title": "We are NOT From Here: Live in Porto - Stand-up Comedy in English",
       "dateTime": "2026-11-28T00:00:00+00:00",
@@ -233,17 +310,6 @@
       "featured": false
     },
     {
-      "id": "meetup-323668963438",
-      "title": "Porto to Perlim 🎄 | Kick Off the Christmas Season – Opening Day!",
-      "dateTime": "2026-11-28T12:20:00+00:00",
-      "venue": "Metro Casa da Musica",
-      "district": "Porto",
-      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
-      "ticketUrl": "https://www.meetup.com/guibook-porto-community/events/317025767/",
-      "source": "Meetup",
-      "featured": false
-    },
-    {
       "id": "bol-c3e823c34db1",
       "title": "Dário Guerreiro | Primogénito",
       "dateTime": "2026-11-28T18:00:00+00:00",
@@ -255,36 +321,80 @@
       "featured": false
     },
     {
-      "id": "meetup-6738ab789502",
+      "id": "viral agenda comédia-e14baf108e0b",
+      "title": "Dário Guerreiro | Primogénito",
+      "dateTime": "2026-11-28T18:00:00+00:00",
+      "venue": "Teatro das Figuras",
+      "district": "Faro",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1874999-654d48bbf910edd4a62134b645342404.jpeg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1874999/dario-guerreiro-primogenito",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-df8b80b91e5c",
+      "title": "LIVRAI-NOS DA FOME! | AGON",
+      "dateTime": "2026-11-28T19:00:00+00:00",
+      "venue": "Auditório Carlos do Carmo - Lagoa",
+      "district": "Portugal",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1883240-38aa77aa726e0a8b60da0dbb885a0584.jpeg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1883240/livrai-nos-da-fome-agon",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
+      "id": "lisboa comedy club-e021101a3460",
+      "title": "Noite de Stand-Up Comedy",
+      "dateTime": "2026-11-28T19:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-11-28-1930",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
+      "id": "meetup lisboa-877958845677",
       "title": "Queer Comedy Kiki - Gratitude Show",
       "dateTime": "2026-11-28T20:00:00+00:00",
       "venue": "Aconchego House",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/queer-lisbon/events/317359097/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
-      "id": "meetup-584bf99cf088",
+      "id": "meetup lisboa-845fc6ddc548",
       "title": "Dating is a Joke!: A Comedy + Singles Event",
       "dateTime": "2026-11-28T20:30:00+00:00",
       "venue": "Selva Comedy Cafe",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317311939/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
-      "id": "meetup-9758559f13e2",
+      "id": "meetup lisboa-101b9eeff212",
       "title": "Comedy Speakeasy!",
       "dateTime": "2026-11-28T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317500398/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-2c8fb9125399",
+      "title": "Dating is a Joke!: A Comedy Singles Event (In English)",
+      "dateTime": "2026-11-28T20:30:00+00:00",
+      "venue": "Selva Comedy Cafe",
+      "district": "Lisboa",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/382c1d5bf757c801ade886da86ec5e78-md.png",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1868071/dating-is-a-joke-a-comedy-singles-event-in-english",
+      "source": "Viral Agenda Comédia",
       "featured": false
     },
     {
@@ -307,6 +417,39 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz162755.png?v=2",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/189178-dark_comedy_sessions_marcos_bilro_convidados-lisboa_comedy_club/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-394db33a36bd",
+      "title": "Há Teatro na Freguesia... de Sá",
+      "dateTime": "2026-11-28T21:00:00+00:00",
+      "venue": "Junta de Freguesia de Arca e Ponte de Lima",
+      "district": "Viana do Castelo",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1869573-2872989c74287621136a7b40dad0fb3b.png",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1869573/ha-teatro-na-freguesia-de-sa",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-5fe15845d06b",
+      "title": "Comedy Nights Coimbra",
+      "dateTime": "2026-11-28T21:00:00+00:00",
+      "venue": "Fnac Coimbra",
+      "district": "Coimbra",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1881076-bc74411034525b5ac579a750050bd2d2.jpg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1881076/comedy-nights-coimbra",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-e450c3802352",
+      "title": "Revista à Serrana 3",
+      "dateTime": "2026-11-28T21:00:00+00:00",
+      "venue": "Fórum Cultural de Porto de Mós",
+      "district": "Porto",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1882030-e574d98ad8409017910d2b52793522df.jpg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1882030/revista-a-serrana-3",
+      "source": "Viral Agenda Comédia",
       "featured": false
     },
     {
@@ -354,6 +497,28 @@
       "featured": false
     },
     {
+      "id": "viral agenda comédia-9216c0df4a55",
+      "title": "Ria em Leiria - Miguel Vieira e Convidados",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Teatro Miguel Franco",
+      "district": "Leiria",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1834505-7f2ff477987ff3755fae08d872ba3678.jpg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1834505/ria-em-leiria-miguel-vieira-e-convidados",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-0a917a21aa6d",
+      "title": "“O que importa é participar” - Espetáculo de humor de Hugo van der Ding",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Teatro-Cine de Torres Vedras",
+      "district": "Lisboa",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1848668-ad48b10431f155bd833f5e46350b4551.jpeg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1848668/o-que-importa-e-participar-espetaculo-de-humor-de-hugo-van-der-ding",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
       "id": "eventbrite-d966d0ecbf7a",
       "title": "English Comedy Night",
       "dateTime": "2026-11-29T00:00:00+00:00",
@@ -376,25 +541,14 @@
       "featured": false
     },
     {
-      "id": "meetup-9ab1f6fb60dc",
-      "title": "🥾🌿 Hiking not set yet",
-      "dateTime": "2026-11-29T09:00:00+00:00",
-      "venue": "Campanha Train Station",
-      "district": "Porto",
-      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
-      "ticketUrl": "https://www.meetup.com/porto-10000-steps-walk/events/317352978/",
-      "source": "Meetup",
-      "featured": false
-    },
-    {
-      "id": "meetup-e19117d908e6",
+      "id": "meetup lisboa-b20257b7e546",
       "title": "Lisbon's Up and Coming Comics - New Jokes and Fun Prizes - English Comedy",
       "dateTime": "2026-11-29T18:00:00+00:00",
       "venue": "Selva Comedy Cafe",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317358617/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
@@ -409,36 +563,25 @@
       "featured": false
     },
     {
-      "id": "meetup-bec2cc14eb8e",
+      "id": "meetup porto-c6314aedcaa5",
       "title": "English Open Mic",
       "dateTime": "2026-11-29T21:00:00+00:00",
       "venue": "Pinguim Café - Bar/Pub",
       "district": "Porto",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-2-square.webp",
       "ticketUrl": "https://www.meetup.com/a-lemonade-stand-up-comedy/events/317461635/",
-      "source": "Meetup",
+      "source": "Meetup Porto",
       "featured": false
     },
     {
-      "id": "meetup-907ba834057c",
+      "id": "meetup porto-a431af987270",
       "title": "Porto Easy Online Dating Night for Singles",
       "dateTime": "2026-11-29T21:00:00+00:00",
       "venue": "R. de 9 de Julho 201",
       "district": "Porto",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-2-square.webp",
       "ticketUrl": "https://www.meetup.com/strings-and-stories-puppet-teachers/events/317587467/",
-      "source": "Meetup",
-      "featured": false
-    },
-    {
-      "id": "teatro sá da bandeira-245ae13ddd68",
-      "title": "ArtGym Company apresenta KAIROS",
-      "dateTime": "2026-11-30T00:00:00+00:00",
-      "venue": "Sala Principal",
-      "district": "Porto",
-      "imageUrl": "https://teatrosadabandeira.pt/wp-content/uploads/2026/09/Cartaz-ArtGym-Company-apresenta-KAIROS.jpg",
-      "ticketUrl": "https://teatrosadabandeira.pt/evento/artgym-company-apresenta-kairos/",
-      "source": "Teatro Sá da Bandeira",
+      "source": "Meetup Porto",
       "featured": false
     },
     {
@@ -464,36 +607,36 @@
       "featured": false
     },
     {
-      "id": "meetup-0b4c55f3beb9",
-      "title": "Social Chess Games",
-      "dateTime": "2026-12-01T19:00:00+00:00",
-      "venue": "Nope Bar",
-      "district": "Porto",
-      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-3-square.webp",
-      "ticketUrl": "https://www.meetup.com/nope-pelmeni-bar-friends/events/317385476/",
-      "source": "Meetup",
+      "id": "lisboa comedy club-e42f693c7776",
+      "title": "Noite de Stand-Up Comedy",
+      "dateTime": "2026-12-01T19:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-01-1930",
+      "source": "Lisboa Comedy Club",
       "featured": false
     },
     {
-      "id": "meetup-d7e73475798f",
+      "id": "meetup lisboa-846d7ce65f89",
       "title": "English Comedy Showcase - The Best Comedians in Lisbon 🔥",
       "dateTime": "2026-12-01T20:30:00+00:00",
       "venue": "Selva Comedy Cafe",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317386443/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
-      "id": "meetup-08adc9cdb580",
+      "id": "meetup lisboa-4f7685d5dc04",
       "title": "English Comedy Showcase - The BEST comedians in Lisbon 🔥",
       "dateTime": "2026-12-01T20:30:00+00:00",
       "venue": "Selva Comedy Cafe",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-3-square.webp",
       "ticketUrl": "https://www.meetup.com/lisbon-digital-nomads/events/317018536/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
@@ -508,47 +651,69 @@
       "featured": false
     },
     {
-      "id": "meetup-88ef7fd052c5",
+      "id": "meetup lisboa-750051afb3ca",
       "title": "Public Speaking Practice: Games, Drills and Getting Past the Nerves",
       "dateTime": "2026-12-02T17:30:00+00:00",
       "venue": "Local a anunciar",
-      "district": "Portugal",
+      "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/speak-up-public-speaking-practice/events/317599269/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
-      "id": "meetup-cb864df1ab4d",
+      "id": "meetup porto-da574740f989",
       "title": "🎬 DINNER & A MOVIE: Movie Night & Dinner 🎬",
       "dateTime": "2026-12-02T19:00:00+00:00",
       "venue": "Local a anunciar",
-      "district": "Portugal",
+      "district": "Porto",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/looksharp/events/317396707/",
-      "source": "Meetup",
+      "source": "Meetup Porto",
       "featured": false
     },
     {
-      "id": "meetup-a95f65c8c034",
+      "id": "meetup lisboa-dd06353e5e2a",
       "title": "IDADE • Storytelling Lisboa em português",
       "dateTime": "2026-12-02T19:30:00+00:00",
       "venue": "Fábrica Braço de Prata",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-3-square.webp",
       "ticketUrl": "https://www.meetup.com/storytelling-lisboa/events/317451550/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
-      "id": "meetup-6ae5adfdf963",
+      "id": "lisboa comedy club-b858279a131c",
+      "title": "Noite de Stand-Up Comedy",
+      "dateTime": "2026-12-02T19:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-02-1930",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
+      "id": "meetup porto-f26e797b496f",
+      "title": "Quiz & Beer Night / Noite de Quiz e Cerveja",
+      "dateTime": "2026-12-02T20:00:00+00:00",
+      "venue": "Letraria Porto Downtown",
+      "district": "Porto",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-3-square.webp",
+      "ticketUrl": "https://www.meetup.com/porto-torto/events/316465299/",
+      "source": "Meetup Porto",
+      "featured": false
+    },
+    {
+      "id": "meetup lisboa-6b57a765a742",
       "title": "The Fabulous - standup comedy w/ women and queer comedians!",
       "dateTime": "2026-12-02T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317427056/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
@@ -560,6 +725,17 @@
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/republic-comedy/events/317427057/",
       "source": "Meetup",
+      "featured": false
+    },
+    {
+      "id": "meetup porto-44c864100cf0",
+      "title": "Meet New People in Porto — Dinner With Strangers 🍷",
+      "dateTime": "2026-12-02T20:30:00+00:00",
+      "venue": "Porto",
+      "district": "Porto",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-5-square.webp",
+      "ticketUrl": "https://www.meetup.com/dinnersmate/events/317582859/",
+      "source": "Meetup Porto",
       "featured": false
     },
     {
@@ -607,14 +783,36 @@
       "featured": false
     },
     {
-      "id": "meetup-0fad1d1535e0",
+      "id": "lisboa comedy club-74fce1fa7a8f",
+      "title": "Noite de Stand-Up Comedy",
+      "dateTime": "2026-12-03T19:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-03-1930",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
+      "id": "meetup lisboa-45ee00a30cdf",
       "title": "Cheek Comedy: Top Comedians, Candles, Cocktails & New Friends (English)",
       "dateTime": "2026-12-03T20:30:00+00:00",
       "venue": "Má Lingua",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317511743/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-ba9cdcfb991a",
+      "title": "Stand Up Comedy | Pinguim Café &#8211; Porto Comedy Room",
+      "dateTime": "2026-12-03T21:30:00+00:00",
+      "venue": "Pinguim Café",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/cartaz.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/stand-up-comedy-pinguim-cafe-porto-comedy-room-11/",
+      "source": "Agenda Cultural Porto",
       "featured": false
     },
     {
@@ -629,25 +827,25 @@
       "featured": false
     },
     {
-      "id": "meetup-f4b707bfffeb",
-      "title": "The Year We Found Each Other | Porto After Six × The Misfits",
-      "dateTime": "2026-12-04T19:00:00+00:00",
-      "venue": "Local a anunciar",
-      "district": "Porto",
-      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
-      "ticketUrl": "https://www.meetup.com/porto-arts-curious-meetup-group/events/317369920/",
-      "source": "Meetup",
+      "id": "lisboa comedy club-83e64ddceda7",
+      "title": "Noite de Stand-Up Comedy",
+      "dateTime": "2026-12-04T19:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-04-1930",
+      "source": "Lisboa Comedy Club",
       "featured": false
     },
     {
-      "id": "meetup-f9ae380aa8e9",
+      "id": "meetup lisboa-5ae6638f7eec",
       "title": "Dan Burt and Friends - English comedy in a chill cafe",
       "dateTime": "2026-12-04T20:30:00+00:00",
       "venue": "Selva Comedy Cafe",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317368720/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
@@ -681,6 +879,17 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz157184.jpg?v=2",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/182882-evora_hugo_sousa_aqui_entre_nos-universidade_de_evora/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "lisboa comedy club-4ae12d24830f",
+      "title": "Noite de Stand-Up Comedy (1.ª Sessão)",
+      "dateTime": "2026-12-05T19:00:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-05-1900",
+      "source": "Lisboa Comedy Club",
       "featured": false
     },
     {
@@ -728,6 +937,17 @@
       "featured": false
     },
     {
+      "id": "lisboa comedy club-c20695dfcb5f",
+      "title": "Noite de Stand-Up Comedy (2.ª Sessão)",
+      "dateTime": "2026-12-05T21:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-05-2130",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
       "id": "bol-7c4172058249",
       "title": "Mariana Xavier – Antes do Ano que Vem @ Alverca do Ribatejo",
       "dateTime": "2026-12-06T18:00:00+00:00",
@@ -761,14 +981,14 @@
       "featured": false
     },
     {
-      "id": "meetup-8276a3c3b8ae",
+      "id": "meetup lisboa-00d3cb04c569",
       "title": "Republic of Comedy OPEN MIC!",
       "dateTime": "2026-12-07T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317515030/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
@@ -794,6 +1014,17 @@
       "featured": false
     },
     {
+      "id": "lisboa comedy club-f66a0e4cc458",
+      "title": "Noite de Stand-Up Comedy",
+      "dateTime": "2026-12-08T19:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-08-1930",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
       "id": "bol-06f1da13277b",
       "title": "Mariana Xavier - Antes do Ano que Vem @ Estoril",
       "dateTime": "2026-12-08T21:00:00+00:00",
@@ -805,25 +1036,47 @@
       "featured": false
     },
     {
-      "id": "meetup-ee4df2ff4b30",
+      "id": "castlerock pub-eba90dd38fbb",
+      "title": "Comedy Sessions — Noite de Comédia",
+      "dateTime": "2026-12-08T22:00:00+00:00",
+      "venue": "CastleRock Pub & Hotel",
+      "district": "Porto",
+      "imageUrl": "",
+      "ticketUrl": "https://castlerockpub.com/agenda?sessao=2026-12-08-2200",
+      "source": "CastleRock Pub",
+      "featured": false
+    },
+    {
+      "id": "meetup lisboa-2adf35015ae3",
       "title": "Storytelling Night—\"SECRETS AND LIES\"",
       "dateTime": "2026-12-09T19:30:00+00:00",
       "venue": "Fábrica Braço de Prata",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-3-square.webp",
       "ticketUrl": "https://www.meetup.com/storytelling-lisboa/events/317590654/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
-      "id": "meetup-d235525f5756",
+      "id": "lisboa comedy club-867278303b33",
+      "title": "Noite de Stand-Up Comedy",
+      "dateTime": "2026-12-09T19:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-09-1930",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
+      "id": "meetup porto-12f43b9e74ab",
       "title": "COMEDY NIGHT in Porto: Presented in English",
       "dateTime": "2026-12-09T21:00:00+00:00",
       "venue": "Look.Sharp Cafe and Event Space",
       "district": "Porto",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/looksharp/events/317513908/",
-      "source": "Meetup",
+      "source": "Meetup Porto",
       "featured": false
     },
     {
@@ -860,14 +1113,25 @@
       "featured": false
     },
     {
-      "id": "meetup-5e9d4d94cab9",
+      "id": "lisboa comedy club-2e80313243d7",
+      "title": "Noite de Stand-Up Comedy",
+      "dateTime": "2026-12-10T19:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-10-1930",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
+      "id": "meetup lisboa-98890955fab1",
       "title": "Ragebait! A comedy debate show on NOTHING!",
       "dateTime": "2026-12-10T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317427090/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
@@ -882,6 +1146,17 @@
       "featured": false
     },
     {
+      "id": "agenda cultural porto-513719ca100b",
+      "title": "Stand Up Comedy | Pinguim Café &#8211; Porto Comedy Room",
+      "dateTime": "2026-12-10T21:30:00+00:00",
+      "venue": "Pinguim Café",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/cartaz-1.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/stand-up-comedy-pinguim-cafe-porto-comedy-room-12/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
       "id": "eventbrite-f69f9cad9b82",
       "title": "1 Irishman in Lisbon | A stand-up comedy show in English | 9PM",
       "dateTime": "2026-12-11T00:00:00+00:00",
@@ -893,14 +1168,36 @@
       "featured": false
     },
     {
-      "id": "meetup-465bea0dc5f1",
+      "id": "lisboa comedy club-379c6a38dba2",
+      "title": "Noite de Stand-Up Comedy",
+      "dateTime": "2026-12-11T19:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-11-1930",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
+      "id": "meetup lisboa-95c9724fce13",
       "title": "Expats Anonymous - Comedy Night About Life Abroad (In English)",
       "dateTime": "2026-12-11T20:30:00+00:00",
       "venue": "Selva Comedy Cafe",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317386898/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-f28439cc9637",
+      "title": "Stand Up Comedy | Dehouse Trindade &#8211; Porto Comedy Room",
+      "dateTime": "2026-12-11T21:30:00+00:00",
+      "venue": "DeHouse Trindade",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/cartaz-1-3.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/stand-up-comedy-dehouse-trindade-porto-comedy-room/",
+      "source": "Agenda Cultural Porto",
       "featured": false
     },
     {
@@ -948,25 +1245,25 @@
       "featured": false
     },
     {
-      "id": "meetup-a7fdd43dbc9c",
-      "title": "Reclaim Your Voice * Women only Evening * 12.12",
-      "dateTime": "2026-12-12T17:00:00+00:00",
-      "venue": "Healing House",
-      "district": "Porto",
-      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
-      "ticketUrl": "https://www.meetup.com/women-circle-porto/events/317503414/",
-      "source": "Meetup",
+      "id": "lisboa comedy club-1358c0bd4360",
+      "title": "Noite de Stand-Up Comedy (1.ª Sessão)",
+      "dateTime": "2026-12-12T19:00:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-12-1900",
+      "source": "Lisboa Comedy Club",
       "featured": false
     },
     {
-      "id": "meetup-fd38fe52c8cf",
+      "id": "meetup lisboa-82275c411658",
       "title": "Dating Disasters 💔 - Comedy Night in English 🤣",
       "dateTime": "2026-12-12T20:30:00+00:00",
       "venue": "Selva Comedy Cafe",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317415532/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
@@ -992,6 +1289,17 @@
       "featured": false
     },
     {
+      "id": "lisboa comedy club-5fd88eb0eeb9",
+      "title": "Noite de Stand-Up Comedy (2.ª Sessão)",
+      "dateTime": "2026-12-12T21:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-12-2130",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
       "id": "bol-86a1e744dd26",
       "title": "GAIA | HUGO SOUSA: AQUI ENTRE NÓS",
       "dateTime": "2026-12-13T21:00:00+00:00",
@@ -1014,6 +1322,17 @@
       "featured": false
     },
     {
+      "id": "lisboa comedy club-7c6f09f36a67",
+      "title": "Noite de Stand-Up Comedy",
+      "dateTime": "2026-12-15T19:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-15-1930",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
       "id": "bol-71b785069bd8",
       "title": "COM CALMA COMEDY SESSIONS | AVENIDAS NOVAS",
       "dateTime": "2026-12-15T21:00:00+00:00",
@@ -1022,6 +1341,17 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz160806.jpg?v=3",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/186992-com_calma_comedy_sessions_avenidas_novas-com_calma_avenidas_novas/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "lisboa comedy club-7342e2fffb69",
+      "title": "Noite de Stand-Up Comedy",
+      "dateTime": "2026-12-16T19:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-16-1930",
+      "source": "Lisboa Comedy Club",
       "featured": false
     },
     {
@@ -1058,14 +1388,25 @@
       "featured": false
     },
     {
-      "id": "meetup-25997f19c385",
+      "id": "lisboa comedy club-c8f5df7cb702",
+      "title": "Noite de Stand-Up Comedy",
+      "dateTime": "2026-12-17T19:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-17-1930",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
+      "id": "meetup porto-a733e45cf895",
       "title": "ENGLISH STAND UP COMEDY OPEN MIC @Porto",
       "dateTime": "2026-12-17T21:00:00+00:00",
       "venue": "Maria Pistolas",
       "district": "Porto",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-2-square.webp",
       "ticketUrl": "https://www.meetup.com/porto-expat-meetup/events/317097937/",
-      "source": "Meetup",
+      "source": "Meetup Porto",
       "featured": false
     },
     {
@@ -1088,6 +1429,28 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz154107.jpg?v=3",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/179444-guimaraes_hugo_sousa_aqui_entre_nos-sao_mamede_cae/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "agenda cultural porto-27f39cfd7a13",
+      "title": "Stand Up Comedy | Pinguim Café &#8211; Porto Comedy Room",
+      "dateTime": "2026-12-17T21:30:00+00:00",
+      "venue": "Pinguim Café",
+      "district": "Porto",
+      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/cartaz-1-1.jpg",
+      "ticketUrl": "https://agendaculturalporto.org/eventos/stand-up-comedy-pinguim-cafe-porto-comedy-room-13/",
+      "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "lisboa comedy club-6e7f9cdde418",
+      "title": "Noite de Stand-Up Comedy",
+      "dateTime": "2026-12-18T19:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-18-1930",
+      "source": "Lisboa Comedy Club",
       "featured": false
     },
     {
@@ -1135,6 +1498,17 @@
       "featured": false
     },
     {
+      "id": "lisboa comedy club-72365d2419f2",
+      "title": "Noite de Stand-Up Comedy (1.ª Sessão)",
+      "dateTime": "2026-12-19T19:00:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-19-1900",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
       "id": "bol-05cc6ed73b86",
       "title": "Marcelo Serrado | Terapia",
       "dateTime": "2026-12-19T21:30:00+00:00",
@@ -1179,6 +1553,17 @@
       "featured": false
     },
     {
+      "id": "lisboa comedy club-f41a60089444",
+      "title": "Noite de Stand-Up Comedy (2.ª Sessão)",
+      "dateTime": "2026-12-19T21:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-19-2130",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
       "id": "bol-d9bc83bcb900",
       "title": "&#34;TERAPIA&#34; com MARCELO SERRADO",
       "dateTime": "2026-12-21T21:00:00+00:00",
@@ -1190,6 +1575,50 @@
       "featured": false
     },
     {
+      "id": "lisboa comedy club-115405868f31",
+      "title": "Noite de Stand-Up Comedy",
+      "dateTime": "2026-12-22T19:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-22-1930",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
+      "id": "castlerock pub-fd543ae1f528",
+      "title": "Comedy Sessions — Noite de Comédia",
+      "dateTime": "2026-12-22T22:00:00+00:00",
+      "venue": "CastleRock Pub & Hotel",
+      "district": "Porto",
+      "imageUrl": "",
+      "ticketUrl": "https://castlerockpub.com/agenda?sessao=2026-12-22-2200",
+      "source": "CastleRock Pub",
+      "featured": false
+    },
+    {
+      "id": "lisboa comedy club-5f7f56f892a0",
+      "title": "Noite de Stand-Up Comedy",
+      "dateTime": "2026-12-23T19:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-23-1930",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
+      "id": "lisboa comedy club-6e53add9a9e0",
+      "title": "Noite de Stand-Up Comedy (1.ª Sessão)",
+      "dateTime": "2026-12-26T19:00:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-26-1900",
+      "source": "Lisboa Comedy Club",
+      "featured": false
+    },
+    {
       "id": "agenda cultural porto-0c19bbc64090",
       "title": "Especial Natal 2026 | Etc e Tal",
       "dateTime": "2026-12-26T21:00:00+00:00",
@@ -1198,6 +1627,17 @@
       "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/10/Especial-Natal-2026-Etc-e-Tal.jpg",
       "ticketUrl": "https://agendaculturalporto.org/eventos/especial-natal-2026-etc-e-tal/",
       "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "lisboa comedy club-0bd24520b9de",
+      "title": "Noite de Stand-Up Comedy (2.ª Sessão)",
+      "dateTime": "2026-12-26T21:30:00+00:00",
+      "venue": "Lisboa Comedy Club",
+      "district": "Lisboa",
+      "imageUrl": "",
+      "ticketUrl": "https://lisboacomedyclub.pt/?sessao=2026-12-26-2130",
+      "source": "Lisboa Comedy Club",
       "featured": false
     },
     {
