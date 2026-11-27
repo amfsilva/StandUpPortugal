@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T11:28:47.885398+00:00",
+  "updatedAt": "2026-11-27T20:49:58.132662+00:00",
   "events": [
     {
       "id": "meetup lisboa-f2a89726d297",
@@ -117,7 +117,7 @@
       "dateTime": "2026-11-27T21:30:00+00:00",
       "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108459/cartaz.jpg?rev=20261126181924",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108459/cartaz.jpg?rev=20261127131211",
       "ticketUrl": "https://www.ticketline.pt/evento/v2-espacos-outros-linha-de-falha-fotografia-na-c",
       "source": "Ticketline",
       "featured": false
@@ -128,7 +128,7 @@
       "dateTime": "2026-11-27T21:30:00+00:00",
       "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4,...",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/93233/cartaz.jpg?rev=20261126181924",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/93233/cartaz.jpg?rev=20261127131211",
       "ticketUrl": "https://www.ticketline.pt/evento/macam-93233",
       "source": "Ticketline",
       "featured": false
@@ -139,7 +139,7 @@
       "dateTime": "2026-11-27T21:30:00+00:00",
       "venue": "A Moagem - Sala De Exposições",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108236/cartaz.jpg?rev=20261126181924",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108236/cartaz.jpg?rev=20261127131211",
       "ticketUrl": "https://www.ticketline.pt/evento/ressoar-108236",
       "source": "Ticketline",
       "featured": false
@@ -150,7 +150,7 @@
       "dateTime": "2026-11-27T21:30:00+00:00",
       "venue": "Teatro Da Trindade Inatel - Estúdio",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/104971/cartaz.jpg?rev=20261126181924",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/104971/cartaz.jpg?rev=20261127131211",
       "ticketUrl": "https://www.ticketline.pt/evento/sob-pressao-104971",
       "source": "Ticketline",
       "featured": false
@@ -161,7 +161,7 @@
       "dateTime": "2026-11-27T21:30:00+00:00",
       "venue": "Culturgest - Auditório Emílio Rui Vilar",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106089/cartaz.jpg?rev=20261126181924",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106089/cartaz.jpg?rev=20261127131211",
       "ticketUrl": "https://www.ticketline.pt/evento/carolina-bianchi-the-brotherhood-106089",
       "source": "Ticketline",
       "featured": false
@@ -216,7 +216,7 @@
       "dateTime": "2026-11-27T21:30:00+00:00",
       "venue": "Cinema Fernando Lopes - Universidade Lusófona",
       "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/109692/cartaz.jpg?rev=20261126181924",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/109692/cartaz.jpg?rev=20261127131211",
       "ticketUrl": "https://www.ticketline.pt/evento/conversa-acorda-109692",
       "source": "Ticketline",
       "featured": false
@@ -461,7 +461,7 @@
       "imageUrl": "",
       "ticketUrl": "https://www.bol.pt/",
       "source": "BOL",
-      "featured": true
+      "featured": false
     },
     {
       "id": "bol-e516ff423a4d",
@@ -717,14 +717,14 @@
       "featured": false
     },
     {
-      "id": "meetup-174c7effef1c",
+      "id": "meetup lisboa-300ff74a79b5",
       "title": "The Fabulous - standup comedy w/ women and queer comedians!",
       "dateTime": "2026-12-02T20:30:00+00:00",
       "venue": "Xafarix Bar",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/republic-comedy/events/317427057/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
@@ -772,14 +772,14 @@
       "featured": false
     },
     {
-      "id": "meetup-93de27cb0bff",
+      "id": "meetup lisboa-04ce4d92aa17",
       "title": "Open Mic Night at Fable",
       "dateTime": "2026-12-03T19:00:00+00:00",
       "venue": "Fable - Cafe, Coffee, English Books",
       "district": "Lisboa",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/fable-lisbon-bookshop-cafe-events-workshops/events/317033044/",
-      "source": "Meetup",
+      "source": "Meetup Lisboa",
       "featured": false
     },
     {
@@ -868,7 +868,7 @@
       "imageUrl": "",
       "ticketUrl": "https://ticketline.sapo.pt/",
       "source": "Ticketline",
-      "featured": true
+      "featured": false
     },
     {
       "id": "bol-f26537e46918",
@@ -1998,7 +1998,7 @@
       "dateTime": "2027-02-19T21:30:00+00:00",
       "venue": "TAGV",
       "district": "Coimbra",
-      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz163020.jpg?v=4",
+      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz163020.jpg?v=7",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/189458-o_ceu_pode_esperar_luana_do_bem-tagv/",
       "source": "BOL",
       "featured": false
@@ -2243,6 +2243,28 @@
       "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/10/Tempo-de-Espera-Carlos-Vidal.jpg",
       "ticketUrl": "https://agendaculturalporto.org/eventos/tempo-de-espera-carlos-vidal/",
       "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "bol-b472e0abcf31",
+      "title": "LISBOA | MÁRIO FALCÃO: DIFERENCIADO",
+      "dateTime": "2027-04-24T21:30:00+00:00",
+      "venue": "Aula Magna",
+      "district": "Lisboa",
+      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz163522.png?v=1",
+      "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/190021-lisboa_mario_falcao_diferenciado-aula_magna/",
+      "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "bol-b5e5cc3628aa",
+      "title": "Primogénito - Dário Guerreiro",
+      "dateTime": "2027-05-08T21:30:00+00:00",
+      "venue": "C Cultural António Aleixo",
+      "district": "Faro",
+      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz163567.jpg?v=2",
+      "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/190099-primogenito_dario_guerreiro-c_cultural_antonio_aleixo/",
+      "source": "BOL",
       "featured": false
     },
     {
