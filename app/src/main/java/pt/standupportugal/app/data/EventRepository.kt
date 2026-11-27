@@ -62,12 +62,7 @@ class EventRepository(
         } else {
             loadBundledOnlineFeed().specials
         }
-        list.sortedWith(
-            compareByDescending<OnlineSpecial> { it.featured }
-                .thenByDescending { it.effectiveSortDate() }
-                .thenByDescending { it.priority }
-                .thenBy { it.title }
-        )
+        sortOnlineSpecials(list)
     }
 
     private fun fetchRemoteOnlineFeed(): OnlineSpecialsFeed? {
@@ -131,6 +126,21 @@ class EventRepository(
     }
 
     companion object {
+        fun sortOnlineSpecials(list: List<OnlineSpecial>): List<OnlineSpecial> {
+            val featured = list.filter { it.featured }.sortedWith(
+                compareByDescending<OnlineSpecial> { it.priority }
+                    .thenByDescending { it.effectiveSortDate() }
+                    .thenBy { it.title }
+            )
+            val regular = list.filter { !it.featured }.sortedWith(
+                compareBy<OnlineSpecial> { it.languageGroupRank() }
+                    .thenByDescending { it.effectiveSortDate() }
+                    .thenByDescending { it.priority }
+                    .thenBy { it.title }
+            )
+            return featured + regular
+        }
+
         /**
          * Merges automatic feed events with manual/promoted Google Sheet events,
          * filters out past events (older than 2 hours ago), deduplicates by ticketUrl,

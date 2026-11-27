@@ -58,7 +58,7 @@ Permite gerir e priorizar o separador **Online (Especiais)** da app (apenas espe
 
 Colunas:
 - `title`, `comedian`, `platform` (`YouTube`, `Netflix`, `HBO`, `Prime Video`, `RTP Play`), `language` (`PT` ou `PT-BR`), `publishedDate` (`YYYY-MM-DD`), `year`, `imageUrl`, `watchUrl`
-- `featured`: `TRUE` para destacar no topo com selo **Em Destaque** (os restantes ordenam-se do mais recente para o mais antigo por `publishedDate`)
+- `featured`: `TRUE` para destacar no topo com selo **Em Destaque** (os destacados ordenam-se por `priority` decrescente; os restantes aparecem primeiro `PT` e depois `PT-BR`, sempre do mais recente para o mais antigo por `publishedDate`)
 - `priority`: número inteiro (ex.: `100`, `50`, `10`) para desempate
 - `hide`: `TRUE` para ocultar algum item
 
@@ -103,6 +103,7 @@ Colunas:
 | 2026-11-26 | `v1.2.0` | Adicionado alternador **Ao Vivo / Online (Especiais)** na app, filtro por plataforma, `docs/online_specials.json` e aba `Online` na Google Sheet com `featured`, `priority` e `hide`. |
 | 2026-11-26 | Auto-Deploy Play | Configurado envio automático opcional do `.aab` para **Testes internos** da Google Play via `GOOGLE_PLAY_SERVICE_ACCOUNT_JSON` (`r0adkll/upload-google-play`). |
 | 2026-11-27 | `v1.3.0` | Corrigido distrito do Diogo Faro (Santarém), removido e-mail pessoal dos docs, adicionado formulário de contacto (`contacto.html`), `Max`→`HBO`, data de publicação e ordenação por mais recente no Online, incluído Vítor Sá e guia Gemini para telemóvel. |
+| 2026-11-27 | `v1.3.1` | Ordenação do Online atualizada: destacados por ordem de `priority` no topo, seguidos de `PT` (mais recentes primeiro) e depois `PT-BR` (mais recentes primeiro). |
 
 ---
 

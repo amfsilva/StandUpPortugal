@@ -624,15 +624,25 @@ def update_online_specials(online_output_path: Path) -> None:
         ),
         reverse=False,
     )
-    # Sort properly: featured=True first, then publishedDate descending, then priority descending
-    final_specials.sort(
+    featured_specials = [sp for sp in final_specials if sp.get("featured", False)]
+    regular_specials = [sp for sp in final_specials if not sp.get("featured", False)]
+
+    featured_specials.sort(
         key=lambda sp: (
-            1 if sp.get("featured", False) else 0,
-            sp.get("publishedDate") or (f"{sp.get('year', '')}-01-01" if sp.get("year") else ""),
             int(sp.get("priority", 0)),
+            sp.get("publishedDate") or (f"{sp.get('year', '')}-01-01" if sp.get("year") else ""),
         ),
         reverse=True,
     )
+    regular_specials.sort(
+        key=lambda sp: (
+            0 if "BR" not in str(sp.get("language", "PT")).upper() else 1,
+            -(int((sp.get("publishedDate") or (f"{sp.get('year', '')}-01-01" if sp.get("year") else "0000-01-01")).replace("-", "")[:8] or "0")),
+            -int(sp.get("priority", 0)),
+            sp.get("title", ""),
+        )
+    )
+    final_specials = featured_specials + regular_specials
     online_payload = {
         "updatedAt": datetime.now(timezone.utc).isoformat(),
         "specials": final_specials,

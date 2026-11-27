@@ -97,4 +97,16 @@ class EventRepositoryTest {
         assertEquals(1, yt.size)
         assertEquals("1", yt[0].id)
     }
+
+    @Test
+    fun sortOnlineSpecials_featuredByPriorityThenPtPtNewestThenPtBrNewest() {
+        val brNew = OnlineSpecial("br-new", "BR New", "C1", "YouTube", "PT-BR", "2026-06-01", "2026", "", "u1", featured = false, priority = 10)
+        val ptOld = OnlineSpecial("pt-old", "PT Old", "C2", "YouTube", "PT", "2022-01-01", "2022", "", "u2", featured = false, priority = 10)
+        val ptNew = OnlineSpecial("pt-new", "PT New", "C3", "YouTube", "PT", "2025-05-01", "2025", "", "u3", featured = false, priority = 10)
+        val featLow = OnlineSpecial("feat-low", "Feat Low", "C4", "YouTube", "PT-BR", "2020-01-01", "2020", "", "u4", featured = true, priority = 50)
+        val featHigh = OnlineSpecial("feat-high", "Feat High", "C5", "YouTube", "PT", "2021-01-01", "2021", "", "u5", featured = true, priority = 100)
+
+        val sorted = EventRepository.sortOnlineSpecials(listOf(brNew, ptOld, featLow, ptNew, featHigh))
+        assertEquals(listOf("feat-high", "feat-low", "pt-new", "pt-old", "br-new"), sorted.map { it.id })
+    }
 }

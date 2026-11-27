@@ -31,6 +31,12 @@ data class OnlineSpecial(
         return ""
     }
 
+    /** 0 for Portugal (PT / PT-PT), 1 for Brazilian Portuguese (PT-BR / BR). */
+    fun languageGroupRank(): Int {
+        val upper = language.trim().uppercase()
+        return if (upper.contains("BR")) 1 else 0
+    }
+
     fun formattedPublishedDatePt(): String {
         val raw = publishedDate.trim()
         if (raw.isBlank()) return year.trim()
