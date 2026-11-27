@@ -106,6 +106,7 @@ Colunas:
 | 2026-11-27 | `v1.3.0` | Corrigido distrito do Diogo Faro (Santarém), removido e-mail pessoal dos docs, adicionado formulário de contacto (`contacto.html`), `Max`→`HBO`, data de publicação e ordenação por mais recente no Online, incluído Vítor Sá e guia Gemini para telemóvel. |
 | 2026-11-27 | `v1.3.1` | Ordenação do Online atualizada: destacados por ordem de `priority` no topo, seguidos de `PT` (mais recentes primeiro) e depois `PT-BR` (mais recentes primeiro). |
 | 2026-11-27 | `v1.3.2` | Criado Google Form oficial (2 campos) ligado à Google Sheet e notificações por e-mail, e ligado diretamente na app (`FEEDBACK_FORM_URL`) e em `privacy.html` / `contacto.html`. |
+| 2026-11-27 | `v1.3.3` | Renomeado o separador `Online (Especiais)` para `Online`. |
 
 ---
 

@@ -210,7 +210,7 @@ fun StandUpFeedScreen(viewModel: StandUpViewModel) {
                         inactiveContentColor = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 ) {
-                    Text("Online (Especiais)", fontWeight = FontWeight.Bold)
+                    Text("Online", fontWeight = FontWeight.Bold)
                 }
             }
 
