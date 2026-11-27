@@ -5,6 +5,7 @@
 **Feed JSON público (GitHub Pages):** https://amfsilva.github.io/StandUpPortugal/events.json  
 **Feed Online público (Especiais):** https://amfsilva.github.io/StandUpPortugal/online_specials.json  
 **Política de Privacidade (Google Play):** https://amfsilva.github.io/StandUpPortugal/privacy.html  
+**Formulário de Sugestões / Bugs:** https://docs.google.com/forms/d/e/1FAIpQLScao4UEvx5vsajCHUrdAh_4uZlxPHTAAL_uIMxldyFBC4whrg/viewform  
 **Google Sheet de Eventos e Destaques:** https://docs.google.com/spreadsheets/d/1Of0g9oUzgiO8OLR0zTWlKeioWC2-HKwEoz7vcpFrNdk/edit  
 
 ---
@@ -104,6 +105,7 @@ Colunas:
 | 2026-11-26 | Auto-Deploy Play | Configurado envio automático opcional do `.aab` para **Testes internos** da Google Play via `GOOGLE_PLAY_SERVICE_ACCOUNT_JSON` (`r0adkll/upload-google-play`). |
 | 2026-11-27 | `v1.3.0` | Corrigido distrito do Diogo Faro (Santarém), removido e-mail pessoal dos docs, adicionado formulário de contacto (`contacto.html`), `Max`→`HBO`, data de publicação e ordenação por mais recente no Online, incluído Vítor Sá e guia Gemini para telemóvel. |
 | 2026-11-27 | `v1.3.1` | Ordenação do Online atualizada: destacados por ordem de `priority` no topo, seguidos de `PT` (mais recentes primeiro) e depois `PT-BR` (mais recentes primeiro). |
+| 2026-11-27 | `v1.3.2` | Criado Google Form oficial (2 campos) ligado à Google Sheet e notificações por e-mail, e ligado diretamente na app (`FEEDBACK_FORM_URL`) e em `privacy.html` / `contacto.html`. |
 
 ---
 
