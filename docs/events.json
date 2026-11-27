@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T09:36:18.867571+00:00",
+  "updatedAt": "2026-11-27T10:38:26.920858+00:00",
   "events": [
     {
       "id": "meetup-fdcedaa29ed4",
@@ -1582,6 +1582,17 @@
       "district": "Portugal",
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz161008.jpg?v=2",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/187220-luxemburgo_roscas_estacionancio-luxemburgo/",
+      "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "bol-bb60cf54c52d",
+      "title": "TINONI TOUR",
+      "dateTime": "2027-02-20T21:30:00+00:00",
+      "venue": "Aud B V Carcavelos",
+      "district": "Lisboa",
+      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz160910.jpg?v=5",
+      "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/187108-tinoni_tour-aud_b_v_carcavelos/",
       "source": "BOL",
       "featured": false
     },
