@@ -57,10 +57,12 @@ Permite gerir e priorizar o separador **Online (Especiais)** da app (apenas espe
 - **Streaming:** apenas links diretos oficiais de **Netflix**, **Max (HBO)**, **Prime Video** ou **RTP Play**.
 
 Colunas:
-- `title`, `comedian`, `platform` (`YouTube`, `Netflix`, `Max`, `Prime Video`, `RTP Play`), `language`, `year`, `imageUrl`, `watchUrl`
-- `featured`: `TRUE` para destacar no topo com selo **Em Destaque**
-- `priority`: número inteiro (ex.: `100`, `50`, `10`) para ordenar os seus especiais favoritos primeiro
+- `title`, `comedian`, `platform` (`YouTube`, `Netflix`, `HBO`, `Prime Video`, `RTP Play`), `language` (`PT` ou `PT-BR`), `publishedDate` (`YYYY-MM-DD`), `year`, `imageUrl`, `watchUrl`
+- `featured`: `TRUE` para destacar no topo com selo **Em Destaque** (os restantes ordenam-se do mais recente para o mais antigo por `publishedDate`)
+- `priority`: número inteiro (ex.: `100`, `50`, `10`) para desempate
 - `hide`: `TRUE` para ocultar algum item
+
+**Prompt para o Gemini no telemóvel:** consulte [GEMINI_TELEMOVEL_PROMPT.md](GEMINI_TELEMOVEL_PROMPT.md) para pedir novos eventos/especiais ao Gemini diretamente no telemóvel.
 
 ### 2.5 Configuração única (Publicar na Web) e Atualização Imediata
 1. Na Google Sheet: **Ficheiro → Partilhar → Publicar na Web**.
@@ -100,9 +102,10 @@ Colunas:
 | 2026-11-26 | Sheet Moderação & Fontes | Adicionada coluna `hide` para ocultar eventos, aba `Fontes` (`GOOGLE_SHEET_SOURCES_CSV_URL`) para gerir sites/bares no Drive e aba `Feed Atual` com os 174 eventos ativos. |
 | 2026-11-26 | `v1.2.0` | Adicionado alternador **Ao Vivo / Online (Especiais)** na app, filtro por plataforma, `docs/online_specials.json` e aba `Online` na Google Sheet com `featured`, `priority` e `hide`. |
 | 2026-11-26 | Auto-Deploy Play | Configurado envio automático opcional do `.aab` para **Testes internos** da Google Play via `GOOGLE_PLAY_SERVICE_ACCOUNT_JSON` (`r0adkll/upload-google-play`). |
+| 2026-11-27 | `v1.3.0` | Corrigido distrito do Diogo Faro (Santarém), removido e-mail pessoal dos docs, adicionado formulário de contacto (`contacto.html`), `Max`→`HBO`, data de publicação e ordenação por mais recente no Online, incluído Vítor Sá e guia Gemini para telemóvel. |
 
 ---
 
 ## 5. Próximos Desenvolvimentos (Backlog)
 
-- **Sugerir novo espaço de comédia por e-mail:** Adicionar um botão/opção na app (no diálogo `ⓘ` ou no topo/fundo) para o utilizador enviar um e-mail pré-preenchido para `amfsilva@gmail.com` a sugerir um novo espaço de comédia (bar, comedy club ou sala com noites de stand-up) para ser incluído na Google Sheet / scraper.
+- **Sugerir novo espaço de comédia por e-mail / formulário:** Adicionar ligação direta ao formulário oficial de sugestões, destaques e bugs no diálogo `ⓘ`.

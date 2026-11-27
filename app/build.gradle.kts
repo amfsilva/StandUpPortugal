@@ -13,8 +13,8 @@ android {
         applicationId = "pt.standupportugal.comedy"
         minSdk = 24
         targetSdk = 36
-        versionCode = 5
-        versionName = "1.2.0"
+        versionCode = 6
+        versionName = "1.3.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
@@ -28,6 +28,11 @@ android {
             "String",
             "ONLINE_FEED_URL",
             "\"https://amfsilva.github.io/StandUpPortugal/online_specials.json\""
+        )
+        buildConfigField(
+            "String",
+            "FEEDBACK_FORM_URL",
+            "\"https://amfsilva.github.io/StandUpPortugal/contacto.html\""
         )
         buildConfigField(
             "String",

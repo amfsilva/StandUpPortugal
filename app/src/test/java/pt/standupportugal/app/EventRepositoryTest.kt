@@ -90,8 +90,8 @@ class EventRepositoryTest {
     @Test
     fun applyOnlineFilters_filtersByPlatformAndQuery() {
         val specials = listOf(
-            OnlineSpecial("1", "Especial Completo", "Comediante PT", "YouTube", "PT", "2026", "", "https://youtube.com/1"),
-            OnlineSpecial("2", "Netflix Special", "Comediante EN", "Netflix", "EN", "2026", "", "https://netflix.com/2")
+            OnlineSpecial("1", "Especial Completo", "Comediante PT", "YouTube", "PT", "2026-05-01", "2026", "", "https://youtube.com/1"),
+            OnlineSpecial("2", "Netflix Special", "Comediante EN", "Netflix", "EN", "2026-04-01", "2026", "", "https://netflix.com/2")
         )
         val yt = StandUpViewModel.applyOnlineFilters(specials, "YouTube", "comediante")
         assertEquals(1, yt.size)

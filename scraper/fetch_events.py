@@ -78,16 +78,30 @@ def is_relevant_portugal_comedy(title: str, venue: str, source: str) -> bool:
     return True
 
 
-def infer_district(text: str) -> str:
-    lowered = text.lower()
-    for district, keywords in DISTRICT_KEYWORDS.items():
-        if any(kw in lowered for kw in keywords):
-            return district
-    if "tivoli" in lowered or "coliseu dos recreios" in lowered or "são jorge" in lowered:
-        return "Lisboa"
-    if "sá da bandeira" in lowered or "coliseu porto" in lowered:
-        return "Porto"
-    return "Portugal"
+def infer_district(text: str, venue_hint: str = "") -> str:
+    """
+    Infers the Portuguese district. Prioritizes venue/city text over title so
+    comedian names (e.g. 'Diogo Faro') never override the actual venue district.
+    """
+    def _match_district(blob: str) -> str | None:
+        cleaned = re.sub(r"\bdiogo\s+faro\b", " ", blob.lower())
+        for district, keywords in DISTRICT_KEYWORDS.items():
+            for kw in keywords:
+                if re.search(rf"\b{re.escape(kw)}\b", cleaned):
+                    return district
+        if "tivoli" in cleaned or "coliseu dos recreios" in cleaned or "são jorge" in cleaned:
+            return "Lisboa"
+        if "sá da bandeira" in cleaned or "coliseu porto" in cleaned:
+            return "Porto"
+        if "teatro virgínia" in cleaned or "teatro virginia" in cleaned:
+            return "Santarém"
+        return None
+
+    if venue_hint:
+        matched = _match_district(venue_hint)
+        if matched:
+            return matched
+    return _match_district(text) or "Portugal"
 
 
 def make_id(source: str, ticket_url: str, date_str: str) -> str:
@@ -177,7 +191,7 @@ def extract_json_ld_events(soup: BeautifulSoup, source: str, default_base_url: s
                 elif isinstance(addr, str):
                     city_hint = addr
 
-            district = infer_district(f"{venue} {city_hint} {title}")
+            district = infer_district(f"{venue} {city_hint} {title}", venue_hint=f"{venue} {city_hint}")
             events.append({
                 "id": make_id(source, ticket_url, dt.isoformat()),
                 "title": title,
@@ -359,7 +373,7 @@ def fetch_ticketline_standup() -> list[dict[str, Any]]:
 
             venue_el = li.select_one('[itemprop="location"], .venues')
             venue = venue_el.get_text(" ", strip=True) if venue_el else "Portugal"
-            district = infer_district(f"{venue} {title}")
+            district = infer_district(f"{venue} {title}", venue_hint=venue)
 
             seen_urls.add(ticket_url)
             events.append({
@@ -445,7 +459,7 @@ def fetch_bol_standup() -> list[dict[str, Any]]:
                 "title": title,
                 "dateTime": dt.isoformat(),
                 "venue": "Portugal",
-                "district": infer_district(f"{title} {parent_text}"),
+                "district": infer_district(f"{title} {parent_text}", venue_hint=parent_text),
                 "imageUrl": image_url,
                 "ticketUrl": ticket_url,
                 "source": "BOL",
@@ -570,10 +584,16 @@ def update_online_specials(online_output_path: Path) -> None:
             continue
         title = (row.get("title") or "").strip()
         platform = (row.get("platform") or "").strip() or "YouTube"
+        if platform.lower() == "max":
+            platform = "HBO"
         lang = (row.get("language") or "PT").strip().upper()
         if not title or not watch_url or not any(tag in lang for tag in ("PT", "BR")):
             continue
         featured_raw = (row.get("featured") or "").strip().lower()
+        published_date = (row.get("publishedDate") or "").strip()
+        year = (row.get("year") or "").strip()
+        if not year and len(published_date) >= 4:
+            year = published_date[:4]
         try:
             priority = int((row.get("priority") or "0").strip() or "0")
         except ValueError:
@@ -584,7 +604,8 @@ def update_online_specials(online_output_path: Path) -> None:
             "comedian": (row.get("comedian") or "").strip(),
             "platform": platform,
             "language": lang,
-            "year": (row.get("year") or "").strip(),
+            "publishedDate": published_date,
+            "year": year,
             "imageUrl": (row.get("imageUrl") or "").strip(),
             "watchUrl": watch_url,
             "featured": featured_raw in {"true", "1", "sim", "yes"},
@@ -597,9 +618,20 @@ def update_online_specials(online_output_path: Path) -> None:
     final_specials.sort(
         key=lambda sp: (
             not bool(sp.get("featured", False)),
-            -int(sp.get("priority", 0)),
-            sp.get("title", ""),
-        )
+            "" if sp.get("publishedDate") else "z",
+            sp.get("publishedDate", ""),
+            int(sp.get("priority", 0)),
+        ),
+        reverse=False,
+    )
+    # Sort properly: featured=True first, then publishedDate descending, then priority descending
+    final_specials.sort(
+        key=lambda sp: (
+            1 if sp.get("featured", False) else 0,
+            sp.get("publishedDate") or (f"{sp.get('year', '')}-01-01" if sp.get("year") else ""),
+            int(sp.get("priority", 0)),
+        ),
+        reverse=True,
     )
     online_payload = {
         "updatedAt": datetime.now(timezone.utc).isoformat(),

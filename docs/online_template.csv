@@ -1,14 +1,15 @@
-title,comedian,platform,language,year,imageUrl,watchUrl,featured,priority,hide
-"LIMBO (Espetáculo Completo)","Guilherme Duarte","YouTube","PT","","https://i.ytimg.com/vi/NbBwN6000uA/hqdefault.jpg","https://www.youtube.com/watch?v=NbBwN6000uA",TRUE,100,FALSE
-"X Tour (Espetáculo Completo)","Hugo Sousa","YouTube","PT","","https://i.ytimg.com/vi/q_7q92HEk_g/hqdefault.jpg","https://www.youtube.com/watch?v=q_7q92HEk_g",FALSE,95,FALSE
-"NÃO FAZ SENTIDO (Espetáculo Completo)","Guilherme Fonseca","YouTube","PT","","https://i.ytimg.com/vi/kKUCaJP90so/hqdefault.jpg","https://www.youtube.com/watch?v=kKUCaJP90so",FALSE,90,FALSE
-"OVERBOOKING (Espetáculo Completo)","Joel Ricardo Santos","YouTube","PT","","https://i.ytimg.com/vi/bS_gc7gLAto/hqdefault.jpg","https://www.youtube.com/watch?v=bS_gc7gLAto",FALSE,85,FALSE
-"POR FALAR NOUTRA COISA (Espetáculo Completo)","Guilherme Duarte","YouTube","PT","","https://i.ytimg.com/vi/Bx-Kika1o8g/hqdefault.jpg","https://www.youtube.com/watch?v=Bx-Kika1o8g",FALSE,80,FALSE
-"Alma de Pobre","Afonso Padilha","Netflix","PT-BR","","","https://www.netflix.com/title/81194685",FALSE,75,FALSE
-"POKAS","Thiago Ventura","Netflix","PT-BR","","","https://www.netflix.com/title/81194682",FALSE,70,FALSE
-"Gerações","Afonso Padilha","Prime Video","PT-BR","","","https://www.primevideo.com/detail/0PHO8D7679GIP9LZPPU7FPRBVW",FALSE,65,FALSE
-"Desessencial (Show Completo)","Afonso Padilha","YouTube","PT-BR","","https://i.ytimg.com/vi/wUvVw-Qhgrc/hqdefault.jpg","https://www.youtube.com/watch?v=wUvVw-Qhgrc",FALSE,60,FALSE
-"Sujeito Homem (Especial Completo)","Thiago Ventura","YouTube","PT-BR","","https://i.ytimg.com/vi/OvNHCn2Hk9Y/hqdefault.jpg","https://www.youtube.com/watch?v=OvNHCn2Hk9Y",FALSE,55,FALSE
-"O Pequeno Bigbig (Especial Completo)","Thiago Ventura","YouTube","PT-BR","","https://i.ytimg.com/vi/mwTJxRLHWA0/hqdefault.jpg","https://www.youtube.com/watch?v=mwTJxRLHWA0",FALSE,50,FALSE
-"Efeito Borboleta (Show Completo)","Whindersson Nunes","YouTube","PT-BR","","https://i.ytimg.com/vi/34xcdhQ0QgU/hqdefault.jpg","https://www.youtube.com/watch?v=34xcdhQ0QgU",FALSE,45,FALSE
-"Proparoxítona (Show Completo)","Whindersson Nunes","YouTube","PT-BR","","https://i.ytimg.com/vi/IRirqw082XI/hqdefault.jpg","https://www.youtube.com/watch?v=IRirqw082XI",FALSE,40,FALSE
+title,comedian,platform,language,publishedDate,year,imageUrl,watchUrl,featured,priority,hide
+"LIMBO (Espetáculo Completo)","Guilherme Duarte","YouTube","PT","2023-12-25","2023","https://i.ytimg.com/vi/NbBwN6000uA/hqdefault.jpg","https://www.youtube.com/watch?v=NbBwN6000uA",TRUE,100,FALSE
+"OVERBOOKING (Espetáculo Completo)","Joel Ricardo Santos","YouTube","PT","2026-05-22","2026","https://i.ytimg.com/vi/bS_gc7gLAto/hqdefault.jpg","https://www.youtube.com/watch?v=bS_gc7gLAto",FALSE,90,FALSE
+"Sujeito Homem (Especial Completo)","Thiago Ventura","YouTube","PT-BR","2026-05-11","2026","https://i.ytimg.com/vi/OvNHCn2Hk9Y/hqdefault.jpg","https://www.youtube.com/watch?v=OvNHCn2Hk9Y",FALSE,85,FALSE
+"X Tour (Espetáculo Completo)","Hugo Sousa","YouTube","PT","2025-04-16","2025","https://i.ytimg.com/vi/q_7q92HEk_g/hqdefault.jpg","https://www.youtube.com/watch?v=q_7q92HEk_g",FALSE,80,FALSE
+"O Pequeno Bigbig (Especial Completo)","Thiago Ventura","YouTube","PT-BR","2025-01-21","2025","https://i.ytimg.com/vi/mwTJxRLHWA0/hqdefault.jpg","https://www.youtube.com/watch?v=mwTJxRLHWA0",FALSE,75,FALSE
+"NÃO FAZ SENTIDO (Espetáculo Completo)","Guilherme Fonseca","YouTube","PT","2025-01-01","2025","https://i.ytimg.com/vi/kKUCaJP90so/hqdefault.jpg","https://www.youtube.com/watch?v=kKUCaJP90so",FALSE,70,FALSE
+"Efeito Borboleta (Show Completo)","Whindersson Nunes","YouTube","PT-BR","2024-12-25","2024","https://i.ytimg.com/vi/34xcdhQ0QgU/hqdefault.jpg","https://www.youtube.com/watch?v=34xcdhQ0QgU",FALSE,65,FALSE
+"Bilhete de Ida — Covilhã (Espetáculo Completo)","Vítor Sá","YouTube","PT","2022-02-27","2022","https://i.ytimg.com/vi/jaMfxSDbi5o/hqdefault.jpg","https://www.youtube.com/watch?v=jaMfxSDbi5o",FALSE,60,FALSE
+"Desessencial (Show Completo)","Afonso Padilha","YouTube","PT-BR","2021-01-31","2021","https://i.ytimg.com/vi/wUvVw-Qhgrc/hqdefault.jpg","https://www.youtube.com/watch?v=wUvVw-Qhgrc",FALSE,55,FALSE
+"Alma de Pobre","Afonso Padilha","Netflix","PT-BR","2020-09-03","2020","","https://www.netflix.com/title/81194685",FALSE,50,FALSE
+"POKAS","Thiago Ventura","Netflix","PT-BR","2020-07-02","2020","","https://www.netflix.com/title/81194682",FALSE,45,FALSE
+"Gerações","Afonso Padilha","Prime Video","PT-BR","2020-01-01","2020","","https://www.primevideo.com/detail/0PHO8D7679GIP9LZPPU7FPRBVW",FALSE,40,FALSE
+"POR FALAR NOUTRA COISA (Espetáculo Completo)","Guilherme Duarte","YouTube","PT","2018-12-23","2018","https://i.ytimg.com/vi/Bx-Kika1o8g/hqdefault.jpg","https://www.youtube.com/watch?v=Bx-Kika1o8g",FALSE,35,FALSE
+"Proparoxítona (Show Completo)","Whindersson Nunes","YouTube","PT-BR","2017-12-21","2017","https://i.ytimg.com/vi/IRirqw082XI/hqdefault.jpg","https://www.youtube.com/watch?v=IRirqw082XI",FALSE,30,FALSE

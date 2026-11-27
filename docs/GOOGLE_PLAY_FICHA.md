@@ -41,4 +41,4 @@ Nota: App meramente informativa. Não nos responsabilizamos por eventuais erros 
   - *A sua app recolhe ou partilha algum dos tipos de dados de utilizador obrigatórios?* → **Não**
 - **Público-alvo e conteúdo:** **13-15, 16-17, 18+** (ou **18+** se preferir evitar verificações de apps infantis) — *Não é concebida para crianças*
 - **Categoria na loja:** **Entretenimento** (*Entertainment*) ou **Eventos** (*Events*)
-- **Email de contacto na loja:** `amfsilva@gmail.com`
+- **Email de contacto na loja:** *(Use um e-mail dedicado para a app na Play Console para não expor o e-mail pessoal)*

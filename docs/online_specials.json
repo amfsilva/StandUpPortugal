@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T18:13:00Z",
+  "updatedAt": "2026-11-27T09:15:00Z",
   "specials": [
     {
       "id": "youtube-NbBwN6000uA",
@@ -7,35 +7,12 @@
       "comedian": "Guilherme Duarte",
       "platform": "YouTube",
       "language": "PT",
-      "year": "",
+      "publishedDate": "2023-12-25",
+      "year": "2023",
       "imageUrl": "https://i.ytimg.com/vi/NbBwN6000uA/hqdefault.jpg",
       "watchUrl": "https://www.youtube.com/watch?v=NbBwN6000uA",
       "featured": true,
       "priority": 100
-    },
-    {
-      "id": "youtube-q_7q92HEk_g",
-      "title": "X Tour (Espetáculo Completo)",
-      "comedian": "Hugo Sousa",
-      "platform": "YouTube",
-      "language": "PT",
-      "year": "",
-      "imageUrl": "https://i.ytimg.com/vi/q_7q92HEk_g/hqdefault.jpg",
-      "watchUrl": "https://www.youtube.com/watch?v=q_7q92HEk_g",
-      "featured": false,
-      "priority": 95
-    },
-    {
-      "id": "youtube-kKUCaJP90so",
-      "title": "NÃO FAZ SENTIDO (Espetáculo Completo)",
-      "comedian": "Guilherme Fonseca",
-      "platform": "YouTube",
-      "language": "PT",
-      "year": "",
-      "imageUrl": "https://i.ytimg.com/vi/kKUCaJP90so/hqdefault.jpg",
-      "watchUrl": "https://www.youtube.com/watch?v=kKUCaJP90so",
-      "featured": false,
-      "priority": 90
     },
     {
       "id": "youtube-bS_gc7gLAto",
@@ -43,71 +20,12 @@
       "comedian": "Joel Ricardo Santos",
       "platform": "YouTube",
       "language": "PT",
-      "year": "",
+      "publishedDate": "2026-05-22",
+      "year": "2026",
       "imageUrl": "https://i.ytimg.com/vi/bS_gc7gLAto/hqdefault.jpg",
       "watchUrl": "https://www.youtube.com/watch?v=bS_gc7gLAto",
       "featured": false,
-      "priority": 85
-    },
-    {
-      "id": "youtube-Bx-Kika1o8g",
-      "title": "POR FALAR NOUTRA COISA (Espetáculo Completo)",
-      "comedian": "Guilherme Duarte",
-      "platform": "YouTube",
-      "language": "PT",
-      "year": "",
-      "imageUrl": "https://i.ytimg.com/vi/Bx-Kika1o8g/hqdefault.jpg",
-      "watchUrl": "https://www.youtube.com/watch?v=Bx-Kika1o8g",
-      "featured": false,
-      "priority": 80
-    },
-    {
-      "id": "netflix-81194685",
-      "title": "Alma de Pobre",
-      "comedian": "Afonso Padilha",
-      "platform": "Netflix",
-      "language": "PT-BR",
-      "year": "",
-      "imageUrl": "",
-      "watchUrl": "https://www.netflix.com/title/81194685",
-      "featured": false,
-      "priority": 75
-    },
-    {
-      "id": "netflix-81194682",
-      "title": "POKAS",
-      "comedian": "Thiago Ventura",
-      "platform": "Netflix",
-      "language": "PT-BR",
-      "year": "",
-      "imageUrl": "",
-      "watchUrl": "https://www.netflix.com/title/81194682",
-      "featured": false,
-      "priority": 70
-    },
-    {
-      "id": "prime-0PHO8D7679GIP9LZPPU7FPRBVW",
-      "title": "Gerações",
-      "comedian": "Afonso Padilha",
-      "platform": "Prime Video",
-      "language": "PT-BR",
-      "year": "",
-      "imageUrl": "",
-      "watchUrl": "https://www.primevideo.com/detail/0PHO8D7679GIP9LZPPU7FPRBVW",
-      "featured": false,
-      "priority": 65
-    },
-    {
-      "id": "youtube-wUvVw-Qhgrc",
-      "title": "Desessencial (Show Completo)",
-      "comedian": "Afonso Padilha",
-      "platform": "YouTube",
-      "language": "PT-BR",
-      "year": "",
-      "imageUrl": "https://i.ytimg.com/vi/wUvVw-Qhgrc/hqdefault.jpg",
-      "watchUrl": "https://www.youtube.com/watch?v=wUvVw-Qhgrc",
-      "featured": false,
-      "priority": 60
+      "priority": 90
     },
     {
       "id": "youtube-OvNHCn2Hk9Y",
@@ -115,11 +33,25 @@
       "comedian": "Thiago Ventura",
       "platform": "YouTube",
       "language": "PT-BR",
-      "year": "",
+      "publishedDate": "2026-05-11",
+      "year": "2026",
       "imageUrl": "https://i.ytimg.com/vi/OvNHCn2Hk9Y/hqdefault.jpg",
       "watchUrl": "https://www.youtube.com/watch?v=OvNHCn2Hk9Y",
       "featured": false,
-      "priority": 55
+      "priority": 85
+    },
+    {
+      "id": "youtube-q_7q92HEk_g",
+      "title": "X Tour (Espetáculo Completo)",
+      "comedian": "Hugo Sousa",
+      "platform": "YouTube",
+      "language": "PT",
+      "publishedDate": "2025-04-16",
+      "year": "2025",
+      "imageUrl": "https://i.ytimg.com/vi/q_7q92HEk_g/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=q_7q92HEk_g",
+      "featured": false,
+      "priority": 80
     },
     {
       "id": "youtube-mwTJxRLHWA0",
@@ -127,11 +59,25 @@
       "comedian": "Thiago Ventura",
       "platform": "YouTube",
       "language": "PT-BR",
-      "year": "",
+      "publishedDate": "2025-01-21",
+      "year": "2025",
       "imageUrl": "https://i.ytimg.com/vi/mwTJxRLHWA0/hqdefault.jpg",
       "watchUrl": "https://www.youtube.com/watch?v=mwTJxRLHWA0",
       "featured": false,
-      "priority": 50
+      "priority": 75
+    },
+    {
+      "id": "youtube-kKUCaJP90so",
+      "title": "NÃO FAZ SENTIDO (Espetáculo Completo)",
+      "comedian": "Guilherme Fonseca",
+      "platform": "YouTube",
+      "language": "PT",
+      "publishedDate": "2025-01-01",
+      "year": "2025",
+      "imageUrl": "https://i.ytimg.com/vi/kKUCaJP90so/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=kKUCaJP90so",
+      "featured": false,
+      "priority": 70
     },
     {
       "id": "youtube-34xcdhQ0QgU",
@@ -139,11 +85,90 @@
       "comedian": "Whindersson Nunes",
       "platform": "YouTube",
       "language": "PT-BR",
-      "year": "",
+      "publishedDate": "2024-12-25",
+      "year": "2024",
       "imageUrl": "https://i.ytimg.com/vi/34xcdhQ0QgU/hqdefault.jpg",
       "watchUrl": "https://www.youtube.com/watch?v=34xcdhQ0QgU",
       "featured": false,
+      "priority": 65
+    },
+    {
+      "id": "youtube-jaMfxSDbi5o",
+      "title": "Bilhete de Ida — Covilhã (Espetáculo Completo)",
+      "comedian": "Vítor Sá",
+      "platform": "YouTube",
+      "language": "PT",
+      "publishedDate": "2022-02-27",
+      "year": "2022",
+      "imageUrl": "https://i.ytimg.com/vi/jaMfxSDbi5o/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=jaMfxSDbi5o",
+      "featured": false,
+      "priority": 60
+    },
+    {
+      "id": "youtube-wUvVw-Qhgrc",
+      "title": "Desessencial (Show Completo)",
+      "comedian": "Afonso Padilha",
+      "platform": "YouTube",
+      "language": "PT-BR",
+      "publishedDate": "2021-01-31",
+      "year": "2021",
+      "imageUrl": "https://i.ytimg.com/vi/wUvVw-Qhgrc/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=wUvVw-Qhgrc",
+      "featured": false,
+      "priority": 55
+    },
+    {
+      "id": "netflix-81194685",
+      "title": "Alma de Pobre",
+      "comedian": "Afonso Padilha",
+      "platform": "Netflix",
+      "language": "PT-BR",
+      "publishedDate": "2020-09-03",
+      "year": "2020",
+      "imageUrl": "",
+      "watchUrl": "https://www.netflix.com/title/81194685",
+      "featured": false,
+      "priority": 50
+    },
+    {
+      "id": "netflix-81194682",
+      "title": "POKAS",
+      "comedian": "Thiago Ventura",
+      "platform": "Netflix",
+      "language": "PT-BR",
+      "publishedDate": "2020-07-02",
+      "year": "2020",
+      "imageUrl": "",
+      "watchUrl": "https://www.netflix.com/title/81194682",
+      "featured": false,
       "priority": 45
+    },
+    {
+      "id": "prime-0PHO8D7679GIP9LZPPU7FPRBVW",
+      "title": "Gerações",
+      "comedian": "Afonso Padilha",
+      "platform": "Prime Video",
+      "language": "PT-BR",
+      "publishedDate": "2020-01-01",
+      "year": "2020",
+      "imageUrl": "",
+      "watchUrl": "https://www.primevideo.com/detail/0PHO8D7679GIP9LZPPU7FPRBVW",
+      "featured": false,
+      "priority": 40
+    },
+    {
+      "id": "youtube-Bx-Kika1o8g",
+      "title": "POR FALAR NOUTRA COISA (Espetáculo Completo)",
+      "comedian": "Guilherme Duarte",
+      "platform": "YouTube",
+      "language": "PT",
+      "publishedDate": "2018-12-23",
+      "year": "2018",
+      "imageUrl": "https://i.ytimg.com/vi/Bx-Kika1o8g/hqdefault.jpg",
+      "watchUrl": "https://www.youtube.com/watch?v=Bx-Kika1o8g",
+      "featured": false,
+      "priority": 35
     },
     {
       "id": "youtube-IRirqw082XI",
@@ -151,11 +176,12 @@
       "comedian": "Whindersson Nunes",
       "platform": "YouTube",
       "language": "PT-BR",
-      "year": "",
+      "publishedDate": "2017-12-21",
+      "year": "2017",
       "imageUrl": "https://i.ytimg.com/vi/IRirqw082XI/hqdefault.jpg",
       "watchUrl": "https://www.youtube.com/watch?v=IRirqw082XI",
       "featured": false,
-      "priority": 40
+      "priority": 30
     }
   ]
 }

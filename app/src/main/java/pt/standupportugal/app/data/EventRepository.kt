@@ -64,6 +64,7 @@ class EventRepository(
         }
         list.sortedWith(
             compareByDescending<OnlineSpecial> { it.featured }
+                .thenByDescending { it.effectiveSortDate() }
                 .thenByDescending { it.priority }
                 .thenBy { it.title }
         )

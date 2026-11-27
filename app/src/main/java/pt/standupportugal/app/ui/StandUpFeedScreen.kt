@@ -77,6 +77,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import pt.standupportugal.app.BuildConfig
 import pt.standupportugal.app.data.FeedOrigin
 import pt.standupportugal.app.data.OnlineSpecial
 import pt.standupportugal.app.data.StandUpEvent
@@ -100,16 +101,24 @@ fun StandUpFeedScreen(viewModel: StandUpViewModel) {
                 )
             },
             confirmButton = {
-                TextButton(onClick = { showAboutDialog = false }) {
-                    Text("Fechar")
+                TextButton(onClick = {
+                    showAboutDialog = false
+                    openExternalUrl(context, BuildConfig.FEEDBACK_FORM_URL)
+                }) {
+                    Text("Sugestões / Bugs")
                 }
             },
             dismissButton = {
-                TextButton(onClick = {
-                    showAboutDialog = false
-                    openExternalUrl(context, "https://amfsilva.github.io/StandUpPortugal/privacy.html")
-                }) {
-                    Text("Privacidade")
+                Row {
+                    TextButton(onClick = {
+                        showAboutDialog = false
+                        openExternalUrl(context, "https://amfsilva.github.io/StandUpPortugal/privacy.html")
+                    }) {
+                        Text("Privacidade")
+                    }
+                    TextButton(onClick = { showAboutDialog = false }) {
+                        Text("Fechar")
+                    }
                 }
             }
         )
@@ -739,10 +748,11 @@ private fun OnlineSpecialCard(
             }
 
             Column(modifier = Modifier.padding(16.dp)) {
+                val dateLabel = special.formattedPublishedDatePt()
                 val metaParts = buildList {
                     if (special.comedian.isNotBlank()) add(special.comedian)
+                    if (dateLabel.isNotBlank()) add(dateLabel)
                     if (special.language.isNotBlank()) add(special.language)
-                    if (special.year.isNotBlank()) add(special.year)
                 }
                 if (metaParts.isNotEmpty()) {
                     Text(
