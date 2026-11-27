@@ -4,11 +4,14 @@
 
 - **Nome da app:** `StandUp Portugal`
 - **Descrição curta (máx. 80 caracteres):**  
-  `Agenda de Stand-Up Comedy em Portugal por data e distrito, com link oficial.` *(76 caracteres)*
+  `StandUp Portugal, sempre à mão para a sua próxima dose de humor!` *(64 caracteres)*
+  *(Alternativa técnica: `Agenda de Stand-Up Comedy em Portugal por data e distrito, com link oficial.`)*
 
 - **Descrição completa:**
 ```text
-Descubra todos os espetáculos de Stand-Up Comedy em Portugal num só lugar!
+StandUp Portugal — sempre à mão para a sua próxima dose de humor!
+
+Descubra todos os espetáculos de Stand-Up Comedy em Portugal num só lugar, ao vivo perto de si ou online!
 
 A StandUp Portugal reúne os próximos espetáculos de comédia pelo país inteiro, sempre ordenados pelas datas mais próximas e com filtro rápido por distrito (Lisboa, Porto, Coimbra, Braga, Faro, Açores, Madeira e muito mais).
 

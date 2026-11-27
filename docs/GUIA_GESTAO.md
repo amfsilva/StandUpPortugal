@@ -113,3 +113,4 @@ Colunas:
 ## 5. Próximos Desenvolvimentos (Backlog)
 
 - **Sugerir novo espaço de comédia por e-mail / formulário:** Adicionar ligação direta ao formulário oficial de sugestões, destaques e bugs no diálogo `ⓘ`.
+- **Slogan para lançamento em Produção / publicidade:** `"StandUp Portugal — sempre à mão para a sua próxima dose de humor!"` (já guardado em `docs/GOOGLE_PLAY_FICHA.md` para a descrição/banner da Google Play).
