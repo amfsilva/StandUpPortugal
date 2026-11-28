@@ -1,314 +1,6 @@
 {
-  "updatedAt": "2026-11-27T20:49:58.132662+00:00",
+  "updatedAt": "2026-11-28T06:51:26.864774+00:00",
   "events": [
-    {
-      "id": "meetup lisboa-f2a89726d297",
-      "title": "The Villain Comedy",
-      "dateTime": "2026-11-27T20:30:00+00:00",
-      "venue": "Xafarix Bar",
-      "district": "Lisboa",
-      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
-      "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317500393/",
-      "source": "Meetup Lisboa",
-      "featured": false
-    },
-    {
-      "id": "meetup lisboa-d4174431217e",
-      "title": "The Villain Comedy",
-      "dateTime": "2026-11-27T20:30:00+00:00",
-      "venue": "Xafarix Bar",
-      "district": "Lisboa",
-      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
-      "ticketUrl": "https://www.meetup.com/republic-comedy/events/317500392/",
-      "source": "Meetup Lisboa",
-      "featured": false
-    },
-    {
-      "id": "meetup porto-1db2c2129374",
-      "title": "No Plans. No Problem. Dinner With Strangers✨",
-      "dateTime": "2026-11-27T20:30:00+00:00",
-      "venue": "Porto",
-      "district": "Porto",
-      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-5-square.webp",
-      "ticketUrl": "https://www.meetup.com/dinnersmate/events/317313482/",
-      "source": "Meetup Porto",
-      "featured": false
-    },
-    {
-      "id": "viral agenda comédia-bc477e4c9aad",
-      "title": "Mais de 30",
-      "dateTime": "2026-11-27T20:30:00+00:00",
-      "venue": "Suspenso",
-      "district": "Lisboa",
-      "imageUrl": "https://cdn.viralagenda.com/images/events/726cd36fc83d11588afd4c1edaeca371-md.jpg",
-      "ticketUrl": "https://www.viralagenda.com/pt/events/1871489/mais-de-30",
-      "source": "Viral Agenda Comédia",
-      "featured": false
-    },
-    {
-      "id": "bol-d30d7beea88b",
-      "title": "(não) sei ser em palco | Joana Gama",
-      "dateTime": "2026-11-27T21:00:00+00:00",
-      "venue": "Lisboa Comedy Club",
-      "district": "Lisboa",
-      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz161677.png?v=3",
-      "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/187978-nao_sei_ser_em_palco_joana_gama-lisboa_comedy_club/",
-      "source": "BOL",
-      "featured": false
-    },
-    {
-      "id": "bol-2c4b7d7f77e5",
-      "title": "Com Calma Comedy Sessions | Benfica",
-      "dateTime": "2026-11-27T21:00:00+00:00",
-      "venue": "Com Calma Espaço Cultural",
-      "district": "Lisboa",
-      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz159328.png?v=3",
-      "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/185293-com_calma_comedy_sessions_benfica-com_calma_espaco_cultural/",
-      "source": "BOL",
-      "featured": false
-    },
-    {
-      "id": "bol-1c4e639dae7a",
-      "title": "Santarém | Massa Mãe | Diogo Faro",
-      "dateTime": "2026-11-27T21:00:00+00:00",
-      "venue": "Teatro Taborda",
-      "district": "Santarém",
-      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz153333.jpg?v=3",
-      "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/178538-santarem_massa_mae_diogo_faro-teatro_taborda/",
-      "source": "BOL",
-      "featured": false
-    },
-    {
-      "id": "agenda cultural porto-ea23faf9e9ce",
-      "title": "Alameda Comedy Club: seis noites de stand-up com entrada gratuita",
-      "dateTime": "2026-11-27T21:00:00+00:00",
-      "venue": "Alameda Shop&amp;Spot",
-      "district": "Porto",
-      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/09/338619c18ab38b319f5bbd6dc2598a85-large.jpg",
-      "ticketUrl": "https://agendaculturalporto.org/eventos/stand-up-gratis-no-alameda-shopspot/",
-      "source": "Agenda Cultural Porto",
-      "featured": false
-    },
-    {
-      "id": "agenda cultural porto-7d13d265c32d",
-      "title": "Manel Rosa sobe ao palco do Alameda Comedy Club",
-      "dateTime": "2026-11-27T21:00:00+00:00",
-      "venue": "Alameda Shop&amp;Spot",
-      "district": "Porto",
-      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-11-at-17.31.33.jpeg",
-      "ticketUrl": "https://agendaculturalporto.org/eventos/manel-rosa-sobe-ao-palco-do-alameda-comedy-club/",
-      "source": "Agenda Cultural Porto",
-      "featured": false
-    },
-    {
-      "id": "viral agenda comédia-be505f19bf05",
-      "title": "Manel Rosa sobe ao palco do Alameda Comedy Club",
-      "dateTime": "2026-11-27T21:00:00+00:00",
-      "venue": "Alameda Shopping - Porto",
-      "district": "Porto",
-      "imageUrl": "https://cdn.viralagenda.com/images/events/5ce909b69738d863e95515573013a1a8-md.jpg",
-      "ticketUrl": "https://www.viralagenda.com/pt/events/1882245/manel-rosa-sobe-ao-palco-do-alameda-comedy-club",
-      "source": "Viral Agenda Comédia",
-      "featured": false
-    },
-    {
-      "id": "ticketline-564abeb32470",
-      "title": "Espaços Outros | Linha De Falha",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4",
-      "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108459/cartaz.jpg?rev=20261127131211",
-      "ticketUrl": "https://www.ticketline.pt/evento/v2-espacos-outros-linha-de-falha-fotografia-na-c",
-      "source": "Ticketline",
-      "featured": false
-    },
-    {
-      "id": "ticketline-675f803ce20e",
-      "title": "Macam",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4,...",
-      "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/93233/cartaz.jpg?rev=20261127131211",
-      "ticketUrl": "https://www.ticketline.pt/evento/macam-93233",
-      "source": "Ticketline",
-      "featured": false
-    },
-    {
-      "id": "ticketline-67708ac70095",
-      "title": "Ressoar",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "A Moagem - Sala De Exposições",
-      "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108236/cartaz.jpg?rev=20261127131211",
-      "ticketUrl": "https://www.ticketline.pt/evento/ressoar-108236",
-      "source": "Ticketline",
-      "featured": false
-    },
-    {
-      "id": "ticketline-dd9f65e8e5b1",
-      "title": "Sob Pressão",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "Teatro Da Trindade Inatel - Estúdio",
-      "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/104971/cartaz.jpg?rev=20261127131211",
-      "ticketUrl": "https://www.ticketline.pt/evento/sob-pressao-104971",
-      "source": "Ticketline",
-      "featured": false
-    },
-    {
-      "id": "ticketline-afbd700008d8",
-      "title": "Carolina Bianchi | The Brotherhood",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "Culturgest - Auditório Emílio Rui Vilar",
-      "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/106089/cartaz.jpg?rev=20261127131211",
-      "ticketUrl": "https://www.ticketline.pt/evento/carolina-bianchi-the-brotherhood-106089",
-      "source": "Ticketline",
-      "featured": false
-    },
-    {
-      "id": "bol-a955cde2d649",
-      "title": "Pedro Teixeira da Mota | Amanhã não Está Certo",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "CAE Vale de Cambra",
-      "district": "Aveiro",
-      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz158888.jpg?v=5",
-      "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/184834-pedro_teixeira_da_mota_amanha_nao_esta_certo-cae_vale_de_cambra/",
-      "source": "BOL",
-      "featured": false
-    },
-    {
-      "id": "agenda cultural porto-598fab3411fb",
-      "title": "Balbúrdia transforma o Auditório Francisco de Assis numa noite de caos e stand-up",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "Auditório Francisco de Assis",
-      "district": "Porto",
-      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/08/Balburdia-transforma-o-Auditorio-Francisco-de-Assis-numa-noite-de-caos-e-stand-up.jpg",
-      "ticketUrl": "https://agendaculturalporto.org/eventos/balburdia-transforma-o-auditorio-francisco-de-assis-numa-noite-de-caos-e-stand-up/",
-      "source": "Agenda Cultural Porto",
-      "featured": false
-    },
-    {
-      "id": "agenda cultural porto-cf87aec03d16",
-      "title": "Monstros do Ano: Fernando Alvim leva a Gaia os momentos mais insólitos e bizarros de 2026",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "Auditório Municipal de Gaia",
-      "district": "Porto",
-      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/09/ticketline_post_1080x1350-1.png",
-      "ticketUrl": "https://agendaculturalporto.org/eventos/monstros-do-ano-fernando-alvim-leva-a-gaia-os-momentos-mais-insolitos-e-bizarros-de-2026/",
-      "source": "Agenda Cultural Porto",
-      "featured": false
-    },
-    {
-      "id": "agenda cultural porto-905c32a29a03",
-      "title": "Porto Comedy Room ocupa o Hard Rock Cafe Porto na sexta-feira",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "Hard Rock Café Porto",
-      "district": "Porto",
-      "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/11/f889be63d0c2bcbe39c7cd5109e09504-large.jpg",
-      "ticketUrl": "https://agendaculturalporto.org/eventos/porto-comedy-room-ocupa-o-hard-rock-cafe-porto-na-sexta-feira/",
-      "source": "Agenda Cultural Porto",
-      "featured": false
-    },
-    {
-      "id": "ticketline-048c6b97c715",
-      "title": "Conversa - Açorda",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "Cinema Fernando Lopes - Universidade Lusófona",
-      "district": "Portugal",
-      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/109692/cartaz.jpg?rev=20261127131211",
-      "ticketUrl": "https://www.ticketline.pt/evento/conversa-acorda-109692",
-      "source": "Ticketline",
-      "featured": false
-    },
-    {
-      "id": "viral agenda comédia-79a60dc9c12c",
-      "title": "Festival: III Azores Comedy Fest",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "Centro Cultural e de Congressos de Angra do Heroismo",
-      "district": "Portugal",
-      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1801779-32e3e2f2d9daf7d3fd9cc8f25bb9b865.jpg",
-      "ticketUrl": "https://www.viralagenda.com/pt/events/1801779/festival-iii-azores-comedy-fest",
-      "source": "Viral Agenda Comédia",
-      "featured": false
-    },
-    {
-      "id": "viral agenda comédia-25e27a89f351",
-      "title": "Monstros do Ano",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "Auditório Municipal de Gaia",
-      "district": "Porto",
-      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1849983-67e952f4acdcaf48173b85f0080cf1e5.png",
-      "ticketUrl": "https://www.viralagenda.com/pt/events/1849983/monstros-do-ano",
-      "source": "Viral Agenda Comédia",
-      "featured": false
-    },
-    {
-      "id": "viral agenda comédia-b3d73d317cff",
-      "title": "As Artimanhas de Scapino",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "Casa das Artes de Vila Nova de Famalicão",
-      "district": "Braga",
-      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1874314-f2ed6526137cc74b4130105128ac2822.jpeg",
-      "ticketUrl": "https://www.viralagenda.com/pt/events/1874314/as-artimanhas-de-scapino",
-      "source": "Viral Agenda Comédia",
-      "featured": false
-    },
-    {
-      "id": "viral agenda comédia-133ce8393180",
-      "title": "RIALMA - CLUBE DE COMÉDIA DE ALMADA",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "Cine Incrível",
-      "district": "Setúbal",
-      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1879626-9e9a54c88995e633ffa6de6c25e19e3e.jpeg",
-      "ticketUrl": "https://www.viralagenda.com/pt/events/1879626/rialma-clube-de-comedia-de-almada",
-      "source": "Viral Agenda Comédia",
-      "featured": false
-    },
-    {
-      "id": "viral agenda comédia-e6d915324425",
-      "title": "Stand Up Comedy | Hard Rock Café - Porto Comedy Room",
-      "dateTime": "2026-11-27T21:30:00+00:00",
-      "venue": "Hard Rock Cafe Porto",
-      "district": "Porto",
-      "imageUrl": "https://cdn.viralagenda.com/images/events/f889be63d0c2bcbe39c7cd5109e09504-md.jpg",
-      "ticketUrl": "https://www.viralagenda.com/pt/events/1883109/stand-up-comedy-hard-rock-cafe-porto-comedy-room",
-      "source": "Viral Agenda Comédia",
-      "featured": false
-    },
-    {
-      "id": "eventbrite-6cda15686445",
-      "title": "We are NOT From Here: Live in Porto - Stand-up Comedy in English",
-      "dateTime": "2026-11-28T00:00:00+00:00",
-      "venue": "Nope Pelmeni and Dumplings Bar | Cocktails, Craft Beer, Natural Wines, Chess and Board games",
-      "district": "Porto",
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1193334521%2F948678868953%2F1%2Foriginal.20260912-152544?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=8086b0a58f7142dad936179e4a4398e3",
-      "ticketUrl": "https://www.eventbrite.es/e/we-are-not-from-here-live-in-porto-stand-up-comedy-in-english-tickets-2001400737482",
-      "source": "Eventbrite",
-      "featured": false
-    },
-    {
-      "id": "eventbrite-459b9938d3e7",
-      "title": "Comedians Drinking Games! with Raul Kohli",
-      "dateTime": "2026-11-28T00:00:00+00:00",
-      "venue": "Republic of Comedy",
-      "district": "Lisboa",
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1198364945%2F69073713913%2F1%2Foriginal.20261120-011738?w=400&auto=format%2Ccompress&q=75&sharp=10&s=9267b809082d6bd9554352d7f39908a9",
-      "ticketUrl": "https://www.eventbrite.com/e/comedians-drinking-games-with-raul-kohli-tickets-2005109376120",
-      "source": "Eventbrite",
-      "featured": false
-    },
-    {
-      "id": "eventbrite-c3136af2eb13",
-      "title": "Dating is a Joke!: A Comedy Singles Event (In English)",
-      "dateTime": "2026-11-28T00:00:00+00:00",
-      "venue": "Selva Comedy Cafe",
-      "district": "Lisboa",
-      "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1185358651%2F187809150375%2F1%2Foriginal.20260525-121145?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=434278b08f0eba1742ffc312f4dddaf3",
-      "ticketUrl": "https://www.eventbrite.com/e/dating-is-a-joke-a-comedy-singles-event-in-english-tickets-2003563003879",
-      "source": "Eventbrite",
-      "featured": false
-    },
     {
       "id": "bol-c3e823c34db1",
       "title": "Dário Guerreiro | Primogénito",
@@ -398,6 +90,17 @@
       "featured": false
     },
     {
+      "id": "meetup lisboa-b1f47aa92b88",
+      "title": "Comedy Speakeasy!",
+      "dateTime": "2026-11-28T20:30:00+00:00",
+      "venue": "Xafarix Bar",
+      "district": "Lisboa",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
+      "ticketUrl": "https://www.meetup.com/republic-comedy/events/317500399/",
+      "source": "Meetup Lisboa",
+      "featured": false
+    },
+    {
       "id": "bol-8e96c8849b4a",
       "title": "Almada | Massa Mãe | Diogo Faro",
       "dateTime": "2026-11-28T21:00:00+00:00",
@@ -450,6 +153,28 @@
       "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1882030-e574d98ad8409017910d2b52793522df.jpg",
       "ticketUrl": "https://www.viralagenda.com/pt/events/1882030/revista-a-serrana-3",
       "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
+      "id": "ticketline-35184744ade9",
+      "title": "Espaços Outros | Linha De Falha",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108459/cartaz.jpg?rev=20261127131211",
+      "ticketUrl": "https://www.ticketline.pt/evento/v2-espacos-outros-linha-de-falha-fotografia-na-c",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-e6f0f762ab18",
+      "title": "Macam",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Macam - Museu De Arte Contemporânea Armando Martins | Galeria 4,...",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/93233/cartaz.jpg?rev=20261127131211",
+      "ticketUrl": "https://www.ticketline.pt/evento/macam-93233",
+      "source": "Ticketline",
       "featured": false
     },
     {
@@ -519,6 +244,149 @@
       "featured": false
     },
     {
+      "id": "ticketline-51deaccca9cf",
+      "title": "Braga Games 2026",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Forum Braga - Pavilhão",
+      "district": "Braga",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/110126/cartaz.jpg?rev=20261127131211",
+      "ticketUrl": "https://www.ticketline.pt/evento/braga-games-2026-110126",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-ea21bfaaecf2",
+      "title": "Oficina De Bordados À Vista",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Macam - Museu De Arte Contemporânea Armando Martins",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/107983/cartaz.jpg?rev=20261127131211",
+      "ticketUrl": "https://www.ticketline.pt/evento/v2-oficina-de-bordados-a-vista-entre-linhas-e-co",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-98810fe31892",
+      "title": "Auchan Live | Academia Aveiro",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Academia Auchan Live | Loja De Aveiro",
+      "district": "Aveiro",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/98167/cartaz.jpg?rev=20261127131211",
+      "ticketUrl": "https://www.ticketline.pt/evento/auchan-live-academia-aveiro-98167",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-7a36787eac43",
+      "title": "O Principezinho | O Novo Musical",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Auditório Santa Joana Princesa",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/107729/cartaz.jpg?rev=20261127131211",
+      "ticketUrl": "https://www.ticketline.pt/evento/o-principezinho-o-novo-musical-107729",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-99ff81abde88",
+      "title": "Vamos Obi",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Auditório Carlos Paredes",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/104749/cartaz.jpg?rev=20261127131211",
+      "ticketUrl": "https://www.ticketline.pt/evento/vamos-obi-104749",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-461503cff208",
+      "title": "Histórias Com Magia Para Dragõezinhos 2026",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Museu F C Porto - Auditório",
+      "district": "Porto",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/98555/cartaz.jpg?rev=20261127131211",
+      "ticketUrl": "https://www.ticketline.pt/evento/historias-com-magia-para-dragoezinhos-2026-98555",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-214dac4d8244",
+      "title": "Naza",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Cinema Fernando Lopes - Universidade Lusófona",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/108032/cartaz.jpg?rev=20261127131211",
+      "ticketUrl": "https://www.ticketline.pt/evento/naza-108032",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "ticketline-7a9676d90fd1",
+      "title": "Capuchinho Vermelho - Uma História Nada Normal",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Cine-Teatro Turim",
+      "district": "Portugal",
+      "imageUrl": "https://info.ticketline.pt/images/Espectaculos/109398/cartaz.jpg?rev=20261127131211",
+      "ticketUrl": "https://www.ticketline.pt/evento/capuchinho-vermelho-uma-historia-nada-norma-109398",
+      "source": "Ticketline",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-2742d8f09893",
+      "title": "ARTE",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "CAA Centro de Artes de Águeda",
+      "district": "Aveiro",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1862000-6fa689ec01f8b214662f5a01d80367c9.png",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1862000/arte",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-d3e48950959f",
+      "title": "FRESCOS",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Bombeiros de Carcavelos e São Domingos de Rana",
+      "district": "Lisboa",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/a8acfabbda8efca21963c73d7617ae10-md.jpg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1871899/frescos",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-c34f6509bfa3",
+      "title": "Amanhã Não Está Certo - Pedro Teixeira da Mota",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Teatro Municipal da Lousã",
+      "district": "Portugal",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/5ba97f3e0ff7d4709521e797079a1e91-md.jpg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1878335/amanha-nao-esta-certo-pedro-teixeira-da-mota",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-3a3b93a89e5f",
+      "title": "Stand Up Comedy | Hard Rock Café - Porto Comedy Room",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Hard Rock Cafe Porto",
+      "district": "Porto",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/18e2146239590c673f93367668d88ed6-md.jpg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1883105/stand-up-comedy-hard-rock-cafe-porto-comedy-room",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-d3931105fe65",
+      "title": "MORRERAM TODOS! | Stand-Up",
+      "dateTime": "2026-11-28T21:30:00+00:00",
+      "venue": "Centro Cultural Malaposta",
+      "district": "Lisboa",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1887907-34be17b9f721f5f80c3a666226170adc.png",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1887907/morreram-todos-stand-up",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
       "id": "eventbrite-d966d0ecbf7a",
       "title": "English Comedy Night",
       "dateTime": "2026-11-29T00:00:00+00:00",
@@ -538,6 +406,17 @@
       "imageUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1198551636%2F205370047150%2F1%2Foriginal.20261123-184637?crop=focalpoint&fit=crop&w=400&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=67c3e7566d9f55dd6fa3f93d81ca1bab",
       "ticketUrl": "https://www.eventbrite.com/e/lisbons-up-and-coming-comics-new-jokes-and-fun-prizes-english-comedy-tickets-1998427494432",
       "source": "Eventbrite",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-67c63732ce39",
+      "title": "Comédia com ar de revista “Pátio do Cunha”",
+      "dateTime": "2026-11-29T16:30:00+00:00",
+      "venue": "SIRA – Sociedade de Instrução e Recreio Ancorense",
+      "district": "Portugal",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1873981-161c3d776b08932f6c2faa94f95822dd.jpg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1873981/comedia-com-ar-de-revista-patio-do-cunha",
+      "source": "Viral Agenda Comédia",
       "featured": false
     },
     {
@@ -585,6 +464,17 @@
       "featured": false
     },
     {
+      "id": "viral agenda comédia-35fda49f8d39",
+      "title": "A Lemonade Stand-up Comedy",
+      "dateTime": "2026-11-29T21:00:00+00:00",
+      "venue": "Pinguim Café",
+      "district": "Porto",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/e7b947ce07ae30e698b36922c79c55e6-md.jpg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1877664/a-lemonade-stand-up-comedy",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
       "id": "bol-6abfda177fa2",
       "title": "Caldo Verde - Roberto Correia",
       "dateTime": "2026-11-30T21:00:00+00:00",
@@ -593,6 +483,17 @@
       "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz160985.png?v=2",
       "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/187201-caldo_verde_roberto_correia-lisboa_comedy_club/",
       "source": "BOL",
+      "featured": false
+    },
+    {
+      "id": "viral agenda comédia-ecd32afba9b0",
+      "title": "\"Estupenda\" - Noite de stand-up comedy",
+      "dateTime": "2026-11-30T21:00:00+00:00",
+      "venue": "Cossoul",
+      "district": "Lisboa",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/3ad4d2d2d9589ba10715b4f6d19db0ce-md.jpg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1876345/estupenda-noite-de-stand-up-comedy",
+      "source": "Viral Agenda Comédia",
       "featured": false
     },
     {
@@ -640,6 +541,17 @@
       "featured": false
     },
     {
+      "id": "viral agenda comédia-ae48b3fe781d",
+      "title": "TIAGO ALMEIDA | MAIOR FÃ",
+      "dateTime": "2026-12-01T21:00:00+00:00",
+      "venue": "Teatro Tivoli BBVA",
+      "district": "Lisboa",
+      "imageUrl": "https://cdn.viralagenda.com/images/events/ext/1816997-4f936fb7a93d76e0e62ffa766a905322.jpg",
+      "ticketUrl": "https://www.viralagenda.com/pt/events/1816997/tiago-almeida-maior-fa",
+      "source": "Viral Agenda Comédia",
+      "featured": false
+    },
+    {
       "id": "eventbrite-986284df8660",
       "title": "ENGLISH STAND UP COMEDY OPEN MIC @Aveiro",
       "dateTime": "2026-12-02T00:00:00+00:00",
@@ -665,7 +577,7 @@
       "id": "meetup porto-da574740f989",
       "title": "🎬 DINNER & A MOVIE: Movie Night & Dinner 🎬",
       "dateTime": "2026-12-02T19:00:00+00:00",
-      "venue": "Local a anunciar",
+      "venue": "LOOK.Sharp Cafe Porto | Coworking | Events | Retail",
       "district": "Porto",
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-4-square.webp",
       "ticketUrl": "https://www.meetup.com/looksharp/events/317396707/",
@@ -846,6 +758,17 @@
       "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
       "ticketUrl": "https://www.meetup.com/lisboncomedy/events/317368720/",
       "source": "Meetup Lisboa",
+      "featured": false
+    },
+    {
+      "id": "meetup porto-555bef7b3f7e",
+      "title": "No Plans. No Problem. Dinner With Strangers✨",
+      "dateTime": "2026-12-04T20:30:00+00:00",
+      "venue": "Porto",
+      "district": "Porto",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-5-square.webp",
+      "ticketUrl": "https://www.meetup.com/dinnersmate/events/317608813/",
+      "source": "Meetup Porto",
       "featured": false
     },
     {
@@ -1190,6 +1113,17 @@
       "featured": false
     },
     {
+      "id": "bol-434b7299ae14",
+      "title": "Com Calma Comedy Sessions | Benfica",
+      "dateTime": "2026-12-11T21:00:00+00:00",
+      "venue": "Com Calma Espaço Cultural",
+      "district": "Lisboa",
+      "imageUrl": "https://img.bol.pt/producao/imagens/espectaculos/cartaz159328.png?v=3",
+      "ticketUrl": "https://www.bol.pt/Comprar/Bilhetes/185293-com_calma_comedy_sessions_benfica-com_calma_espaco_cultural/",
+      "source": "BOL",
+      "featured": false
+    },
+    {
       "id": "agenda cultural porto-f28439cc9637",
       "title": "Stand Up Comedy | Dehouse Trindade &#8211; Porto Comedy Room",
       "dateTime": "2026-12-11T21:30:00+00:00",
@@ -1418,6 +1352,17 @@
       "imageUrl": "https://agendaculturalporto.org/wp-content/uploads/2026/05/f3473365d4f33e2af4cf2a89dc950415-large.png",
       "ticketUrl": "https://agendaculturalporto.org/eventos/english-stand-up-comedy-open-mic-no-porto-noite-de-humor-em-ingles-no-maria-pistolas-7/",
       "source": "Agenda Cultural Porto",
+      "featured": false
+    },
+    {
+      "id": "meetup porto-59a793cbac53",
+      "title": "ENGLISH STAND UP COMEDY OPEN MIC @Porto",
+      "dateTime": "2026-12-17T21:00:00+00:00",
+      "venue": "Maria Pistolas",
+      "district": "Porto",
+      "imageUrl": "https://www.meetup.com/images/fallbacks/redesign/group-cover-1-square.webp",
+      "ticketUrl": "https://www.meetup.com/comedycachet/events/317610455/",
+      "source": "Meetup Porto",
       "featured": false
     },
     {
